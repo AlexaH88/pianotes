@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+header, section, footer {
+    clear: both;
+    padding: 2rem 2rem;
+}
+
 /* font families and sizes */
 h1, h2 {
     font-family: 'Orelega One', sans-serif; 
@@ -38,13 +43,22 @@ li {
 
 i {
     font-size: 3rem;
+    color: #5e17eb;
 }
 
-/* links */
+/* header */
+header, .nav-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    padding: 0rem 2rem;
+}
+
 a {
     text-decoration: none;
     color: black;
-
 }
 
 a:hover {
@@ -53,4 +67,11 @@ a:hover {
 
 .active {
     color: #5e17eb;
+}
+
+/* footer */
+ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
 }
