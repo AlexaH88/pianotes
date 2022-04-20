@@ -120,12 +120,17 @@ section li {
 }
 
 /* instructions page */
-section li {
-    list-style: circle; 
+section ul {
+    flex-direction: column;
 }
 
-section ul {
-    display: block;
+section li {
+    padding-left: 2rem;
+}
+
+section i {
+    font-size: 2rem;
+    padding: 0.5rem;
 }
 
 /* footer */
