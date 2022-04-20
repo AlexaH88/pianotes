@@ -9,6 +9,14 @@
     padding: 0;
 }
 
+/* code taken from stack overflow - more details in README */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 header, section, footer {
     clear: both;
     padding: 2rem 2rem;
@@ -94,6 +102,10 @@ a:hover {
 }
 
 /* footer */
+footer {
+    margin-top: auto;
+}
+
 ul {
     display: flex;
     justify-content: space-between;
