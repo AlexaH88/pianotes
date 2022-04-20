@@ -33,29 +33,28 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 6rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 p, li {
     font-family: 'Poppins', sans-serif; 
-    font-size: 2rem;
 }
 
 p { 
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 li { 
-    font-size: 1.6rem;
+    font-size: 2rem;
     list-style: none;
 }
 
 i {
-    font-size: 3rem;
+    font-size: 4.2rem;
     color: #5e17eb;
 }
 
@@ -84,9 +83,17 @@ a:hover {
     color: #5e17eb;
 }
 
-/* main page container */
+/* main page sections */
 .main-page-container {
     margin-top: auto;
+}
+
+section h2 {
+    margin: 2rem 0rem;
+}
+
+section li {
+    margin: 1rem 0rem;
 }
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
@@ -129,7 +136,7 @@ footer {
 
 footer i {
     color: black;
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 0rem 0.2rem;
 }
 
