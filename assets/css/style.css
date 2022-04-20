@@ -19,7 +19,6 @@ body {
 
 header, section, footer {
     padding: 2rem 4rem;
-    text-align: center;
 }
 
 .main-page-container {
@@ -120,8 +119,14 @@ section li {
 }
 
 /* instructions page */
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
 section ul {
     flex-direction: column;
+    align-items: flex-start;
 }
 
 section li {
@@ -131,6 +136,17 @@ section li {
 section i {
     font-size: 2rem;
     padding: 0.5rem;
+}
+
+.instruction-elements {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+#piano-image {
+    width: 100%;
 }
 
 /* footer */
