@@ -106,6 +106,16 @@ footer {
     margin-top: auto;
 }
 
+footer i {
+    color: black;
+    font-size: 2rem;
+    padding: 0rem 0.2rem;
+}
+
+footer i:hover {
+    color: #5e17eb;
+}
+
 ul {
     display: flex;
     justify-content: space-between;
