@@ -79,8 +79,8 @@ a:hover {
 }
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
-/* virtual keyboard */
-.virtual-keyboard {
+/* virtual piano */
+.virtual-piano, .notes {
     display: flex;
     justify-content: center;
 }
