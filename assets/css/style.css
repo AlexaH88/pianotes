@@ -28,7 +28,7 @@ header, section, footer {
 }
 
 /* font families and sizes */
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Orelega One', sans-serif; 
 }
 
@@ -38,10 +38,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
 }
 
 p, li {
@@ -86,6 +82,11 @@ a:hover {
 
 .active {
     color: #5e17eb;
+}
+
+/* main page container */
+.main-page-container {
+    margin-top: auto;
 }
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
