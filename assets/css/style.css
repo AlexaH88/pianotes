@@ -21,11 +21,6 @@ header, section, footer {
     padding: 2rem 4rem;
 }
 
-.main-page-container {
-    justify-content: center;
-    align-items: center;
-}
-
 /* font families and sizes */
 h1, h2 {
     font-family: 'Orelega One', sans-serif; 
@@ -85,6 +80,8 @@ a:hover {
 /* main page sections */
 .main-page-container {
     margin-top: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 section h2 {
@@ -96,7 +93,7 @@ section li {
 }
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
-/* virtual piano page */
+/* play and challenge pages */
 .virtual-piano, .notes {
     display: flex;
     justify-content: center;
@@ -119,21 +116,21 @@ section li {
 }
 
 /* instructions page */
-section {
+.horizontal-section {
     display: flex;
     justify-content: space-between;
 }
 
-section ul {
+.horizontal-section ul {
     flex-direction: column;
     align-items: flex-start;
 }
 
-section li {
+.horizontal-section li {
     padding-left: 2rem;
 }
 
-section i {
+.horizontal-section i {
     font-size: 2rem;
     padding: 0.5rem;
 }
