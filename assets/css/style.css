@@ -34,12 +34,12 @@ h2 {
     font-size: 4rem;
 }
 
-p, li {
+section, li {
     font-family: 'Poppins', sans-serif; 
 }
 
-p { 
-    font-size: 3rem;
+.notes div { 
+    font-size: 4rem;
 }
 
 li { 
@@ -94,9 +94,14 @@ section li {
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
 /* play and challenge pages */
-.virtual-piano, .notes {
+.virtual-piano {
     display: flex;
     justify-content: center;
+}
+
+.notes {
+    display: flex;
+    justify-content: space-around;
 }
 
 .white {
