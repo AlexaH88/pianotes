@@ -39,7 +39,12 @@ section, li {
 }
 
 .notes div { 
-    font-size: 4rem;
+    font-size: 3rem;
+}
+
+.notes i { 
+    font-size: 2.5rem;
+    color: #000000;
 }
 
 li { 
