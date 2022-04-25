@@ -32,32 +32,21 @@
     -   #### Colour Palette
 
         - The colour palette is made up of four colours: 
-          - Dark blue #08172F
-          - Light blue #BDE5EC
-          - Dark brown #9D5E2B
-          - White #FFF
+          - Yellow #FFDE59
+          - Purple #5E17EB
+          - Black #000000
+          - White #FFFFFF
 
-        - The first three colours are taken from the hero images, all the while taking into account their compatibility with each other and the site as a whole. White #fff is used as the fourth colour on the site as a neutral tone.
+        - The yellow #FFDE59 and purple #5E17EB were chosen for their playfulness, fiting with the theme of the site, all the while taking into account their compatibility with each other and the site as a whole. Black #000000 and white #FFFFFF are used as the third and fourth colours on the site as neutral tones.
 
-        ![About The Games Hero Image Colour Palette](assets/images/color-palette-about-the-games.png)
-
-        ![Game Developer History Hero Image Colour Palette](assets/images/color-palette-game-developer-history.png)
-
-        ![Machine Catalogue Hero Image Colour Palette](assets/images/color-palette-machine-catalogue.png)
-
-        ![Sign Up Hero Image Colour Palette](assets/images/color-palette-sign-up.png)
-    
     -   #### Typography
+        - The [Orelega One](https://fonts.google.com/specimen/Orelega+One?query=orelega) and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) fonts are used across the site, with 'Orelega One' used for the headings and 'Poppins' used for the remaining text. 
 
-        -   The 'Hubballi' and 'Mina' fonts are used across the site, with  Hubballi being used for the body text and Mina for the h1, h2, h3 heading. These fonts were chosen as they resemble the in-game fonts fairly closely, as seen by the [Horizon Zero Dawn Logo](https://commons.wikimedia.org/wiki/File:Logo_Horizon_Zero_Dawn.svg):
-        
-            ![Horizon Zero Dawn Logo](assets/images/logo-horizon-zero-dawn.png)
+        - The fonts were chosen for their playful feel, taking into account the theme of the site. 
     
     -   #### Imagery
 
-        -   Each page has its own hero image to immediately immerse the user into the breath-taking world of the Horizon games - whether it be existing fans of the games or newcomers coming to learn more about the world of Horizon. They are all in-game shots and thus allow the user to imagine themselves in the Horizon universe. 
-
-        -   The other images on the page are of the enemy machines and can be found on the Machine Catalogue page. These images have been selected specifically as they show the machines on their own, without any other characters or other machines, so as to make clear to the user which machine is being described. They are also good-quality, in-game images to give the user the feeling of experiencing the game directly.   
+        - The piano icon on the Instructions Page was added to avoid having a text-heavy page and to create a playful and fun look and feel. 
 
 -   ### ***Wireframes***
 
@@ -446,11 +435,11 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### ***Content***
 
-- Canva piano icon on instructions page XXX
-- Written content by Alexa XXX 
+- All content was written by the site creator, [Alexa Hendry](https://github.com/AlexaH88). 
 
 ### ***Media***
 
+- The [piano icon](https://www.canva.com/media/MAEouvjy1U8) on the Instructions page was taken from graphic designer [Avidesign](https://www.canva.com/p/avidesign/) via [Canva](https://www.canva.com/).
 - The piano notes audio XXX
 
 ### ***Acknowledgements***
