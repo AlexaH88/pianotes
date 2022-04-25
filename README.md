@@ -430,58 +430,28 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### ***Code***
 
-- The following were used as references to help with writing the HTML and CSS code:
-  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [CI Love Running Walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LR101+2021_T1/courseware/4a07c57382724cfda5834497317f24d5/f2db5fd401004fccb43b01a6066a5333/)
+- The following were used as references to help with writing the HTML, CSS and JavaScript code:
+  - [Code Institute LMS](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopmentecommerce), in particular the [CI Love Maths Walkthrough](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/78f3c10a937c4fe09640c7c0098d16bd/)
   - [W3Schools](https://www.w3schools.com/) 
   - [Stack Overflow](https://stackoverflow.com/)
   - [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
-- The media queries was taken in part from the [CI Love Running Walkthrough](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/blob/main/08-responsive-elements/01-club-ethos-media-queries-tablet/assets/css/style.css)
+- The virtual piano code was taken from [Web Dev Simplified's](https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw) brilliant [Build A Piano With JavaScript Tutorial](https://www.youtube.com/watch?v=vjco5yKZpU8) and adapted. 
 
-- The code to embed the two video trailers on the About The Games and Machine Catalogue pages was taken from the share option on [YouTube](https://www.youtube.com/) directly and adapted for the site's needs.
-  - [Horizon Zero Dawn Trailer](https://www.youtube.com/watch?v=wzx96gYA8ek)
-  - [Horizon Forbidden West Trailer](https://www.youtube.com/watch?v=Lq594XmpPBg&t=4s)
-  - [Horizon Zero Dawn Machines Trailer](https://www.youtube.com/watch?v=uMKAdNWv9xA)
-  - [Horizon Forbidden West Machines Trailer](https://www.youtube.com/watch?v=pY86drmNdV8)
+- The CSS flexbox code was taken from [Stack Overflow](https://stackoverflow.com/), specifically from [this thread](https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b).
 
-- The text box fade on the Machine Catalogue page images was taken from [W3Schools](https://www.w3schools.com/), specifically from [Fade In A Box](https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_opacity). The code was adapted to work with the specifics of the site. 
-
-- The responsive hamburger menu was taken from [CSS Tricks](https://css-tricks.com/), specifically the [CSS-Only Hamburger Menu](https://css-tricks.com/three-css-alternatives-to-javascript-navigation/#aa-alternative-3-the-css-only-hamburger-menu). The code was adapted to work with the specifics of the site. 
+- The code to use icons as list bullet points on the Instructions page was taken from [Font Awesome](https://fontawesome.com/), specifically [this page](https://fontawesome.com/docs/web/style/lists)
 
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
 
 ### ***Content***
 
-- The About The Games page content is taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page), notably [Horizon Zero Dawn](https://en.wikipedia.org/wiki/Horizon_Zero_Dawn) and [Horizon Forbidden West](https://en.wikipedia.org/wiki/Horizon_Forbidden_West).
-
-- The Game Developer History page content is taken from [Wikipedia](https://en.wikipedia.org/wiki/Main_Page), notably [Guerrilla Games](https://en.wikipedia.org/wiki/Guerrilla_Games).
-
-- The Machine Catalogue page content is taken from [Horizon Fandom](https://horizon.fandom.com/wiki/Horizon_Wiki), notably the [Machine Definition](https://horizon.fandom.com/wiki/Machine#Zero_Dawn_Machines) and individual machine info:
-  - [Charger](https://horizon.fandom.com/wiki/Charger)
-  - [Glinthawk](https://horizon.fandom.com/wiki/Glinthawk)
-  - [Grazer](https://horizon.fandom.com/wiki/Grazer)
-  - [Lancehorn](https://horizon.fandom.com/wiki/Lancehorn)
-  - [Longleg](https://horizon.fandom.com/wiki/Longleg)
-  - [Ravager](https://horizon.fandom.com/wiki/Ravager)
-  - [Scrapper](https://horizon.fandom.com/wiki/Scrapper)
-  - [Shellwalker](https://horizon.fandom.com/wiki/Shell-Walker)
-  - [Snapmaw](https://horizon.fandom.com/wiki/Snapmaw)
-  - [Stalker](https://horizon.fandom.com/wiki/Stalker)
-  - [Thunderjaw](https://horizon.fandom.com/wiki/Thunderjaw)
+- Canva piano icon on instructions page XXX
+- Written content by Alexa XXX 
 
 ### ***Media***
 
-- The four hero images on the About The Games, Game Developer History, Machine Catalogue, and Sign Up pages are in-game screenshots from [Horizon Forbidden West](https://store.playstation.com/en-us/concept/10000886), and were taken by the site's author [Alexa Hendry](https://github.com/AlexaH88).
-
-- The two video trailers on the About The Games page are taken from the official [PlayStation YouTube Page](https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA) and are credited as below. The code to embed them on the site was taken from the share option on [YouTube](https://www.youtube.com/) directly. 
-  - [Horizon Zero Dawn Trailer](https://www.youtube.com/watch?v=wzx96gYA8ek)
-  - [Horizon Forbidden West Trailer](https://www.youtube.com/watch?v=Lq594XmpPBg&t=4s)
-
-- The two videos on the Machine Catalogue page are taken from the official [PlayStation YouTube Page](https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA) and are credited as below. The code to embed them on the site was taken from the share option on [YouTube](https://www.youtube.com/) directly.
-  - [Horizon Zero Dawn Machines Trailer](https://www.youtube.com/watch?v=uMKAdNWv9xA)
-  - [Horizon Forbidden West Machines Trailer](https://www.youtube.com/watch?v=pY86drmNdV8)
-
-- The eleven Machine Catalogue images are in-game screenshots from [Horizon Forbidden West](https://store.playstation.com/en-us/concept/10000886), and were taken by the site's author [Alexa Hendry](https://github.com/AlexaH88).
+- The piano notes audio XXX
 
 ### ***Acknowledgements***
 
