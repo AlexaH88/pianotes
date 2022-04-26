@@ -140,6 +140,11 @@ section li {
 #sheet-music-section h2 {
     margin-top: 5rem;
 }
+
+#sheet-music-section audio {
+    margin-bottom: 3rem;
+}
+
 #sheet-music-section iframe {
     margin-bottom: 5rem;
 }
