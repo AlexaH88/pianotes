@@ -137,6 +137,13 @@ section li {
     align-items: center;
 }
 
+#sheet-music-section h2 {
+    margin-top: 5rem;
+}
+#sheet-music-section iframe {
+    margin-bottom: 5rem;
+}
+
 /* instructions page */
 .horizontal-section {
     display: flex;
