@@ -26,7 +26,7 @@ document.addEventListener('keydown', function(event) {
 
     if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
     if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
-    })
+    });
 
 // play audio and define interaction with piano keys
 function playNote(pianoKey) {
@@ -35,6 +35,6 @@ function playNote(pianoKey) {
     noteAudio.play();
     pianoKey.classList.add('active');
     noteAudio.addEventListener('ended', function() {
-        pianoKey.classList.remove('active')
-    })
+        pianoKey.classList.remove('active');
+    });
 };
