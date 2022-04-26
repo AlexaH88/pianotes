@@ -130,6 +130,13 @@ section li {
     background-color: #5e17eb;
 }
 
+/* sheet music page */
+#sheet-music-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* instructions page */
 .horizontal-section {
     display: flex;
