@@ -38,3 +38,15 @@ function playNote(pianoKey) {
         pianoKey.classList.remove('active');
     });
 };
+
+// virtual piano challenge game
+// define variables needed for the game
+let order = [];
+let playerOrder = [];
+let light;
+let turn;
+let correct;
+let compTurn;
+let intervalId;
+let sound = true;
+let win;
