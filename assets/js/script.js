@@ -44,7 +44,7 @@ function playNote(pianoKey) {
 let order = [];
 let playerOrder = [];
 let light;
-let turn;
+let count;
 let correct;
 let compTurn;
 let intervalId;
