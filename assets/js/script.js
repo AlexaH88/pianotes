@@ -778,7 +778,16 @@ function check() {
             correct = true;
             intervalId = setInterval(gameTurn, 800);
         }, 800);
-    };
 
     sound = false;
+    };
+
+    if (gamePoints == playerOrder.length && correct && !win) {
+        gamePoints++;
+        playerOrder = [];
+        computerTurn = true;
+        keyLights = 0;
+        gamePointsCounter.innerHTML = gamePoints;
+        intervalId = setInterval(gameTurn, 800);
+    }
 };
