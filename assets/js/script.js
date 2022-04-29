@@ -70,8 +70,7 @@ let sound = true;
 let win;
 
 // assign player and computer game point counter to variables
-let playerGamePoints = document.getElementById('player-game-points');
-let computerGamePoints = document.getElementById('computer-game-points');
+let gamePointsCounter = document.getElementById('game-points');
 
 // assign freestyle and challenge buttons to variables
 let freestyleButton = document.getElementById('freestyle-button');
@@ -102,3 +101,17 @@ let ab2 = document.getElementById('key-ab2');
 let a2 = document.getElementById('key-a2');
 let bb2 = document.getElementById('key-bb2');
 let b2 = document.getElementById('key-b2');
+
+freestyleButton
+
+challengeButton.addEventListener('click', function(event) {
+    if (challengeButton.checked == true) {
+        playChallenge()
+        gamePointsCounter.innerHTML = "-";
+    } else { 
+        playFreestyle()
+        gamePointsCounter.innerHTML = "";
+        clearKeyLights();
+        clearInterval(intervalId);
+    }
+});

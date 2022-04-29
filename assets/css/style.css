@@ -63,7 +63,8 @@ i {
     font-weight: bold;
 }
 
-.vertical-section td {
+.vertical-section td,
+.vertical-section div {
     font-size: 2.5rem;
 }
 
@@ -131,15 +132,29 @@ section li {
     color: #5e17eb;
 }
 
-.vertical-section table {
-    margin-bottom: 5rem;
+#game-points {
+    color: #000000;
+    font-weight: bold;
+}
+
+.border {
     border: solid 5px #5e17eb;
+    padding: 10px;
+}
+
+.vertical-section div {
+    margin-bottom: 5rem;
 }
 
 .vertical-section th,
 .vertical-section td {
     padding: 5px 20px;
     text-align: center;
+    font-weight: bold;
+}
+
+.vertical-section th {
+    text-decoration: underline;
 }
 
 .virtual-piano {
