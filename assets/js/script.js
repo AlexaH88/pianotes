@@ -171,3 +171,244 @@ function gameTurn() {
         }, 200);
     }
 };
+
+// define all keys audio functions
+// define c1 key audio function
+function one() {
+    if (sound) {
+        let audio = document.getElementById('C1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define db1 key audio function
+function two() {
+    if (sound) {
+        let audio = document.getElementById('Db1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define d1 key audio function
+function three() {
+    if (sound) {
+        let audio = document.getElementById('D1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define eb1 key audio function
+function four() {
+    if (sound) {
+        let audio = document.getElementById('Eb1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define e1 key audio function
+function five() {
+    if (sound) {
+        let audio = document.getElementById('E1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define f1 key audio function
+function six() {
+    if (sound) {
+        let audio = document.getElementById('F1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define gb1 key audio function
+function seven() {
+    if (sound) {
+        let audio = document.getElementById('Gb1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define g1 key audio function
+function eight() {
+    if (sound) {
+        let audio = document.getElementById('G1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define ab1 key audio function
+function nine() {
+    if (sound) {
+        let audio = document.getElementById('Ab1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define a1 key audio function
+function ten() {
+    if (sound) {
+        let audio = document.getElementById('A1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define bb1 key audio function
+function eleven() {
+    if (sound) {
+        let audio = document.getElementById('Bb1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define b1 key audio function
+function twelve() {
+    if (sound) {
+        let audio = document.getElementById('B1');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define c2 key audio function
+function thirteen() {
+    if (sound) {
+        let audio = document.getElementById('C2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define db2 key audio function
+function fourteen() {
+    if (sound) {
+        let audio = document.getElementById('Db2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define d2 key audio function
+function fifteen() {
+    if (sound) {
+        let audio = document.getElementById('D2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define eb2 key audio function
+function sixteen() {
+    if (sound) {
+        let audio = document.getElementById('Eb2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define e2 key audio function
+function seventeen() {
+    if (sound) {
+        let audio = document.getElementById('E2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define f2 key audio function
+function eighteen() {
+    if (sound) {
+        let audio = document.getElementById('F2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define gb2 key audio function
+function nineteen() {
+    if (sound) {
+        let audio = document.getElementById('Gb2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define g2 key audio function
+function twenty() {
+    if (sound) {
+        let audio = document.getElementById('G2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define ab2 key audio function
+function twentyOne() {
+    if (sound) {
+        let audio = document.getElementById('Ab2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define a2 key audio function
+function twentyTwo() {
+    if (sound) {
+        let audio = document.getElementById('A2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define bb2 key audio function
+function twentyThree() {
+    if (sound) {
+        let audio = document.getElementById('Bb2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
+
+// define b2 key audio function
+function twentyFour() {
+    if (sound) {
+        let audio = document.getElementById('B2');
+        audio.play();
+    }
+    sound = true;
+    c1.style.backgroundColor = "#5e17eb";
+};
