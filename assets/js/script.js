@@ -106,10 +106,8 @@ let b2 = document.getElementById('key-b2');
 challengeButton.addEventListener('click', function (event) {
     if (challengeButton.checked == true) {
         playChallenge()
-        gamePointsCounter.innerHTML = "-";
     } else {
-        //playFreestyle()//
-        gamePointsCounter.innerHTML = "";
+        playFreestyle()
         clearKeyLights();
         clearInterval(intervalId);
     }
