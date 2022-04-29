@@ -418,3 +418,30 @@ function clearKeyLights() {
     whiteKeys.style.backgroundColor = "#FFFFFF";
     blackKeys.style.backgroundColor = "#000000";
 };
+
+function flashKeyLights() {
+    c1.style.backgroundColor = "#5e17eb";
+    db1.style.backgroundColor = "#5e17eb";
+    d1.style.backgroundColor = "#5e17eb";
+    eb1.style.backgroundColor = "#5e17eb";
+    e1.style.backgroundColor = "#5e17eb";
+    f1.style.backgroundColor = "#5e17eb";
+    gb1.style.backgroundColor = "#5e17eb";
+    g1.style.backgroundColor = "#5e17eb";
+    ab1.style.backgroundColor = "#5e17eb";
+    a1.style.backgroundColor = "#5e17eb";
+    bb1.style.backgroundColor = "#5e17eb";
+    b1.style.backgroundColor = "#5e17eb";
+    c2.style.backgroundColor = "#5e17eb";
+    db2.style.backgroundColor = "#5e17eb";
+    d2.style.backgroundColor = "#5e17eb";
+    eb2.style.backgroundColor = "#5e17eb";
+    e2.style.backgroundColor = "#5e17eb";
+    f2.style.backgroundColor = "#5e17eb";
+    gb2.style.backgroundColor = "#5e17eb";
+    g2.style.backgroundColor = "#5e17eb";
+    ab2.style.backgroundColor = "#5e17eb";
+    a2.style.backgroundColor = "#5e17eb";
+    bb2.style.backgroundColor = "#5e17eb";
+    b2.style.backgroundColor = "#5e17eb";
+};
