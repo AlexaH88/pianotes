@@ -102,8 +102,7 @@ let a2 = document.getElementById('key-a2');
 let bb2 = document.getElementById('key-bb2');
 let b2 = document.getElementById('key-b2');
 
-freestyleButton
-
+// event listener for clicking on challenge button
 challengeButton.addEventListener('click', function(event) {
     if (challengeButton.checked == true) {
         playChallenge()
@@ -115,3 +114,20 @@ challengeButton.addEventListener('click', function(event) {
         clearInterval(intervalId);
     }
 });
+
+// play challenge function
+function playChallenge() {
+    win = false;
+    order = [];
+    playerOrder = [];
+    keyLights = 0;
+    intervalId = 0;
+    gamePoints = 1;
+    gamePointsCounter.innerHTML = 1;
+    correct = true;
+    for (let i = 0; i < 20; i++) {
+        order.push(Math.floor(Math.random() * 24) + 1);
+    }
+    computerTurn = true;
+    intervalId = setInterval(gameTurn, 800);
+};
