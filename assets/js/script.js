@@ -412,3 +412,9 @@ function twentyFour() {
     sound = true;
     c1.style.backgroundColor = "#5e17eb";
 };
+
+// clear lit up keys 
+function clearKeyLights() {
+    whiteKeys.style.backgroundColor = "#FFFFFF";
+    blackKeys.style.backgroundColor = "#000000";
+};
