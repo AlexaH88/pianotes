@@ -415,8 +415,30 @@ function twentyFour() {
 
 // clear lit up keys 
 function clearKeyLights() {
-    whiteKeys.style.backgroundColor = "#FFFFFF";
-    blackKeys.style.backgroundColor = "#000000";
+    c1.style.backgroundColor = "#FFFFFF";
+    db1.style.backgroundColor = "#000000";
+    d1.style.backgroundColor = "#FFFFFF";
+    eb1.style.backgroundColor = "#000000";
+    e1.style.backgroundColor = "#FFFFFF";
+    f1.style.backgroundColor = "#FFFFFF";
+    gb1.style.backgroundColor = "#000000";
+    g1.style.backgroundColor = "#FFFFFF";
+    ab1.style.backgroundColor = "#000000";
+    a1.style.backgroundColor = "#FFFFFF";
+    bb1.style.backgroundColor = "#000000";
+    b1.style.backgroundColor = "#FFFFFF";
+    c2.style.backgroundColor = "#FFFFFF";
+    db2.style.backgroundColor = "#000000";
+    d2.style.backgroundColor = "#FFFFFF";
+    eb2.style.backgroundColor = "#000000";
+    e2.style.backgroundColor = "#FFFFFF";
+    f2.style.backgroundColor = "#FFFFFF";
+    gb2.style.backgroundColor = "#000000";
+    g2.style.backgroundColor = "#FFFFFF";
+    ab2.style.backgroundColor = "#000000";
+    a2.style.backgroundColor = "#FFFFFF";
+    bb2.style.backgroundColor = "#000000";
+    b2.style.backgroundColor = "#FFFFFF";
 };
 
 function flashKeyLights() {
