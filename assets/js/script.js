@@ -131,3 +131,43 @@ function playChallenge() {
     computerTurn = true;
     intervalId = setInterval(gameTurn, 800);
 };
+
+// function defining who's turn it is
+function gameTurn() {
+    if (keyLights == gamePoints) {
+        clearInterval(intervalId);
+        computerTurn = false;
+        clearKeyLights();
+    }
+
+    if (computerTurn) {
+        clearKeyLights();
+        setTimeout( function() {
+            if (order[keyLights] == 1) one();
+            if (order[keyLights] == 2) two();
+            if (order[keyLights] == 3) three();
+            if (order[keyLights] == 4) four();
+            if (order[keyLights] == 5) five();
+            if (order[keyLights] == 6) six();
+            if (order[keyLights] == 7) seven();
+            if (order[keyLights] == 8) eight();
+            if (order[keyLights] == 9) nine();
+            if (order[keyLights] == 10) ten();
+            if (order[keyLights] == 11) eleven();
+            if (order[keyLights] == 12) twelve();
+            if (order[keyLights] == 13) thirteen();
+            if (order[keyLights] == 14) fourteen();
+            if (order[keyLights] == 15) fifteen();
+            if (order[keyLights] == 16) sixteen();
+            if (order[keyLights] == 17) seventeen();
+            if (order[keyLights] == 18) eighteen();
+            if (order[keyLights] == 19) nineteen();
+            if (order[keyLights] == 20) twenty();
+            if (order[keyLights] == 21) twentyOne();
+            if (order[keyLights] == 22) twentyTwo();
+            if (order[keyLights] == 23) twentyThree();
+            if (order[keyLights] == 24) twentyFour();
+            keyLights++;
+        }, 200);
+    }
+};
