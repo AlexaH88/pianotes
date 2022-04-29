@@ -40,13 +40,63 @@ function playNote(pianoKey) {
 };
 
 // virtual piano challenge game
-// define variables needed for the game
+// order in which the keys light up
 let order = [];
+
+// order in which the player presses the keys
 let playerOrder = [];
-let light;
-let count;
+
+// integer for number of times the keys light up
+let keyLights;
+
+// variable to count the number of points scored
+let gamePoints;
+
+// boolean defining whether player has hit the right notes or not
 let correct;
-let compTurn;
+
+// boolean defining whether it's the player's or computer's turn
+let computerTurn;
+
+// variable to identify the interval between notes being played
 let intervalId;
+
+// boolean defining the piano note audio on or off
 let sound = true;
+
+// boolean defining if the player has won or not
 let win;
+
+// assign player and computer game point counter to variables
+let playerGamePoints = document.getElementById('player-game-points');
+let computerGamePoints = document.getElementById('computer-game-points');
+
+// assign freestyle and challenge buttons to variables
+let freestyleButton = document.getElementById('freestyle-button');
+let challengeButton = document.getElementById('challenge-button');
+
+// assign individual piano keys to variables
+let c1 = document.getElementById('key-c1');
+let db1 = document.getElementById('key-db1');
+let d1 = document.getElementById('key-d1');
+let eb1 = document.getElementById('key-eb1');
+let e1 = document.getElementById('key-e1');
+let f1 = document.getElementById('key-f1');
+let gb1 = document.getElementById('key-gb1');
+let g1 = document.getElementById('key-g1');
+let ab1 = document.getElementById('key-ab1');
+let a1 = document.getElementById('key-a1');
+let bb1 = document.getElementById('key-bb1');
+let b1 = document.getElementById('key-b1');
+let c2 = document.getElementById('key-c2');
+let db2 = document.getElementById('key-db2');
+let d2 = document.getElementById('key-d2');
+let eb2 = document.getElementById('key-eb2');
+let e2 = document.getElementById('key-e2');
+let f2 = document.getElementById('key-f2');
+let gb2 = document.getElementById('key-gb2');
+let g2 = document.getElementById('key-g2');
+let ab2 = document.getElementById('key-ab2');
+let a2 = document.getElementById('key-a2');
+let bb2 = document.getElementById('key-bb2');
+let b2 = document.getElementById('key-b2');

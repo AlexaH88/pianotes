@@ -66,8 +66,8 @@
             <div class="vertical-section">
                 <h2>How would you like to play?</h2>
                 <div>
-                    <button class="buttons">Freestyle</button>
-                    <button class="buttons">Challenge</button>
+                    <button id="freestyle-button">Freestyle</button>
+                    <button id="challenge-button">Challenge</button>
                 </div>
             </div>
 
@@ -101,30 +101,30 @@
 
             <!-- keys -->
             <div class="virtual-piano">
-                <div data-note="C" class="key white"></div>
-                <div data-note="Db" class="key black"></div>
-                <div data-note="D" class="key white"></div>
-                <div data-note="Eb" class="key black"></div>
-                <div data-note="E" class="key white"></div>
-                <div data-note="F" class="key white"></div>
-                <div data-note="Gb" class="key black"></div>
-                <div data-note="G" class="key white"></div>
-                <div data-note="Ab" class="key black"></div>
-                <div data-note="A" class="key white"></div>
-                <div data-note="Bb" class="key black"></div>
-                <div data-note="B" class="key white"></div>
-                <div data-note="C" class="key white"></div>
-                <div data-note="Db" class="key black"></div>
-                <div data-note="D" class="key white"></div>
-                <div data-note="Eb" class="key black"></div>
-                <div data-note="E" class="key white"></div>
-                <div data-note="F" class="key white"></div>
-                <div data-note="Gb" class="key black"></div>
-                <div data-note="G" class="key white"></div>
-                <div data-note="Ab" class="key black"></div>
-                <div data-note="A" class="key white"></div>
-                <div data-note="Bb" class="key black"></div>
-                <div data-note="B" class="key white"></div>
+                <div data-note="C" class="key white" id="key-c1"></div>
+                <div data-note="Db" class="key black" id="key-db1"></div>
+                <div data-note="D" class="key white" id="key-d1"></div>
+                <div data-note="Eb" class="key black" id="key-eb1"></div>
+                <div data-note="E" class="key white" id="key-e1"></div>
+                <div data-note="F" class="key white" id="key-f1"></div>
+                <div data-note="Gb" class="key black" id="key-gb1"></div>
+                <div data-note="G" class="key white" id="key-g1"></div>
+                <div data-note="Ab" class="key black" id="key-ab1"></div>
+                <div data-note="A" class="key white" id="key-a1"></div>
+                <div data-note="Bb" class="key black" id="key-bb1"></div>
+                <div data-note="B" class="key white" id="key-b1"></div>
+                <div data-note="C" class="key white" id="key-c2"></div>
+                <div data-note="Db" class="key black" id="key-db2"></div>
+                <div data-note="D" class="key white" id="key-d2"></div>
+                <div data-note="Eb" class="key black" id="key-eb2"></div>
+                <div data-note="E" class="key white" id="key-e2"></div>
+                <div data-note="F" class="key white" id="key-f2"></div>
+                <div data-note="Gb" class="key black" id="key-gb2"></div>
+                <div data-note="G" class="key white" id="key-g2"></div>
+                <div data-note="Ab" class="key black" id="key-ab2"></div>
+                <div data-note="A" class="key white" id="key-a2"></div>
+                <div data-note="Bb" class="key black" id="key-bb2"></div>
+                <div data-note="B" class="key white" id="key-b2"></div>
             </div>
 
             <!-- list of white keys available -->
@@ -163,6 +163,25 @@
                 <div><i class="fa-solid fa-keyboard"></i> J</div>
             </div>
 
+            <!-- game points -->
+            <div class="vertical-section">
+                <h2>Game Points</h2>
+                <div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>You</th>
+                                <th>Computer</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <!-- score board -->
             <div class="vertical-section">
                 <h2>Score Board</h2>
@@ -174,8 +193,8 @@
                                 <th>Computer</th>
                             </tr>
                             <tr>
-                                <td>0</td>
-                                <td>0</td>
+                                <td id="player-game-points">0</td>
+                                <td id="computer-game-points">0</td>
                             </tr>
                         </tbody>
                     </table>
