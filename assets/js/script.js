@@ -40,6 +40,8 @@ function playNote(pianoKey) {
 };
 
 // virtual piano challenge game
+// this code was predominantly taken from the YouTube channel freeCodeCamp.org and adapted - see details in the README
+
 // order in which the keys light up
 let order = [];
 
