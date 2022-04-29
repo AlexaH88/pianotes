@@ -108,7 +108,7 @@ challengeButton.addEventListener('click', function (event) {
         playChallenge()
         gamePointsCounter.innerHTML = "-";
     } else {
-        playFreestyle()
+        //playFreestyle()//
         gamePointsCounter.innerHTML = "";
         clearKeyLights();
         clearInterval(intervalId);
@@ -190,7 +190,7 @@ function two() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    db1.style.backgroundColor = "#5e17eb";
 };
 
 // define d1 key audio function
@@ -200,7 +200,7 @@ function three() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    d1.style.backgroundColor = "#5e17eb";
 };
 
 // define eb1 key audio function
@@ -210,7 +210,7 @@ function four() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    eb1.style.backgroundColor = "#5e17eb";
 };
 
 // define e1 key audio function
@@ -220,7 +220,7 @@ function five() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    e1.style.backgroundColor = "#5e17eb";
 };
 
 // define f1 key audio function
@@ -230,7 +230,7 @@ function six() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    f1.style.backgroundColor = "#5e17eb";
 };
 
 // define gb1 key audio function
@@ -240,7 +240,7 @@ function seven() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    gb1.style.backgroundColor = "#5e17eb";
 };
 
 // define g1 key audio function
@@ -250,7 +250,7 @@ function eight() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    g1.style.backgroundColor = "#5e17eb";
 };
 
 // define ab1 key audio function
@@ -260,7 +260,7 @@ function nine() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    ab1.style.backgroundColor = "#5e17eb";
 };
 
 // define a1 key audio function
@@ -270,7 +270,7 @@ function ten() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    a1.style.backgroundColor = "#5e17eb";
 };
 
 // define bb1 key audio function
@@ -280,7 +280,7 @@ function eleven() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    bb1.style.backgroundColor = "#5e17eb";
 };
 
 // define b1 key audio function
@@ -290,7 +290,7 @@ function twelve() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    b1.style.backgroundColor = "#5e17eb";
 };
 
 // define c2 key audio function
@@ -300,7 +300,7 @@ function thirteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    c2.style.backgroundColor = "#5e17eb";
 };
 
 // define db2 key audio function
@@ -310,7 +310,7 @@ function fourteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    db2.style.backgroundColor = "#5e17eb";
 };
 
 // define d2 key audio function
@@ -320,7 +320,7 @@ function fifteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    d2.style.backgroundColor = "#5e17eb";
 };
 
 // define eb2 key audio function
@@ -330,7 +330,7 @@ function sixteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    eb2.style.backgroundColor = "#5e17eb";
 };
 
 // define e2 key audio function
@@ -340,7 +340,7 @@ function seventeen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    e2.style.backgroundColor = "#5e17eb";
 };
 
 // define f2 key audio function
@@ -350,7 +350,7 @@ function eighteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    f2.style.backgroundColor = "#5e17eb";
 };
 
 // define gb2 key audio function
@@ -360,7 +360,7 @@ function nineteen() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    gb2.style.backgroundColor = "#5e17eb";
 };
 
 // define g2 key audio function
@@ -370,7 +370,7 @@ function twenty() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    g2.style.backgroundColor = "#5e17eb";
 };
 
 // define ab2 key audio function
@@ -380,7 +380,7 @@ function twentyOne() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    ab2.style.backgroundColor = "#5e17eb";
 };
 
 // define a2 key audio function
@@ -390,7 +390,7 @@ function twentyTwo() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    a2.style.backgroundColor = "#5e17eb";
 };
 
 // define bb2 key audio function
@@ -400,7 +400,7 @@ function twentyThree() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    bb2.style.backgroundColor = "#5e17eb";
 };
 
 // define b2 key audio function
@@ -410,7 +410,7 @@ function twentyFour() {
         audio.play();
     }
     sound = true;
-    c1.style.backgroundColor = "#5e17eb";
+    b2.style.backgroundColor = "#5e17eb";
 };
 
 // clear lit up keys 
@@ -790,4 +790,10 @@ function check() {
         gamePointsCounter.innerHTML = gamePoints;
         intervalId = setInterval(gameTurn, 800);
     }
+};
+
+// player wins function
+function winGame() {
+    flashKeyLights();
+    win = true;
 };
