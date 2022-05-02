@@ -808,5 +808,6 @@ function check() {
 // player wins function
 function winGame() {
     flashKeyLights();
+    challengeOn = false;
     win = true;
 };
