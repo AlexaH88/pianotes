@@ -57,138 +57,140 @@
         </nav>
     </header>
 
-    <!-- main page container -->
-    <div class="main-page-container">
-        <!-- virtual piano section -->
-        <section>
+    <main>
+        <!-- main page container -->
+        <div class="main-page-container">
+            <!-- virtual piano section -->
+            <section>
 
-            <!-- play mode selector -->
-            <div class="vertical-section">
-                <h2>How would you like to play?</h2>
-                <div>
-                    <button id="freestyle-button">Freestyle</button>
-                    <button id="challenge-button">Challenge</button>
+                <!-- play mode selector -->
+                <div class="vertical-section">
+                    <h2>How would you like to play?</h2>
+                    <div>
+                        <button id="freestyle-button">Freestyle</button>
+                        <button id="challenge-button">Challenge</button>
+                    </div>
                 </div>
-            </div>
 
-            <!-- list of computer keys to use -->
-            <div class="notes">
-                <div><i class="fa-solid fa-keyboard"></i> Q</div>
-                <div><i class="fa-solid fa-keyboard"></i> W</div>
-                <div><i class="fa-solid fa-keyboard"></i> E</div>
-                <div><i class="fa-solid fa-keyboard"></i> R</div>
-                <div><i class="fa-solid fa-keyboard"></i> T</div>
-                <div><i class="fa-solid fa-keyboard"></i> Y</div>
-                <div><i class="fa-solid fa-keyboard"></i> U</div>
-                <div><i class="fa-solid fa-keyboard"></i> I</div>
-                <div><i class="fa-solid fa-keyboard"></i> O</div>
-                <div><i class="fa-solid fa-keyboard"></i> P</div>
-            </div>
-
-            <!-- list of black keys available -->
-            <div class="notes">
-                <div><i class="fa-solid fa-music"></i> C1#</div>
-                <div><i class="fa-solid fa-music"></i> D1#</div>
-                <div><i class="fa-solid fa-music"></i> F1#</div>
-                <div><i class="fa-solid fa-music"></i> G1#</div>
-                <div><i class="fa-solid fa-music"></i> A1#</div>
-                <div><i class="fa-solid fa-music"></i> C2#</div>
-                <div><i class="fa-solid fa-music"></i> D2#</div>
-                <div><i class="fa-solid fa-music"></i> F2#</div>
-                <div><i class="fa-solid fa-music"></i> G2#</div>
-                <div><i class="fa-solid fa-music"></i> A2#</div>
-            </div>
-
-            <!-- keys -->
-            <div class="virtual-piano">
-                <div data-note="C1" class="key white" id="key-c1"></div>
-                <div data-note="Db1" class="key black" id="key-db1"></div>
-                <div data-note="D1" class="key white" id="key-d1"></div>
-                <div data-note="Eb1" class="key black" id="key-eb1"></div>
-                <div data-note="E1" class="key white" id="key-e1"></div>
-                <div data-note="F1" class="key white" id="key-f1"></div>
-                <div data-note="Gb1" class="key black" id="key-gb1"></div>
-                <div data-note="G1" class="key white" id="key-g1"></div>
-                <div data-note="Ab1" class="key black" id="key-ab1"></div>
-                <div data-note="A1" class="key white" id="key-a1"></div>
-                <div data-note="Bb1" class="key black" id="key-bb1"></div>
-                <div data-note="B1" class="key white" id="key-b1"></div>
-                <div data-note="C2" class="key white" id="key-c2"></div>
-                <div data-note="Db2" class="key black" id="key-db2"></div>
-                <div data-note="D2" class="key white" id="key-d2"></div>
-                <div data-note="Eb2" class="key black" id="key-eb2"></div>
-                <div data-note="E2" class="key white" id="key-e2"></div>
-                <div data-note="F2" class="key white" id="key-f2"></div>
-                <div data-note="Gb2" class="key black" id="key-gb2"></div>
-                <div data-note="G2" class="key white" id="key-g2"></div>
-                <div data-note="Ab2" class="key black" id="key-ab2"></div>
-                <div data-note="A2" class="key white" id="key-a2"></div>
-                <div data-note="Bb2" class="key black" id="key-bb2"></div>
-                <div data-note="B2" class="key white" id="key-b2"></div>
-            </div>
-
-            <!-- list of white keys available -->
-            <div class="notes">
-                <div><i class="fa-solid fa-music"></i> C1</div>
-                <div><i class="fa-solid fa-music"></i> D1</div>
-                <div><i class="fa-solid fa-music"></i> E1</div>
-                <div><i class="fa-solid fa-music"></i> F1</div>
-                <div><i class="fa-solid fa-music"></i> G1</div>
-                <div><i class="fa-solid fa-music"></i> A1</div>
-                <div><i class="fa-solid fa-music"></i> B1</div>
-                <div><i class="fa-solid fa-music"></i> C2</div>
-                <div><i class="fa-solid fa-music"></i> D2</div>
-                <div><i class="fa-solid fa-music"></i> E2</div>
-                <div><i class="fa-solid fa-music"></i> F2</div>
-                <div><i class="fa-solid fa-music"></i> G2</div>
-                <div><i class="fa-solid fa-music"></i> A2</div>
-                <div><i class="fa-solid fa-music"></i> B2</div>
-            </div>
-
-            <!-- list of computer keys to use -->
-            <div class="notes">
-                <div><i class="fa-solid fa-keyboard"></i> Z</div>
-                <div><i class="fa-solid fa-keyboard"></i> X</div>
-                <div><i class="fa-solid fa-keyboard"></i> C</div>
-                <div><i class="fa-solid fa-keyboard"></i> V</div>
-                <div><i class="fa-solid fa-keyboard"></i> B</div>
-                <div><i class="fa-solid fa-keyboard"></i> N</div>
-                <div><i class="fa-solid fa-keyboard"></i> M</div>
-                <div><i class="fa-solid fa-keyboard"></i> A</div>
-                <div><i class="fa-solid fa-keyboard"></i> S</div>
-                <div><i class="fa-solid fa-keyboard"></i> D</div>
-                <div><i class="fa-solid fa-keyboard"></i> F</div>
-                <div><i class="fa-solid fa-keyboard"></i> G</div>
-                <div><i class="fa-solid fa-keyboard"></i> H</div>
-                <div><i class="fa-solid fa-keyboard"></i> J</div>
-            </div>
-
-            <!-- game points -->
-            <div class="vertical-section">
-                <h2>Player Game Points</h2>
-                <div id="game-points" class="border">0</div>
-            </div>
-
-            <!-- score board -->
-            <div class="vertical-section">
-                <h2>Score Board</h2>
-                <div class="border">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>You</th>
-                                <th>Computer</th>
-                            </tr>
-                            <tr>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- list of computer keys to use -->
+                <div class="notes">
+                    <div><i class="fa-solid fa-keyboard"></i> Q</div>
+                    <div><i class="fa-solid fa-keyboard"></i> W</div>
+                    <div><i class="fa-solid fa-keyboard"></i> E</div>
+                    <div><i class="fa-solid fa-keyboard"></i> R</div>
+                    <div><i class="fa-solid fa-keyboard"></i> T</div>
+                    <div><i class="fa-solid fa-keyboard"></i> Y</div>
+                    <div><i class="fa-solid fa-keyboard"></i> U</div>
+                    <div><i class="fa-solid fa-keyboard"></i> I</div>
+                    <div><i class="fa-solid fa-keyboard"></i> O</div>
+                    <div><i class="fa-solid fa-keyboard"></i> P</div>
                 </div>
-            </div>
-        </section>
-    </div>
+
+                <!-- list of black keys available -->
+                <div class="notes">
+                    <div><i class="fa-solid fa-music"></i> C1#</div>
+                    <div><i class="fa-solid fa-music"></i> D1#</div>
+                    <div><i class="fa-solid fa-music"></i> F1#</div>
+                    <div><i class="fa-solid fa-music"></i> G1#</div>
+                    <div><i class="fa-solid fa-music"></i> A1#</div>
+                    <div><i class="fa-solid fa-music"></i> C2#</div>
+                    <div><i class="fa-solid fa-music"></i> D2#</div>
+                    <div><i class="fa-solid fa-music"></i> F2#</div>
+                    <div><i class="fa-solid fa-music"></i> G2#</div>
+                    <div><i class="fa-solid fa-music"></i> A2#</div>
+                </div>
+
+                <!-- keys -->
+                <div class="virtual-piano">
+                    <div data-note="C1" class="key white" id="key-c1"></div>
+                    <div data-note="Db1" class="key black" id="key-db1"></div>
+                    <div data-note="D1" class="key white" id="key-d1"></div>
+                    <div data-note="Eb1" class="key black" id="key-eb1"></div>
+                    <div data-note="E1" class="key white" id="key-e1"></div>
+                    <div data-note="F1" class="key white" id="key-f1"></div>
+                    <div data-note="Gb1" class="key black" id="key-gb1"></div>
+                    <div data-note="G1" class="key white" id="key-g1"></div>
+                    <div data-note="Ab1" class="key black" id="key-ab1"></div>
+                    <div data-note="A1" class="key white" id="key-a1"></div>
+                    <div data-note="Bb1" class="key black" id="key-bb1"></div>
+                    <div data-note="B1" class="key white" id="key-b1"></div>
+                    <div data-note="C2" class="key white" id="key-c2"></div>
+                    <div data-note="Db2" class="key black" id="key-db2"></div>
+                    <div data-note="D2" class="key white" id="key-d2"></div>
+                    <div data-note="Eb2" class="key black" id="key-eb2"></div>
+                    <div data-note="E2" class="key white" id="key-e2"></div>
+                    <div data-note="F2" class="key white" id="key-f2"></div>
+                    <div data-note="Gb2" class="key black" id="key-gb2"></div>
+                    <div data-note="G2" class="key white" id="key-g2"></div>
+                    <div data-note="Ab2" class="key black" id="key-ab2"></div>
+                    <div data-note="A2" class="key white" id="key-a2"></div>
+                    <div data-note="Bb2" class="key black" id="key-bb2"></div>
+                    <div data-note="B2" class="key white" id="key-b2"></div>
+                </div>
+
+                <!-- list of white keys available -->
+                <div class="notes">
+                    <div><i class="fa-solid fa-music"></i> C1</div>
+                    <div><i class="fa-solid fa-music"></i> D1</div>
+                    <div><i class="fa-solid fa-music"></i> E1</div>
+                    <div><i class="fa-solid fa-music"></i> F1</div>
+                    <div><i class="fa-solid fa-music"></i> G1</div>
+                    <div><i class="fa-solid fa-music"></i> A1</div>
+                    <div><i class="fa-solid fa-music"></i> B1</div>
+                    <div><i class="fa-solid fa-music"></i> C2</div>
+                    <div><i class="fa-solid fa-music"></i> D2</div>
+                    <div><i class="fa-solid fa-music"></i> E2</div>
+                    <div><i class="fa-solid fa-music"></i> F2</div>
+                    <div><i class="fa-solid fa-music"></i> G2</div>
+                    <div><i class="fa-solid fa-music"></i> A2</div>
+                    <div><i class="fa-solid fa-music"></i> B2</div>
+                </div>
+
+                <!-- list of computer keys to use -->
+                <div class="notes">
+                    <div><i class="fa-solid fa-keyboard"></i> Z</div>
+                    <div><i class="fa-solid fa-keyboard"></i> X</div>
+                    <div><i class="fa-solid fa-keyboard"></i> C</div>
+                    <div><i class="fa-solid fa-keyboard"></i> V</div>
+                    <div><i class="fa-solid fa-keyboard"></i> B</div>
+                    <div><i class="fa-solid fa-keyboard"></i> N</div>
+                    <div><i class="fa-solid fa-keyboard"></i> M</div>
+                    <div><i class="fa-solid fa-keyboard"></i> A</div>
+                    <div><i class="fa-solid fa-keyboard"></i> S</div>
+                    <div><i class="fa-solid fa-keyboard"></i> D</div>
+                    <div><i class="fa-solid fa-keyboard"></i> F</div>
+                    <div><i class="fa-solid fa-keyboard"></i> G</div>
+                    <div><i class="fa-solid fa-keyboard"></i> H</div>
+                    <div><i class="fa-solid fa-keyboard"></i> J</div>
+                </div>
+
+                <!-- game points -->
+                <div class="vertical-section">
+                    <h2>Player Game Points</h2>
+                    <div id="game-points" class="border">0</div>
+                </div>
+
+                <!-- score board -->
+                <div class="vertical-section">
+                    <h2>Score Board</h2>
+                    <div class="border">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>You</th>
+                                    <th>Computer</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- audio notes for piano -->
     <audio src="assets/notes/notes_C.mp3" id="C1"></audio>
