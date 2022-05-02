@@ -1,44 +1,3 @@
-// virtual piano
-// This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
-
-// define black and white keys on computer keyboard
-let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
-let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
-
-// select all piano keys and attribute to variable
-let pianoKeys = document.querySelectorAll('.key');
-let whiteKeys = document.querySelectorAll('.key.white');
-let blackKeys = document.querySelectorAll('.key.black');
-
-// click event listener for piano keys
-pianoKeys.forEach(function (pianoKey) {
-    pianoKey.addEventListener('click', function () {
-        return playNote(pianoKey);
-    });
-});
-
-// keydown event for piano keys
-document.addEventListener('keydown', function (event) {
-    if (event.repeat) return;
-    let pianoKey = event.key;
-    let whiteKeyIndex = WHITE_KEYS.indexOf(pianoKey);
-    let blackKeyIndex = BLACK_KEYS.indexOf(pianoKey);
-
-    if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
-    if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
-});
-
-// play audio and define interaction with piano keys
-function playNote(pianoKey) {
-    let noteAudio = document.getElementById(pianoKey.dataset.note);
-    noteAudio.currentTime = 0;
-    noteAudio.play();
-    pianoKey.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
-        pianoKey.classList.remove('active');
-    });
-};
-
 // virtual piano challenge game
 // this code was predominantly taken from the YouTube channel freeCodeCamp.org and adapted - see details in the README
 
@@ -104,13 +63,13 @@ let b2 = document.getElementById('key-b2');
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
-    if (challengeButton.checked == true) {
-        playChallenge()
-    } else {
-        playFreestyle()
-        clearKeyLights();
-        clearInterval(intervalId);
-    }
+    playChallenge()
+});
+
+// event listener for clicking on freestyle button
+freestyleButton.addEventListener('click', function (event) {
+    clearKeyLights();
+    clearInterval(intervalId);
 });
 
 // play challenge function
@@ -132,10 +91,13 @@ function playChallenge() {
 
 // function defining who's turn it is
 function gameTurn() {
+    challengeButton = false;
+
     if (keyLights == gamePoints) {
         clearInterval(intervalId);
         computerTurn = false;
         clearKeyLights();
+        challengeButton = true;
     }
 
     if (computerTurn) {
@@ -467,22 +429,24 @@ function flashKeyLights() {
     b2.style.backgroundColor = "#5e17eb";
 };
 
-// event listeners for clicking on each piano keys
+// event listeners for clicking on each piano key
 // event listener for c1 piano key click
 c1.addEventListener('click', function (event) {
-    playerOrder.push(1);
-    check();
-    one();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeButton) {
+        playerOrder.push(1);
+        check();
+        one();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for db1 piano key click
 db1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(2);
     check();
     two();
     if (!win) {
@@ -494,7 +458,7 @@ db1.addEventListener('click', function (event) {
 
 // event listener for d1 piano key click
 d1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(3);
     check();
     three();
     if (!win) {
@@ -506,7 +470,7 @@ d1.addEventListener('click', function (event) {
 
 // event listener for eb1 piano key click
 eb1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(4);
     check();
     four();
     if (!win) {
@@ -518,7 +482,7 @@ eb1.addEventListener('click', function (event) {
 
 // event listener for e1 piano key click
 e1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(5);
     check();
     five();
     if (!win) {
@@ -530,7 +494,7 @@ e1.addEventListener('click', function (event) {
 
 // event listener for f1 piano key click
 f1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(6);
     check();
     six();
     if (!win) {
@@ -542,7 +506,7 @@ f1.addEventListener('click', function (event) {
 
 // event listener for gb1 piano key click
 gb1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(7);
     check();
     seven();
     if (!win) {
@@ -554,7 +518,7 @@ gb1.addEventListener('click', function (event) {
 
 // event listener for g1 piano key click
 g1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(8);
     check();
     eight();
     if (!win) {
@@ -566,7 +530,7 @@ g1.addEventListener('click', function (event) {
 
 // event listener for ab1 piano key click
 ab1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(9);
     check();
     nine();
     if (!win) {
@@ -578,7 +542,7 @@ ab1.addEventListener('click', function (event) {
 
 // event listener for a1 piano key click
 a1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(10);
     check();
     ten();
     if (!win) {
@@ -590,7 +554,7 @@ a1.addEventListener('click', function (event) {
 
 // event listener for bb1 piano key click
 bb1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(11);
     check();
     eleven();
     if (!win) {
@@ -602,7 +566,7 @@ bb1.addEventListener('click', function (event) {
 
 // event listener for b1 piano key click
 b1.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(12);
     check();
     twelve();
     if (!win) {
@@ -614,7 +578,7 @@ b1.addEventListener('click', function (event) {
 
 // event listener for c2 piano key click
 c2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(13);
     check();
     thirteen();
     if (!win) {
@@ -626,7 +590,7 @@ c2.addEventListener('click', function (event) {
 
 // event listener for db2 piano key click
 db2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(14);
     check();
     fourteen();
     if (!win) {
@@ -638,7 +602,7 @@ db2.addEventListener('click', function (event) {
 
 // event listener for d2 piano key click
 d2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(15);
     check();
     fifteen();
     if (!win) {
@@ -650,7 +614,7 @@ d2.addEventListener('click', function (event) {
 
 // event listener for eb2 piano key click
 eb2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(16);
     check();
     sixteen();
     if (!win) {
@@ -662,7 +626,7 @@ eb2.addEventListener('click', function (event) {
 
 // event listener for e2 piano key click
 e2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(17);
     check();
     seventeen();
     if (!win) {
@@ -674,7 +638,7 @@ e2.addEventListener('click', function (event) {
 
 // event listener for f2 piano key click
 f2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(18);
     check();
     eighteen();
     if (!win) {
@@ -686,7 +650,7 @@ f2.addEventListener('click', function (event) {
 
 // event listener for gb2 piano key click
 gb2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(19);
     check();
     nineteen();
     if (!win) {
@@ -698,7 +662,7 @@ gb2.addEventListener('click', function (event) {
 
 // event listener for g2 piano key click
 g2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(20);
     check();
     twenty();
     if (!win) {
@@ -710,7 +674,7 @@ g2.addEventListener('click', function (event) {
 
 // event listener for ab2 piano key click
 ab2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(21);
     check();
     twentyOne();
     if (!win) {
@@ -722,7 +686,7 @@ ab2.addEventListener('click', function (event) {
 
 // event listener for a2 piano key click
 a2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(22);
     check();
     twentyTwo();
     if (!win) {
@@ -734,7 +698,7 @@ a2.addEventListener('click', function (event) {
 
 // event listener for bb2 piano key click
 bb2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(23);
     check();
     twentyThree();
     if (!win) {
@@ -746,7 +710,7 @@ bb2.addEventListener('click', function (event) {
 
 // event listener for b2 piano key click
 b2.addEventListener('click', function (event) {
-    playerOrder.push(1);
+    playerOrder.push(24);
     check();
     twentyFour();
     if (!win) {
@@ -777,7 +741,7 @@ function check() {
             intervalId = setInterval(gameTurn, 800);
         }, 800);
 
-    sound = false;
+        sound = false;
     };
 
     if (gamePoints == playerOrder.length && correct && !win) {
