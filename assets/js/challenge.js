@@ -66,16 +66,22 @@ let b2 = document.getElementById('key-b2');
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
-    challengeOn = true;
-    playChallenge();
+    if (challengeButton.checked == true) {
+        challengeOn = true;
+        playChallenge();
+    } else {
+        challengeOn = false;
+        clearKeyLights();
+        clearInterval(intervalId);
+    }
 });
 
 // event listener for clicking on freestyle button
-freestyleButton.addEventListener('click', function (event) {
-    challengeOn = false;
-    clearKeyLights();
-    clearInterval(intervalId);
-});
+//freestyleButton.addEventListener('click', function (event) {
+    //challengeOn = false;//
+    //clearKeyLights();
+    //clearInterval(intervalId);
+//});//
 
 // play challenge function
 function playChallenge() {
@@ -87,7 +93,7 @@ function playChallenge() {
     gamePoints = 1;
     gamePointsCounter.innerHTML = 1;
     correct = true;
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 5; i++) {
         order.push(Math.floor(Math.random() * 24) + 1);
     }
     computerTurn = true;
@@ -776,11 +782,11 @@ function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
         correct = false;
 
-    if (playerOrder.length == 20 && correct) {
+    if (playerOrder.length == 5 && correct) {
         winGame();
     }
 
-    if (correct = false) {
+    if (correct == false) {
         flashKeyLights();
         setTimeout(function () {
             gamePointsCounter.innerHTML = gamePoints;
