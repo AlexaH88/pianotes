@@ -10,7 +10,7 @@ let pianoKeys = document.querySelectorAll('.key');
 let whiteKeys = document.querySelectorAll('.key.white');
 let blackKeys = document.querySelectorAll('.key.black');
 
-function freestyleOn() {
+function playFreestyle() {
     // click event listener for piano keys
     pianoKeys.forEach(function (pianoKey) {
         pianoKey.addEventListener('click', function () {
@@ -57,6 +57,12 @@ let keyLights;
 // variable to count the number of rounds
 let round;
 
+// variable to count the player score
+let playerScore;
+
+// variable to count the computer score
+let computerScore;
+
 // boolean defining whether player has hit the right notes or not
 let correct;
 
@@ -75,8 +81,10 @@ let challengeOn = false;
 // boolean defining if the player has won or not
 let win;
 
-// assign round counter to variable
+// assign various counter to variables
 let roundCounter = document.getElementById('round');
+let playerCounter = document.getElementById('player-score');
+let computerCounter = document.getElementById('computer-score');
 
 // assign freestyle and challenge buttons to variables
 let freestyleButton = document.getElementById('freestyle-button');
@@ -117,7 +125,7 @@ challengeButton.addEventListener('click', function (event) {
 // event listener for clicking on freestyle button
 freestyleButton.addEventListener('click', function (event) {
     challengeOn = false;
-    freestyleOn();
+    playFreestyle();
 });
 
 // play challenge function
@@ -853,4 +861,7 @@ function winGame() {
     flashKeyLights();
     challengeOn = false;
     win = true;
+    playerScore = 1;
+    playerCounter.innerHTML = playerScore;
+    playChallenge();
 };
