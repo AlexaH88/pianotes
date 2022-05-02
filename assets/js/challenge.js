@@ -25,6 +25,9 @@ let intervalId;
 // boolean defining the piano note audio on or off
 let sound = true;
 
+// variable defining whether the challenge mode is on or off 
+let challengeOn = false;
+
 // boolean defining if the player has won or not
 let win;
 
@@ -63,11 +66,13 @@ let b2 = document.getElementById('key-b2');
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
-    playChallenge()
+    challengeOn = true;
+    playChallenge();
 });
 
 // event listener for clicking on freestyle button
 freestyleButton.addEventListener('click', function (event) {
+    challengeOn = false;
     clearKeyLights();
     clearInterval(intervalId);
 });
@@ -91,13 +96,13 @@ function playChallenge() {
 
 // function defining who's turn it is
 function gameTurn() {
-    challengeButton = false;
+    challengeOn = false;
 
     if (keyLights == gamePoints) {
         clearInterval(intervalId);
         computerTurn = false;
         clearKeyLights();
-        challengeButton = true;
+        challengeOn = true;
     }
 
     if (computerTurn) {
@@ -432,7 +437,7 @@ function flashKeyLights() {
 // event listeners for clicking on each piano key
 // event listener for c1 piano key click
 c1.addEventListener('click', function (event) {
-    if (challengeButton) {
+    if (challengeOn) {
         playerOrder.push(1);
         check();
         one();
@@ -446,277 +451,323 @@ c1.addEventListener('click', function (event) {
 
 // event listener for db1 piano key click
 db1.addEventListener('click', function (event) {
-    playerOrder.push(2);
-    check();
-    two();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(2);
+        check();
+        two();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for d1 piano key click
 d1.addEventListener('click', function (event) {
-    playerOrder.push(3);
-    check();
-    three();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(3);
+        check();
+        three();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for eb1 piano key click
 eb1.addEventListener('click', function (event) {
-    playerOrder.push(4);
-    check();
-    four();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(4);
+        check();
+        four();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for e1 piano key click
 e1.addEventListener('click', function (event) {
-    playerOrder.push(5);
-    check();
-    five();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(5);
+        check();
+        five();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for f1 piano key click
 f1.addEventListener('click', function (event) {
-    playerOrder.push(6);
-    check();
-    six();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(6);
+        check();
+        six();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for gb1 piano key click
 gb1.addEventListener('click', function (event) {
-    playerOrder.push(7);
-    check();
-    seven();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(7);
+        check();
+        seven();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for g1 piano key click
 g1.addEventListener('click', function (event) {
-    playerOrder.push(8);
-    check();
-    eight();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(8);
+        check();
+        eight();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for ab1 piano key click
 ab1.addEventListener('click', function (event) {
-    playerOrder.push(9);
-    check();
-    nine();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(9);
+        check();
+        nine();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for a1 piano key click
 a1.addEventListener('click', function (event) {
-    playerOrder.push(10);
-    check();
-    ten();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(10);
+        check();
+        ten();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for bb1 piano key click
 bb1.addEventListener('click', function (event) {
-    playerOrder.push(11);
-    check();
-    eleven();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(11);
+        check();
+        eleven();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for b1 piano key click
 b1.addEventListener('click', function (event) {
-    playerOrder.push(12);
-    check();
-    twelve();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(12);
+        check();
+        twelve();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for c2 piano key click
 c2.addEventListener('click', function (event) {
-    playerOrder.push(13);
-    check();
-    thirteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(13);
+        check();
+        thirteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for db2 piano key click
 db2.addEventListener('click', function (event) {
-    playerOrder.push(14);
-    check();
-    fourteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(14);
+        check();
+        fourteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for d2 piano key click
 d2.addEventListener('click', function (event) {
-    playerOrder.push(15);
-    check();
-    fifteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(15);
+        check();
+        fifteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for eb2 piano key click
 eb2.addEventListener('click', function (event) {
-    playerOrder.push(16);
-    check();
-    sixteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(16);
+        check();
+        sixteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for e2 piano key click
 e2.addEventListener('click', function (event) {
-    playerOrder.push(17);
-    check();
-    seventeen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(17);
+        check();
+        seventeen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for f2 piano key click
 f2.addEventListener('click', function (event) {
-    playerOrder.push(18);
-    check();
-    eighteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(18);
+        check();
+        eighteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for gb2 piano key click
 gb2.addEventListener('click', function (event) {
-    playerOrder.push(19);
-    check();
-    nineteen();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(19);
+        check();
+        nineteen();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for g2 piano key click
 g2.addEventListener('click', function (event) {
-    playerOrder.push(20);
-    check();
-    twenty();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(20);
+        check();
+        twenty();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for ab2 piano key click
 ab2.addEventListener('click', function (event) {
-    playerOrder.push(21);
-    check();
-    twentyOne();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(21);
+        check();
+        twentyOne();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for a2 piano key click
 a2.addEventListener('click', function (event) {
-    playerOrder.push(22);
-    check();
-    twentyTwo();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(22);
+        check();
+        twentyTwo();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for bb2 piano key click
 bb2.addEventListener('click', function (event) {
-    playerOrder.push(23);
-    check();
-    twentyThree();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(23);
+        check();
+        twentyThree();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
 // event listener for b2 piano key click
 b2.addEventListener('click', function (event) {
-    playerOrder.push(24);
-    check();
-    twentyFour();
-    if (!win) {
-        setTimeout(function () {
-            clearKeyLights();
-        }, 300);
+    if (challengeOn) {
+        playerOrder.push(24);
+        check();
+        twentyFour();
+        if (!win) {
+            setTimeout(function () {
+                clearKeyLights();
+            }, 300);
+        }
     }
 });
 
