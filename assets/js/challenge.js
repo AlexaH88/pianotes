@@ -54,8 +54,8 @@ let playerOrder = [];
 // integer for number of times the keys light up
 let keyLights;
 
-// variable to count the number of points scored
-let gamePoints;
+// variable to count the number of rounds
+let round;
 
 // boolean defining whether player has hit the right notes or not
 let correct;
@@ -75,8 +75,8 @@ let challengeOn = false;
 // boolean defining if the player has won or not
 let win;
 
-// assign player and computer game point counter to variables
-let gamePointsCounter = document.getElementById('game-points');
+// assign round counter to variable
+let roundCounter = document.getElementById('round');
 
 // assign freestyle and challenge buttons to variables
 let freestyleButton = document.getElementById('freestyle-button');
@@ -127,8 +127,8 @@ function playChallenge() {
     playerOrder = [];
     keyLights = 0;
     intervalId = 0;
-    gamePoints = 1;
-    gamePointsCounter.innerHTML = 1;
+    round = 1;
+    roundCounter.innerHTML = 1;
     correct = true;
     for (let i = 0; i < 5; i++) {
         order.push(Math.floor(Math.random() * 24) + 1);
@@ -141,7 +141,7 @@ function playChallenge() {
 function gameTurn() {
     challengeOn = false;
 
-    if (keyLights == gamePoints) {
+    if (keyLights == round) {
         clearInterval(intervalId);
         computerTurn = false;
         clearKeyLights();
@@ -826,7 +826,7 @@ function check() {
     if (correct == false) {
         flashKeyLights();
         setTimeout(function () {
-            gamePointsCounter.innerHTML = gamePoints;
+            roundCounter.innerHTML = round;
             clearKeyLights();
             computerTurn = true;
             keyLights = 0;
@@ -838,12 +838,12 @@ function check() {
         sound = false;
     };
 
-    if (gamePoints == playerOrder.length && correct && !win) {
-        gamePoints++;
+    if (round == playerOrder.length && correct && !win) {
+        round++;
         playerOrder = [];
         computerTurn = true;
         keyLights = 0;
-        gamePointsCounter.innerHTML = gamePoints;
+        roundCounter.innerHTML = round;
         intervalId = setInterval(gameTurn, 800);
     }
 };
