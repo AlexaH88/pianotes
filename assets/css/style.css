@@ -57,14 +57,18 @@ i {
     color: #5e17eb;
 }
 
-.vertical-section button, 
-.vertical-section th {
+.horizontal-section button {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.vertical-section td,
-.vertical-section div {
+.horizontal-section th {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.horizontal-section td,
+.horizontal-section div {
     font-size: 2.5rem;
 }
 
@@ -108,31 +112,34 @@ section li {
     margin: 1rem 0rem;
 }
 
+.horizontal-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 0rem;
+}
+
 .vertical-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.vertical-section h2 {
-    margin-top: 5rem;
+    margin: 5rem 0rem;
 }
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
 /* play and challenge pages */
-.vertical-section button {
+.horizontal-section button {
     border: solid 5px #5e17eb;
     border-radius: 25px;
     padding: 10px;
-    margin: 0.5rem 1rem 5rem;
+    margin: 0.5rem 1rem;
 }
 
-.vertical-section button:hover {
+.horizontal-section button:hover {
     border: solid 5px #000000;
     color: #5e17eb;
 }
 
-#game-points {
+#round {
     color: #000000;
     font-weight: bold;
 }
@@ -142,18 +149,14 @@ section li {
     padding: 10px;
 }
 
-.vertical-section div {
-    margin-bottom: 5rem;
-}
-
-.vertical-section th,
-.vertical-section td {
+.horizontal-section th,
+.horizontal-section td {
     padding: 5px 20px;
     text-align: center;
     font-weight: bold;
 }
 
-.vertical-section th {
+.horizontal-section th {
     text-decoration: underline;
 }
 
@@ -198,12 +201,6 @@ section li {
 }
 
 /* instructions page */
-.horizontal-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 5rem 0rem;
-}
-
 .horizontal-section ul {
     flex-direction: column;
     align-items: flex-start;

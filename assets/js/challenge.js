@@ -10,7 +10,9 @@ let pianoKeys = document.querySelectorAll('.key');
 let whiteKeys = document.querySelectorAll('.key.white');
 let blackKeys = document.querySelectorAll('.key.black');
 
+// freestyle mode function
 function playFreestyle() {
+
     // click event listener for piano keys
     pianoKeys.forEach(function (pianoKey) {
         pianoKey.addEventListener('click', function () {

@@ -60,17 +60,47 @@
     <main>
         <!-- main page container -->
         <div class="main-page-container">
-            <!-- virtual piano section -->
-            <section>
 
-                <!-- play mode selector -->
-                <div class="vertical-section">
+            <!-- play mode, rounds, and score board section -->
+            <section class="horizontal-section">
+
+                <!-- rounds -->
+                <div>
+                    <h2>Round</h2>
+                    <div id="round" class="border">0</div>
+                </div>
+
+                <!-- play mode -->
+                <div>
                     <h2>How would you like to play?</h2>
                     <div>
                         <button id="freestyle-button">Freestyle</button>
                         <button id="challenge-button">Challenge</button>
                     </div>
                 </div>
+
+                <!-- score board -->
+                <div>
+                    <h2>Score Board</h2>
+                    <div class="border">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>You</th>
+                                    <th>Computer</th>
+                                </tr>
+                                <tr>
+                                    <td id="player-score">0</td>
+                                    <td id="computer-score">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- virtual piano section -->
+            <section>
 
                 <!-- list of computer keys to use -->
                 <div class="notes">
@@ -164,30 +194,6 @@
                     <div><i class="fa-solid fa-keyboard"></i> J</div>
                 </div>
 
-                <!-- game points -->
-                <div class="vertical-section">
-                    <h2>Round</h2>
-                    <div id="round" class="border">0</div>
-                </div>
-
-                <!-- score board -->
-                <div class="vertical-section">
-                    <h2>Score Board</h2>
-                    <div class="border">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>You</th>
-                                    <th>Computer</th>
-                                </tr>
-                                <tr>
-                                    <td id="player-score">0</td>
-                                    <td id="computer-score">0</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
             </section>
         </div>
     </main>
