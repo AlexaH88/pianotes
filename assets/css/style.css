@@ -201,6 +201,7 @@ section li {
 .horizontal-section {
     display: flex;
     justify-content: space-between;
+    margin: 5rem 0rem;
 }
 
 .horizontal-section ul {
@@ -217,15 +218,26 @@ section li {
     padding: 0.5rem;
 }
 
-.instruction-elements {
+.instruction-text {
+    width: 150%;
+    flex-direction: column;
+    display: flex;
+    text-align:justify;
+    margin-right: 150px;
+}
+
+.instruction-graphic {
     width: 100%;
     flex-direction: column;
     display: flex;
     align-items: center;
+    align-content: center;
+    text-align:justify;
 }
 
-#piano-image {
-    width: 100%;
+.instruction-graphic img {
+    width: 60%;
+    height: auto;
 }
 
 /* footer */
