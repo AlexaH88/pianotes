@@ -1,17 +1,9 @@
 // virtual piano
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 
-// define black and white keys on computer keyboard
-let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
-let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
-
-// select all piano keys and attribute to variable
-let pianoKeys = document.querySelectorAll('.key');
-let whiteKeys = document.querySelectorAll('.key.white');
-let blackKeys = document.querySelectorAll('.key.black');
-
 // freestyle mode function
 function playFreestyle() {
+
     // reset all counters
     winScore = 0;
     winCounter.innerHTML = winScore;
@@ -20,6 +12,15 @@ function playFreestyle() {
     round = 0;
     roundCounter.innerHTML = round;
     resultMessage.innerHTML = "";
+
+    // define black and white keys on computer keyboard
+    let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
+    let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
+
+    // select all piano keys and attribute to variable
+    let pianoKeys = document.querySelectorAll('.key');
+    let whiteKeys = document.querySelectorAll('.key.white');
+    let blackKeys = document.querySelectorAll('.key.black');
 
     // click event listener for piano keys
     pianoKeys.forEach(function (pianoKey) {
