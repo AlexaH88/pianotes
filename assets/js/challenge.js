@@ -131,12 +131,16 @@ let b2 = document.getElementById('key-b2');
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
+    challengeButton.style.color = "#5e17eb";
+    challengeButton.style.border = "solid 5px #000000";
     challengeOn = true;
     playChallenge();
 });
 
 // event listener for clicking on freestyle button
 freestyleButton.addEventListener('click', function (event) {
+    freestyleButton.style.color = "#5e17eb";
+    freestyleButton.style.border = "solid 5px #000000";
     challengeOn = false;
     playFreestyle();
 });
