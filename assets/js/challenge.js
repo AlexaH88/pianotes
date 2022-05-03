@@ -11,7 +11,7 @@ function playFreestyle() {
     loseCounter.innerHTML = loseScore;
     round = 0;
     roundCounter.innerHTML = round;
-    resultMessage.innerHTML = "";
+    resultMessage.innerHTML = "N/A";
 
     // define black and white keys on computer keyboard
     let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
