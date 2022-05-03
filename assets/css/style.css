@@ -127,11 +127,15 @@ section li {
 
 /* The following code was predominantly taken from YouTuber Web Dev Simplified and adapted to the needs of this site - see README for details */
 /* play and challenge pages */
+.horizontal-h2 {
+    text-align: center;
+}
+
 .horizontal-section button {
     border: solid 5px #5e17eb;
     border-radius: 25px;
     padding: 10px;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 4rem;
 }
 
 .horizontal-section button:hover {
