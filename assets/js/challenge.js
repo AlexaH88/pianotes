@@ -59,11 +59,11 @@ let keyLights;
 // variable to count the number of rounds
 let round;
 
-// variable to count the player score
-let playerScore;
+// variable to count the win score
+let winScore;
 
-// variable to count the computer score
-let computerScore;
+// variable to count the lose score
+let loseScore;
 
 // boolean defining whether player has hit the right notes or not
 let correct;
@@ -83,10 +83,13 @@ let challengeOn = false;
 // boolean defining if the player has won or not
 let win;
 
-// assign various counter to variables
+// assign various counters to variables
 let roundCounter = document.getElementById('round');
-let playerCounter = document.getElementById('player-score');
-let computerCounter = document.getElementById('computer-score');
+let winCounter = document.getElementById('win-score');
+let loseCounter = document.getElementById('lose-score');
+
+// assign variable to win lose message
+let resultMessage = document.getElementById('result-message');
 
 // assign freestyle and challenge buttons to variables
 let freestyleButton = document.getElementById('freestyle-button');
@@ -122,12 +125,20 @@ let b2 = document.getElementById('key-b2');
 challengeButton.addEventListener('click', function (event) {
     challengeOn = true;
     playChallenge();
+    resultMessage.innerHTML = "";
+    winCounter.innerHTML = "0";
+    loseCounter.innerHTML = "0";
+    roundCounter.innerHTML = "0";
 });
 
 // event listener for clicking on freestyle button
 freestyleButton.addEventListener('click', function (event) {
     challengeOn = false;
     playFreestyle();
+    resultMessage.innerHTML = "";
+    winCounter.innerHTML = 0;
+    loseCounter.innerHTML = 0;
+    roundCounter.innerHTML = 0;
 });
 
 // play challenge function
@@ -835,18 +846,11 @@ function check() {
 
     if (correct == false) {
         flashKeyLights();
-        setTimeout(function () {
-            roundCounter.innerHTML = round;
-            clearKeyLights();
-            computerTurn = true;
-            keyLights = 0;
-            playerOrder = [];
-            correct = true;
-            intervalId = setInterval(gameTurn, 800);
-        }, 800);
-
+        clearKeyLights();
         sound = false;
-    };
+        loseGame();
+        playChallenge()
+    }
 
     if (round == playerOrder.length && correct && !win) {
         round++;
@@ -863,7 +867,16 @@ function winGame() {
     flashKeyLights();
     challengeOn = false;
     win = true;
-    playerScore = 1;
-    playerCounter.innerHTML = playerScore;
-    playChallenge();
+    winScore = 1;
+    winCounter.innerHTML = winScore;
+    resultMessage.innerHTML = "Win!";
+};
+
+// player loses function
+function loseGame() {
+    challengeOn = false;
+    win = false;
+    loseScore = 1;
+    loseCounter.innerHTML = loseScore;
+    resultMessage.innerHTML = "Lose!";
 };
