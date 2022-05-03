@@ -61,15 +61,8 @@
         <!-- main page container -->
         <div class="main-page-container">
 
-            <!-- play mode, rounds, and score board section -->
+            <!-- play mode and score board section -->
             <section class="horizontal-section">
-
-                <!-- rounds -->
-                <div>
-                    <h2>Round</h2>
-                    <div id="round" class="border">0</div>
-                </div>
-
                 <!-- play mode -->
                 <div>
                     <h2>How would you like to play?</h2>
@@ -86,12 +79,17 @@
                         <table>
                             <tbody>
                                 <tr>
-                                    <th>You</th>
-                                    <th>Computer</th>
+                                    <th>Round</th>
+                                    <th>Won</th>
+                                    <th>Lost</th>
                                 </tr>
                                 <tr>
+                                    <td id="round">0</td>
                                     <td id="player-score">0</td>
                                     <td id="computer-score">0</td>
+                                </tr>
+                                <tr>
+                                    <td id="message-score">Win!</td>
                                 </tr>
                             </tbody>
                         </table>
