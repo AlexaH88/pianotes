@@ -12,6 +12,14 @@ let blackKeys = document.querySelectorAll('.key.black');
 
 // freestyle mode function
 function playFreestyle() {
+    // reset all counters
+    winScore = 0;
+    winCounter.innerHTML = winScore;
+    loseScore = 0;
+    loseCounter.innerHTML = loseScore;
+    round = 0;
+    roundCounter.innerHTML = round;
+    resultMessage.innerHTML = "";
 
     // click event listener for piano keys
     pianoKeys.forEach(function (pianoKey) {
