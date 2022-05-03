@@ -133,6 +133,8 @@ let b2 = document.getElementById('key-b2');
 challengeButton.addEventListener('click', function (event) {
     challengeButton.style.color = "#5e17eb";
     challengeButton.style.border = "solid 5px #000000";
+    freestyleButton.style.color = "#000000";
+    freestyleButton.style.border = "solid 5px #5e17eb";
     challengeOn = true;
     playChallenge();
 });
@@ -141,6 +143,8 @@ challengeButton.addEventListener('click', function (event) {
 freestyleButton.addEventListener('click', function (event) {
     freestyleButton.style.color = "#5e17eb";
     freestyleButton.style.border = "solid 5px #000000";
+    challengeButton.style.color = "#000000";
+    challengeButton.style.border = "solid 5px #5e17eb";
     challengeOn = false;
     playFreestyle();
 });
