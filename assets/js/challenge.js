@@ -60,10 +60,10 @@ let keyLights;
 let round;
 
 // variable to count the win score
-let winScore;
+let winScore = 0;
 
 // variable to count the lose score
-let loseScore;
+let loseScore = 0;
 
 // boolean defining whether player has hit the right notes or not
 let correct;
@@ -125,20 +125,12 @@ let b2 = document.getElementById('key-b2');
 challengeButton.addEventListener('click', function (event) {
     challengeOn = true;
     playChallenge();
-    resultMessage.innerHTML = "";
-    winCounter.innerHTML = "0";
-    loseCounter.innerHTML = "0";
-    roundCounter.innerHTML = "0";
 });
 
 // event listener for clicking on freestyle button
 freestyleButton.addEventListener('click', function (event) {
     challengeOn = false;
     playFreestyle();
-    resultMessage.innerHTML = "";
-    winCounter.innerHTML = 0;
-    loseCounter.innerHTML = 0;
-    roundCounter.innerHTML = 0;
 });
 
 // play challenge function
@@ -865,18 +857,16 @@ function check() {
 // player wins function
 function winGame() {
     flashKeyLights();
-    challengeOn = false;
     win = true;
-    winScore = 1;
+    winScore++;
     winCounter.innerHTML = winScore;
     resultMessage.innerHTML = "Win!";
 };
 
 // player loses function
 function loseGame() {
-    challengeOn = false;
     win = false;
-    loseScore = 1;
+    loseScore++;
     loseCounter.innerHTML = loseScore;
     resultMessage.innerHTML = "Lose!";
 };
