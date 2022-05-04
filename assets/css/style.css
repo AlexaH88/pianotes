@@ -34,7 +34,7 @@ h2 {
     font-size: 4rem;
 }
 
-section, li {
+section, li, .notes {
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -151,6 +151,7 @@ section li {
 .border {
     border: solid 5px #5e17eb;
     padding: 10px;
+    height: 100px;
 }
 
 .horizontal-section th,
@@ -164,9 +165,14 @@ section li {
     text-decoration: underline;
 }
 
-.virtual-piano {
+#virtual-piano {
     display: flex;
     justify-content: center;
+    padding: 2rem 4rem;
+}
+
+#virtual-piano-element {
+    margin: 2rem 0rem 10rem;
 }
 
 .notes {
@@ -202,6 +208,8 @@ section li {
 
 .vertical-section iframe {
     margin-bottom: 5rem;
+    width: 80%;
+    height: 800px;
 }
 
 /* instructions page */
