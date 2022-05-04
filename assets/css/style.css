@@ -21,7 +21,7 @@ header, section, footer {
     padding: 2rem 4rem;
 }
 
-/* font families and sizes */
+/* fonts and colours */
 h1, h2 {
     font-family: 'Orelega One', sans-serif; 
 }
@@ -34,7 +34,7 @@ h2 {
     font-size: 4rem;
 }
 
-section, li, .notes, .black {
+section, li, .notes, .black, .white {
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -56,7 +56,17 @@ section, li, .notes, .black {
     font-size: 2.2rem;
     color: #FFFFFF;
     background-color: #000000;
-    margin-left: 1rem;
+}
+
+.white {
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.white i {
+    font-size: 2.2rem;
+    color: #000000;
+    background-color: #FFFFFF;
 }
 
 li { 
@@ -199,6 +209,13 @@ section li {
     border: solid 1px #000000;
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.white i {
+    margin: 0rem 0.5rem 0.8rem;
 }
 
 .black {
@@ -209,6 +226,13 @@ section li {
     margin-left: -40px;
     margin-right: -40px;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.black i {
+    margin: 0.8rem 0.5rem 0rem;
 }
 
 .white.active, .black.active {
