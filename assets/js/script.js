@@ -1,4 +1,4 @@
-// virtual piano
+// virtual piano freestyle mode
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 
 // freestyle mode function
@@ -53,7 +53,7 @@ function playFreestyle() {
 }
 
 
-// virtual piano challenge game
+// virtual piano challenge mode
 // this code was predominantly taken from the YouTube channel freeCodeCamp.org and adapted - see details in the README
 
 // order in which the keys light up
