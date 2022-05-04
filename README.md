@@ -437,7 +437,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### ***Content***
 
-- All content was written by the site creator, [Alexa Hendry](https://github.com/AlexaH88). 
+- All content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88). 
 
 ### ***Media***
 
@@ -453,7 +453,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
   - [Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky](https://musescore.com/user/3435661/scores/2899321) by [Nohpets](https://musescore.com/user/3435661)
   - [Happy Birthday - Patty & Mildred J. Hill](https://musescore.com/user/173585/scores/166951) by [wildpig](https://musescore.com/user/173585)
 
-- The piano notes audio XXX
+- The piano notes audio was recorded by the site creator [Alexa Hendry](https://github.com/AlexaH88) on [Ableton Live](https://www.ableton.com/en/live/).
 
 ### ***Acknowledgements***
 
