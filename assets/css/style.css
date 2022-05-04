@@ -34,7 +34,7 @@ h2 {
     font-size: 4rem;
 }
 
-section, li, .notes {
+section, li, .notes, .black {
     font-family: 'Poppins', sans-serif; 
 }
 
@@ -45,6 +45,18 @@ section, li, .notes {
 .notes i { 
     font-size: 2.3rem;
     color: #000000;
+}
+
+.black {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.black i {
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-left: 1rem;
 }
 
 li { 
@@ -200,6 +212,9 @@ section li {
 }
 
 .white.active, .black.active {
+    background-color: #5e17eb;
+}
+.white.active i, .black.active i {
     background-color: #5e17eb;
 }
 
