@@ -130,6 +130,32 @@ let a2 = document.getElementById('key-a2');
 let bb2 = document.getElementById('key-bb2');
 let b2 = document.getElementById('key-b2');
 
+// assign individual piano key icons to variables
+let z = document.getElementById('icon-z');
+let q = document.getElementById('icon-q');
+let x = document.getElementById('icon-x');
+let w = document.getElementById('icon-w');
+let c = document.getElementById('icon-c');
+let v = document.getElementById('icon-v');
+let e = document.getElementById('icon-e');
+let b = document.getElementById('icon-b');
+let r = document.getElementById('icon-r');
+let n = document.getElementById('icon-n');
+let t = document.getElementById('icon-t');
+let m = document.getElementById('icon-m');
+let a = document.getElementById('icon-a');
+let y = document.getElementById('icon-y');
+let s = document.getElementById('icon-s');
+let u = document.getElementById('icon-u');
+let d = document.getElementById('icon-d');
+let f = document.getElementById('icon-f');
+let i = document.getElementById('icon-i');
+let g = document.getElementById('icon-g');
+let o = document.getElementById('icon-o');
+let h = document.getElementById('icon-h');
+let p = document.getElementById('icon-p');
+let j = document.getElementById('icon-j');
+
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
     challengeButton.style.color = "#5e17eb";
@@ -164,7 +190,7 @@ function playChallenge() {
         order.push(Math.floor(Math.random() * 24) + 1);
     }
     computerTurn = true;
-    intervalId = setInterval(gameTurn, 800);
+    intervalId = setInterval(gameTurn, 1000);
 }
 
 // function defining who's turn it is
@@ -219,6 +245,7 @@ function one() {
     }
     sound = true;
     c1.style.backgroundColor = "#5e17eb";
+    z.style.backgroundColor = "#5e17eb";
 }
 
 // define db1 key audio function
@@ -229,6 +256,7 @@ function two() {
     }
     sound = true;
     db1.style.backgroundColor = "#5e17eb";
+    q.style.backgroundColor = "#5e17eb";
 }
 
 // define d1 key audio function
@@ -239,6 +267,7 @@ function three() {
     }
     sound = true;
     d1.style.backgroundColor = "#5e17eb";
+    x.style.backgroundColor = "#5e17eb";
 }
 
 // define eb1 key audio function
@@ -249,6 +278,7 @@ function four() {
     }
     sound = true;
     eb1.style.backgroundColor = "#5e17eb";
+    w.style.backgroundColor = "#5e17eb";
 }
 
 // define e1 key audio function
@@ -259,6 +289,7 @@ function five() {
     }
     sound = true;
     e1.style.backgroundColor = "#5e17eb";
+    c.style.backgroundColor = "#5e17eb";
 }
 
 // define f1 key audio function
@@ -269,6 +300,7 @@ function six() {
     }
     sound = true;
     f1.style.backgroundColor = "#5e17eb";
+    v.style.backgroundColor = "#5e17eb";
 }
 
 // define gb1 key audio function
@@ -279,6 +311,7 @@ function seven() {
     }
     sound = true;
     gb1.style.backgroundColor = "#5e17eb";
+    e.style.backgroundColor = "#5e17eb";
 }
 
 // define g1 key audio function
@@ -289,6 +322,7 @@ function eight() {
     }
     sound = true;
     g1.style.backgroundColor = "#5e17eb";
+    b.style.backgroundColor = "#5e17eb";
 }
 
 // define ab1 key audio function
@@ -299,6 +333,7 @@ function nine() {
     }
     sound = true;
     ab1.style.backgroundColor = "#5e17eb";
+    r.style.backgroundColor = "#5e17eb";
 }
 
 // define a1 key audio function
@@ -309,6 +344,7 @@ function ten() {
     }
     sound = true;
     a1.style.backgroundColor = "#5e17eb";
+    n.style.backgroundColor = "#5e17eb";
 }
 
 // define bb1 key audio function
@@ -319,6 +355,7 @@ function eleven() {
     }
     sound = true;
     bb1.style.backgroundColor = "#5e17eb";
+    t.style.backgroundColor = "#5e17eb";
 }
 
 // define b1 key audio function
@@ -329,6 +366,7 @@ function twelve() {
     }
     sound = true;
     b1.style.backgroundColor = "#5e17eb";
+    m.style.backgroundColor = "#5e17eb";
 }
 
 // define c2 key audio function
@@ -339,6 +377,7 @@ function thirteen() {
     }
     sound = true;
     c2.style.backgroundColor = "#5e17eb";
+    a.style.backgroundColor = "#5e17eb";
 }
 
 // define db2 key audio function
@@ -349,6 +388,7 @@ function fourteen() {
     }
     sound = true;
     db2.style.backgroundColor = "#5e17eb";
+    y.style.backgroundColor = "#5e17eb";
 }
 
 // define d2 key audio function
@@ -359,6 +399,7 @@ function fifteen() {
     }
     sound = true;
     d2.style.backgroundColor = "#5e17eb";
+    s.style.backgroundColor = "#5e17eb";
 }
 
 // define eb2 key audio function
@@ -369,6 +410,7 @@ function sixteen() {
     }
     sound = true;
     eb2.style.backgroundColor = "#5e17eb";
+    u.style.backgroundColor = "#5e17eb";
 }
 
 // define e2 key audio function
@@ -379,6 +421,7 @@ function seventeen() {
     }
     sound = true;
     e2.style.backgroundColor = "#5e17eb";
+    d.style.backgroundColor = "#5e17eb";
 }
 
 // define f2 key audio function
@@ -389,6 +432,7 @@ function eighteen() {
     }
     sound = true;
     f2.style.backgroundColor = "#5e17eb";
+    f.style.backgroundColor = "#5e17eb";
 }
 
 // define gb2 key audio function
@@ -399,6 +443,7 @@ function nineteen() {
     }
     sound = true;
     gb2.style.backgroundColor = "#5e17eb";
+    i.style.backgroundColor = "#5e17eb";
 }
 
 // define g2 key audio function
@@ -409,6 +454,7 @@ function twenty() {
     }
     sound = true;
     g2.style.backgroundColor = "#5e17eb";
+    g.style.backgroundColor = "#5e17eb";
 }
 
 // define ab2 key audio function
@@ -419,6 +465,7 @@ function twentyOne() {
     }
     sound = true;
     ab2.style.backgroundColor = "#5e17eb";
+    o.style.backgroundColor = "#5e17eb";
 }
 
 // define a2 key audio function
@@ -429,6 +476,7 @@ function twentyTwo() {
     }
     sound = true;
     a2.style.backgroundColor = "#5e17eb";
+    h.style.backgroundColor = "#5e17eb";
 }
 
 // define bb2 key audio function
@@ -439,6 +487,7 @@ function twentyThree() {
     }
     sound = true;
     bb2.style.backgroundColor = "#5e17eb";
+    p.style.backgroundColor = "#5e17eb";
 }
 
 // define b2 key audio function
@@ -449,6 +498,7 @@ function twentyFour() {
     }
     sound = true;
     b2.style.backgroundColor = "#5e17eb";
+    j.style.backgroundColor = "#5e17eb";
 }
 
 // clear lit up keys 
