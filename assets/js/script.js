@@ -172,6 +172,7 @@ freestyleButton.addEventListener('click', function (event) {
     freestyleButton.style.border = "solid 5px #000000";
     challengeButton.style.color = "#000000";
     challengeButton.style.border = "solid 5px #5e17eb";
+    clearKeyLights()
     challengeOn = false;
     playFreestyle();
 });
@@ -949,6 +950,7 @@ function check() {
 
     if (playerOrder.length == 5 && correct) {
         winGame();
+        playChallenge();
     }
 
     if (correct == false) {
@@ -980,6 +982,7 @@ function winGame() {
 
 // player loses function
 function loseGame() {
+    flashKeyLights();
     win = false;
     loseScore++;
     loseCounter.innerHTML = loseScore;
