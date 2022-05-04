@@ -49,7 +49,7 @@ function playFreestyle() {
         noteAudio.addEventListener('ended', function () {
             pianoKey.classList.remove('active');
         });
-    };
+    }
 }
 
 
@@ -165,7 +165,7 @@ function playChallenge() {
     }
     computerTurn = true;
     intervalId = setInterval(gameTurn, 800);
-};
+}
 
 // function defining who's turn it is
 function gameTurn() {
@@ -208,7 +208,7 @@ function gameTurn() {
             keyLights++;
         }, 200);
     }
-};
+}
 
 // define all keys audio functions
 // define c1 key audio function
@@ -219,7 +219,7 @@ function one() {
     }
     sound = true;
     c1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define db1 key audio function
 function two() {
@@ -229,7 +229,7 @@ function two() {
     }
     sound = true;
     db1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define d1 key audio function
 function three() {
@@ -239,7 +239,7 @@ function three() {
     }
     sound = true;
     d1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define eb1 key audio function
 function four() {
@@ -249,7 +249,7 @@ function four() {
     }
     sound = true;
     eb1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define e1 key audio function
 function five() {
@@ -259,7 +259,7 @@ function five() {
     }
     sound = true;
     e1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define f1 key audio function
 function six() {
@@ -269,7 +269,7 @@ function six() {
     }
     sound = true;
     f1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define gb1 key audio function
 function seven() {
@@ -279,7 +279,7 @@ function seven() {
     }
     sound = true;
     gb1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define g1 key audio function
 function eight() {
@@ -289,7 +289,7 @@ function eight() {
     }
     sound = true;
     g1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define ab1 key audio function
 function nine() {
@@ -299,7 +299,7 @@ function nine() {
     }
     sound = true;
     ab1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define a1 key audio function
 function ten() {
@@ -309,7 +309,7 @@ function ten() {
     }
     sound = true;
     a1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define bb1 key audio function
 function eleven() {
@@ -319,7 +319,7 @@ function eleven() {
     }
     sound = true;
     bb1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define b1 key audio function
 function twelve() {
@@ -329,7 +329,7 @@ function twelve() {
     }
     sound = true;
     b1.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define c2 key audio function
 function thirteen() {
@@ -339,7 +339,7 @@ function thirteen() {
     }
     sound = true;
     c2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define db2 key audio function
 function fourteen() {
@@ -349,7 +349,7 @@ function fourteen() {
     }
     sound = true;
     db2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define d2 key audio function
 function fifteen() {
@@ -359,7 +359,7 @@ function fifteen() {
     }
     sound = true;
     d2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define eb2 key audio function
 function sixteen() {
@@ -369,7 +369,7 @@ function sixteen() {
     }
     sound = true;
     eb2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define e2 key audio function
 function seventeen() {
@@ -379,7 +379,7 @@ function seventeen() {
     }
     sound = true;
     e2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define f2 key audio function
 function eighteen() {
@@ -389,7 +389,7 @@ function eighteen() {
     }
     sound = true;
     f2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define gb2 key audio function
 function nineteen() {
@@ -399,7 +399,7 @@ function nineteen() {
     }
     sound = true;
     gb2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define g2 key audio function
 function twenty() {
@@ -409,7 +409,7 @@ function twenty() {
     }
     sound = true;
     g2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define ab2 key audio function
 function twentyOne() {
@@ -419,7 +419,7 @@ function twentyOne() {
     }
     sound = true;
     ab2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define a2 key audio function
 function twentyTwo() {
@@ -429,7 +429,7 @@ function twentyTwo() {
     }
     sound = true;
     a2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define bb2 key audio function
 function twentyThree() {
@@ -439,7 +439,7 @@ function twentyThree() {
     }
     sound = true;
     bb2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // define b2 key audio function
 function twentyFour() {
@@ -449,7 +449,7 @@ function twentyFour() {
     }
     sound = true;
     b2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // clear lit up keys 
 function clearKeyLights() {
@@ -477,7 +477,7 @@ function clearKeyLights() {
     a2.style.backgroundColor = "#FFFFFF";
     bb2.style.backgroundColor = "#000000";
     b2.style.backgroundColor = "#FFFFFF";
-};
+}
 
 // flash key lights function
 function flashKeyLights() {
@@ -505,7 +505,7 @@ function flashKeyLights() {
     a2.style.backgroundColor = "#5e17eb";
     bb2.style.backgroundColor = "#5e17eb";
     b2.style.backgroundColor = "#5e17eb";
-};
+}
 
 // event listeners for clicking on each piano key
 // event listener for c1 piano key click
@@ -858,7 +858,7 @@ function check() {
         clearKeyLights();
         sound = false;
         loseGame();
-        playChallenge()
+        playChallenge();
     }
 
     if (round == playerOrder.length && correct && !win) {
@@ -869,7 +869,7 @@ function check() {
         roundCounter.innerHTML = round;
         intervalId = setInterval(gameTurn, 800);
     }
-};
+}
 
 // player wins function
 function winGame() {
@@ -878,7 +878,7 @@ function winGame() {
     winScore++;
     winCounter.innerHTML = winScore;
     resultMessage.innerHTML = "Win!";
-};
+}
 
 // player loses function
 function loseGame() {
@@ -886,4 +886,4 @@ function loseGame() {
     loseScore++;
     loseCounter.innerHTML = loseScore;
     resultMessage.innerHTML = "Lose!";
-};
+}
