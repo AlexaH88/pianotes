@@ -504,57 +504,105 @@ function twentyFour() {
 // clear lit up keys 
 function clearKeyLights() {
     c1.style.backgroundColor = "#FFFFFF";
+    z.style.backgroundColor = "#FFFFFF";
     db1.style.backgroundColor = "#000000";
+    q.style.backgroundColor = "#000000";
     d1.style.backgroundColor = "#FFFFFF";
+    x.style.backgroundColor = "#FFFFFF";
     eb1.style.backgroundColor = "#000000";
+    w.style.backgroundColor = "#000000";
     e1.style.backgroundColor = "#FFFFFF";
+    c.style.backgroundColor = "#FFFFFF";
     f1.style.backgroundColor = "#FFFFFF";
+    v.style.backgroundColor = "#FFFFFF";
     gb1.style.backgroundColor = "#000000";
+    e.style.backgroundColor = "#000000";
     g1.style.backgroundColor = "#FFFFFF";
+    b.style.backgroundColor = "#FFFFFF";
     ab1.style.backgroundColor = "#000000";
+    r.style.backgroundColor = "#000000";
     a1.style.backgroundColor = "#FFFFFF";
+    n.style.backgroundColor = "#FFFFFF";
     bb1.style.backgroundColor = "#000000";
+    t.style.backgroundColor = "#000000";
     b1.style.backgroundColor = "#FFFFFF";
+    m.style.backgroundColor = "#FFFFFF";
     c2.style.backgroundColor = "#FFFFFF";
+    a.style.backgroundColor = "#FFFFFF";
     db2.style.backgroundColor = "#000000";
+    y.style.backgroundColor = "#000000";
     d2.style.backgroundColor = "#FFFFFF";
+    s.style.backgroundColor = "#FFFFFF";
     eb2.style.backgroundColor = "#000000";
+    u.style.backgroundColor = "#000000";
     e2.style.backgroundColor = "#FFFFFF";
+    d.style.backgroundColor = "#FFFFFF";
     f2.style.backgroundColor = "#FFFFFF";
+    f.style.backgroundColor = "#FFFFFF";
     gb2.style.backgroundColor = "#000000";
+    i.style.backgroundColor = "#000000";
     g2.style.backgroundColor = "#FFFFFF";
+    g.style.backgroundColor = "#FFFFFF";
     ab2.style.backgroundColor = "#000000";
+    o.style.backgroundColor = "#000000";
     a2.style.backgroundColor = "#FFFFFF";
+    h.style.backgroundColor = "#FFFFFF";
     bb2.style.backgroundColor = "#000000";
+    p.style.backgroundColor = "#000000";
     b2.style.backgroundColor = "#FFFFFF";
+    j.style.backgroundColor = "#FFFFFF";
 }
 
 // flash key lights function
 function flashKeyLights() {
     c1.style.backgroundColor = "#5e17eb";
+    z.style.backgroundColor = "#5e17eb";
     db1.style.backgroundColor = "#5e17eb";
+    q.style.backgroundColor = "#5e17eb";
     d1.style.backgroundColor = "#5e17eb";
+    x.style.backgroundColor = "#5e17eb";
     eb1.style.backgroundColor = "#5e17eb";
+    w.style.backgroundColor = "#5e17eb";
     e1.style.backgroundColor = "#5e17eb";
+    c.style.backgroundColor = "#5e17eb";
     f1.style.backgroundColor = "#5e17eb";
+    v.style.backgroundColor = "#5e17eb";
     gb1.style.backgroundColor = "#5e17eb";
+    e.style.backgroundColor = "#5e17eb";
     g1.style.backgroundColor = "#5e17eb";
+    b.style.backgroundColor = "#5e17eb";
     ab1.style.backgroundColor = "#5e17eb";
+    r.style.backgroundColor = "#5e17eb";
     a1.style.backgroundColor = "#5e17eb";
+    n.style.backgroundColor = "#5e17eb";
     bb1.style.backgroundColor = "#5e17eb";
+    t.style.backgroundColor = "#5e17eb";
     b1.style.backgroundColor = "#5e17eb";
+    m.style.backgroundColor = "#5e17eb";
     c2.style.backgroundColor = "#5e17eb";
+    a.style.backgroundColor = "#5e17eb";
     db2.style.backgroundColor = "#5e17eb";
+    y.style.backgroundColor = "#5e17eb";
     d2.style.backgroundColor = "#5e17eb";
+    s.style.backgroundColor = "#5e17eb";
     eb2.style.backgroundColor = "#5e17eb";
+    u.style.backgroundColor = "#5e17eb";
     e2.style.backgroundColor = "#5e17eb";
+    d.style.backgroundColor = "#5e17eb";
     f2.style.backgroundColor = "#5e17eb";
+    f.style.backgroundColor = "#5e17eb";
     gb2.style.backgroundColor = "#5e17eb";
+    i.style.backgroundColor = "#5e17eb";
     g2.style.backgroundColor = "#5e17eb";
+    g.style.backgroundColor = "#5e17eb";
     ab2.style.backgroundColor = "#5e17eb";
+    o.style.backgroundColor = "#5e17eb";
     a2.style.backgroundColor = "#5e17eb";
+    h.style.backgroundColor = "#5e17eb";
     bb2.style.backgroundColor = "#5e17eb";
+    p.style.backgroundColor = "#5e17eb";
     b2.style.backgroundColor = "#5e17eb";
+    j.style.backgroundColor = "#5e17eb";
 }
 
 // event listeners for clicking on each piano key
