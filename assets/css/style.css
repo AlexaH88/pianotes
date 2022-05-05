@@ -35,7 +35,8 @@ h2 {
 }
 
 section, li, .notes, .black, .white {
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.5px; 
 }
 
 .notes div { 
@@ -272,7 +273,6 @@ section li {
     width: 150%;
     flex-direction: column;
     display: flex;
-    text-align:justify;
     margin-right: 150px;
 }
 
