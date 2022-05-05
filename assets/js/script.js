@@ -12,7 +12,7 @@ function playFreestyle() {
     round = 0;
     roundCounter.innerHTML = round;
     resultMessage.innerHTML = "N/A";
-
+    
     // define black and white keys on computer keyboard
     let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
     let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
@@ -28,7 +28,7 @@ function playFreestyle() {
             return playNote(pianoKey);
         });
     });
-
+    
     // keydown event for piano keys
     document.addEventListener('keydown', function (event) {
         if (event.repeat) return;
@@ -39,7 +39,7 @@ function playFreestyle() {
         if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
         if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
     });
-
+    
     // play audio and define interaction with piano keys
     function playNote(pianoKey) {
         let noteAudio = document.getElementById(pianoKey.dataset.note);
@@ -172,7 +172,6 @@ freestyleButton.addEventListener('click', function (event) {
     freestyleButton.style.border = "solid 5px #000000";
     challengeButton.style.color = "#000000";
     challengeButton.style.border = "solid 5px #5e17eb";
-    clearKeyLights()
     challengeOn = false;
     playFreestyle();
 });
