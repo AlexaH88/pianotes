@@ -34,18 +34,9 @@ h2 {
     font-size: 4rem;
 }
 
-section, li, .notes, .black, .white {
+section, li, .black, .white {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px; 
-}
-
-.notes div { 
-    font-size: 2.8rem;
-}
-
-.notes i { 
-    font-size: 2.3rem;
-    color: #000000;
 }
 
 .black {
@@ -198,11 +189,6 @@ section li {
 
 #virtual-piano-element {
     margin: 2rem 0rem 10rem;
-}
-
-.notes {
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .white {
