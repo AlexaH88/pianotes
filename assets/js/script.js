@@ -1,6 +1,15 @@
 // virtual piano freestyle mode
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 
+// define black and white keys on computer keyboard
+let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
+let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
+
+// select all piano keys and attribute to variable
+let pianoKeys = document.querySelectorAll('.key');
+let whiteKeys = document.querySelectorAll('.key.white');
+let blackKeys = document.querySelectorAll('.key.black');
+
 // freestyle mode function
 function playFreestyle() {
 
@@ -12,23 +21,14 @@ function playFreestyle() {
     round = 0;
     roundCounter.innerHTML = round;
     resultMessage.innerHTML = "N/A";
-    
-    // define black and white keys on computer keyboard
-    let WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm', 'a', 's', 'd', 'f', 'g', 'h', 'j'];
-    let BLACK_KEYS = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'];
-
-    // select all piano keys and attribute to variable
-    let pianoKeys = document.querySelectorAll('.key');
-    let whiteKeys = document.querySelectorAll('.key.white');
-    let blackKeys = document.querySelectorAll('.key.black');
 
     // click event listener for piano keys
-    pianoKeys.forEach(function (pianoKey) {
-        pianoKey.addEventListener('click', function () {
-            return playNote(pianoKey);
+    pianoKeys.forEach(function (key) {
+        key.addEventListener('click', function () {
+            return playNote(key);
         });
     });
-    
+
     // keydown event for piano keys
     document.addEventListener('keydown', function (event) {
         if (event.repeat) return;
@@ -39,15 +39,15 @@ function playFreestyle() {
         if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
         if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
     });
-    
+
     // play audio and define interaction with piano keys
-    function playNote(pianoKey) {
-        let noteAudio = document.getElementById(pianoKey.dataset.note);
+    function playNote(key) {
+        let noteAudio = document.getElementById(key.dataset.note);
         noteAudio.currentTime = 0;
         noteAudio.play();
-        pianoKey.classList.add('active');
+        key.classList.add('active');
         noteAudio.addEventListener('ended', function () {
-            pianoKey.classList.remove('active');
+            key.classList.remove('active');
         });
     }
 }
