@@ -222,10 +222,11 @@ section li {
     margin: 0.8rem 0.5rem 0rem;
 }
 
-.white.active, .black.active {
+.active {
     background-color: #5e17eb;
 }
-.white.active i, .black.active i {
+
+.active i {
     background-color: #5e17eb;
 }
 
