@@ -336,6 +336,15 @@ ul {
 /* 1150px and down */
 @media only screen and (max-width: 1150px) {
 
+    /* header */
+    header {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        padding: 2rem;
+    }
+
     /* play and instructions pages */
     .horizontal-section {
         flex-direction: column;
