@@ -71,18 +71,17 @@
 
   ![Nav Bar](assets/images/nav-bar.png)
 
-  - The navigation bar includes five clickable links, allowing the user to easily access the four pages on the site: 
-    - Horizon GamePedia site name (links to the About The Games home page)
-    - About The Games page
-    - Game Developer History page
-    - Machine Catalogue page
-    - Sign Up page
+  - The navigation bar includes four clickable links, allowing the user to easily access the three pages on the site: 
+    - PiaNotes site name (links to the Play home page)
+    - Play page
+    - Sheet Music page
+    - Instructions page
 
   - In order to make navigation easier for the user, the navigation bar is in a fixed position, meaning that it remains at the top of the page as the user scrolls down.
 
   - The navigation bar follows the same style and size as the footer, and appears in the same format on all four pages - this allows for consistency throughout the site.
 
-  - A hover effect of the text turning white is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains white to indicate to the user which page they find themselves on. 
+  - A hover effect of the text turning purple is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
 
   - The navigation bar was created with HTML and CSS only and is fully responsive across devices.
     ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
