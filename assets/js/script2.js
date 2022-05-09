@@ -130,32 +130,6 @@ let a2 = document.getElementById('key-a2');
 let bb2 = document.getElementById('key-bb2');
 let b2 = document.getElementById('key-b2');
 
-// assign individual piano key icons to variables
-let z = document.getElementById('icon-z');
-let q = document.getElementById('icon-q');
-let x = document.getElementById('icon-x');
-let w = document.getElementById('icon-w');
-let c = document.getElementById('icon-c');
-let v = document.getElementById('icon-v');
-let e = document.getElementById('icon-e');
-let b = document.getElementById('icon-b');
-let r = document.getElementById('icon-r');
-let n = document.getElementById('icon-n');
-let t = document.getElementById('icon-t');
-let m = document.getElementById('icon-m');
-let a = document.getElementById('icon-a');
-let y = document.getElementById('icon-y');
-let s = document.getElementById('icon-s');
-let u = document.getElementById('icon-u');
-let d = document.getElementById('icon-d');
-let f = document.getElementById('icon-f');
-let i = document.getElementById('icon-i');
-let g = document.getElementById('icon-g');
-let o = document.getElementById('icon-o');
-let h = document.getElementById('icon-h');
-let p = document.getElementById('icon-p');
-let j = document.getElementById('icon-j');
-
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
     challengeButton.style.color = "#5e17eb";
