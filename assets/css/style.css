@@ -345,12 +345,23 @@ ul {
         padding: 2rem;
     }
 
-    /* play and instructions pages */
+    /* sections */
+    .vertical-section {
+        margin: 0rem 0rem 2rem;
+    }
+
     .horizontal-section {
         flex-direction: column;
         align-items: center;
+        margin: 0rem 0rem 2rem;
     }
 
+    /* play page */
+    #virtual-piano-element {
+        margin: 0rem 0rem 4rem;
+    }
+
+    /* instructions page */
     .instruction-graphic img {
         width: 30%;
     }
@@ -367,5 +378,6 @@ ul {
 
     footer li {
         padding: 5px;
+        font-size: 1.8rem;
     }
 }
