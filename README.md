@@ -359,6 +359,12 @@
 
 -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 
+### ***Fixed Bugs***
+
+- Initially `style.backgroundColor` was used on the Challenge mode of the piano to achieve a purple coloured piano key as it was played - see example `function twenty()` below. This was followed by a `clearKeyLights function`, resetting the `style.backgroundColor` to white and black respectively - see `function clearKeyLights` below. This however caused a bug when switching to Freestyle mode after having played Challenge mode: the purple colour no longer appeared when playing the notes. This was due to the `style.backgroundColor` taking precedence over the `.active` class used on Freestyle mode. The bug was fixed by applying an `.active` class on the Challenge as well - see `function nineteen()` example below. 
+![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
+![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
+
 ### ***Known Bugs***
 
 -   On some mobile devices, notably the Pixel 3a the form fieldset on the Sign Up page pushes the size of screen out more than any of the other content on the page. A white gap can be seen to the right of the footer and navigation bar as a result. However, this issue does not appear on [Chrome DevTools](https://developers.google.com/web/tools) or [Responsinator](https://www.responsinator.com/)
