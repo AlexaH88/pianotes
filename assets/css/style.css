@@ -326,4 +326,9 @@ ul {
     .white i {
         font-size: 1.6rem;
     }
+
+    /* footer */
+    footer li {
+        font-size: 1.6rem;
+    }
 }
