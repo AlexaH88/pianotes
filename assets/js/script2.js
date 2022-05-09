@@ -200,12 +200,10 @@ function gameTurn() {
     if (keyLights == round) {
         clearInterval(intervalId);
         computerTurn = false;
-        clearKeyLights();
         challengeOn = true;
     }
 
     if (computerTurn) {
-        clearKeyLights();
         setTimeout(function () {
             if (order[keyLights] == 1) one();
             if (order[keyLights] == 2) two();
@@ -239,370 +237,266 @@ function gameTurn() {
 // define all keys audio functions
 // define c1 key audio function
 function one() {
-    if (sound) {
-        let audio = document.getElementById('C1');
-        audio.play();
-    }
-    sound = true;
-    c1.style.backgroundColor = "#5e17eb";
-    z.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('C1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    c1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        c1.classList.remove('active');
+    });
 }
 
 // define db1 key audio function
 function two() {
-    if (sound) {
-        let audio = document.getElementById('Db1');
-        audio.play();
-    }
-    sound = true;
-    db1.style.backgroundColor = "#5e17eb";
-    q.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Db1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    db1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        db1.classList.remove('active');
+    });
 }
 
 // define d1 key audio function
 function three() {
-    if (sound) {
-        let audio = document.getElementById('D1');
-        audio.play();
-    }
-    sound = true;
-    d1.style.backgroundColor = "#5e17eb";
-    x.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('D1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    d1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        d1.classList.remove('active');
+    });
 }
 
 // define eb1 key audio function
 function four() {
-    if (sound) {
-        let audio = document.getElementById('Eb1');
-        audio.play();
-    }
-    sound = true;
-    eb1.style.backgroundColor = "#5e17eb";
-    w.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Eb1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    eb1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        eb1.classList.remove('active');
+    });
 }
 
 // define e1 key audio function
 function five() {
-    if (sound) {
-        let audio = document.getElementById('E1');
-        audio.play();
-    }
-    sound = true;
-    e1.style.backgroundColor = "#5e17eb";
-    c.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('E1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    e1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        e1.classList.remove('active');
+    });
 }
 
 // define f1 key audio function
 function six() {
-    if (sound) {
-        let audio = document.getElementById('F1');
-        audio.play();
-    }
-    sound = true;
-    f1.style.backgroundColor = "#5e17eb";
-    v.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('F1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    f1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        f1.classList.remove('active');
+    });
 }
 
 // define gb1 key audio function
 function seven() {
-    if (sound) {
-        let audio = document.getElementById('Gb1');
-        audio.play();
-    }
-    sound = true;
-    gb1.style.backgroundColor = "#5e17eb";
-    e.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Gb1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    gb1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        gb1.classList.remove('active');
+    });
 }
 
 // define g1 key audio function
 function eight() {
-    if (sound) {
-        let audio = document.getElementById('G1');
-        audio.play();
-    }
-    sound = true;
-    g1.style.backgroundColor = "#5e17eb";
-    b.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('G1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    g1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        g1.classList.remove('active');
+    });
 }
 
 // define ab1 key audio function
 function nine() {
-    if (sound) {
-        let audio = document.getElementById('Ab1');
-        audio.play();
-    }
-    sound = true;
-    ab1.style.backgroundColor = "#5e17eb";
-    r.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Ab1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    ab1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        ab1.classList.remove('active');
+    });
 }
 
 // define a1 key audio function
 function ten() {
-    if (sound) {
-        let audio = document.getElementById('A1');
-        audio.play();
-    }
-    sound = true;
-    a1.style.backgroundColor = "#5e17eb";
-    n.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('A1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    a1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        a1.classList.remove('active');
+    });
 }
 
 // define bb1 key audio function
 function eleven() {
-    if (sound) {
-        let audio = document.getElementById('Bb1');
-        audio.play();
-    }
-    sound = true;
-    bb1.style.backgroundColor = "#5e17eb";
-    t.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Bb1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    bb1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        bb1.classList.remove('active');
+    });
 }
 
 // define b1 key audio function
 function twelve() {
-    if (sound) {
-        let audio = document.getElementById('B1');
-        audio.play();
-    }
-    sound = true;
-    b1.style.backgroundColor = "#5e17eb";
-    m.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('B1');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    b1.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        b1.classList.remove('active');
+    });
 }
 
 // define c2 key audio function
 function thirteen() {
-    if (sound) {
-        let audio = document.getElementById('C2');
-        audio.play();
-    }
-    sound = true;
-    c2.style.backgroundColor = "#5e17eb";
-    a.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('C2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    c2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        c2.classList.remove('active');
+    });
 }
 
 // define db2 key audio function
 function fourteen() {
-    if (sound) {
-        let audio = document.getElementById('Db2');
-        audio.play();
-    }
-    sound = true;
-    db2.style.backgroundColor = "#5e17eb";
-    y.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Db2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    db2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        db2.classList.remove('active');
+    });
 }
 
 // define d2 key audio function
 function fifteen() {
-    if (sound) {
-        let audio = document.getElementById('D2');
-        audio.play();
-    }
-    sound = true;
-    d2.style.backgroundColor = "#5e17eb";
-    s.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('D2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    d2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        d2.classList.remove('active');
+    });
 }
 
 // define eb2 key audio function
 function sixteen() {
-    if (sound) {
-        let audio = document.getElementById('Eb2');
-        audio.play();
-    }
-    sound = true;
-    eb2.style.backgroundColor = "#5e17eb";
-    u.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Eb2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    eb2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        eb2.classList.remove('active');
+    });
 }
 
 // define e2 key audio function
 function seventeen() {
-    if (sound) {
-        let audio = document.getElementById('E2');
-        audio.play();
-    }
-    sound = true;
-    e2.style.backgroundColor = "#5e17eb";
-    d.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('E2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    e2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        e2.classList.remove('active');
+    });
 }
 
 // define f2 key audio function
 function eighteen() {
-    if (sound) {
-        let audio = document.getElementById('F2');
-        audio.play();
-    }
-    sound = true;
-    f2.style.backgroundColor = "#5e17eb";
-    f.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('F2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    f2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        f2.classList.remove('active');
+    });
 }
 
 // define gb2 key audio function
 function nineteen() {
-    if (sound) {
-        let audio = document.getElementById('Gb2');
-        audio.play();
-    }
-    sound = true;
-    gb2.style.backgroundColor = "#5e17eb";
-    i.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Gb2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    gb2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        gb2.classList.remove('active');
+    });
 }
 
 // define g2 key audio function
 function twenty() {
-    if (sound) {
-        let audio = document.getElementById('G2');
-        audio.play();
-    }
-    sound = true;
-    g2.style.backgroundColor = "#5e17eb";
-    g.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('G2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    g2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        g2.classList.remove('active');
+    });
 }
 
 // define ab2 key audio function
 function twentyOne() {
-    if (sound) {
-        let audio = document.getElementById('Ab2');
-        audio.play();
-    }
-    sound = true;
-    ab2.style.backgroundColor = "#5e17eb";
-    o.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Ab2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    ab2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        ab2.classList.remove('active');
+    });
 }
 
 // define a2 key audio function
 function twentyTwo() {
-    if (sound) {
-        let audio = document.getElementById('A2');
-        audio.play();
-    }
-    sound = true;
-    a2.style.backgroundColor = "#5e17eb";
-    h.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('A2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    a2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        a2.classList.remove('active');
+    });
 }
 
 // define bb2 key audio function
 function twentyThree() {
-    if (sound) {
-        let audio = document.getElementById('Bb2');
-        audio.play();
-    }
-    sound = true;
-    bb2.style.backgroundColor = "#5e17eb";
-    p.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('Bb2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    bb2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        bb2.classList.remove('active');
+    });
 }
 
 // define b2 key audio function
 function twentyFour() {
-    if (sound) {
-        let audio = document.getElementById('B2');
-        audio.play();
-    }
-    sound = true;
-    b2.style.backgroundColor = "#5e17eb";
-    j.style.backgroundColor = "#5e17eb";
-}
-
-// clear lit up keys 
-function clearKeyLights() {
-    c1.style.backgroundColor = "#FFFFFF";
-    z.style.backgroundColor = "#FFFFFF";
-    db1.style.backgroundColor = "#000000";
-    q.style.backgroundColor = "#000000";
-    d1.style.backgroundColor = "#FFFFFF";
-    x.style.backgroundColor = "#FFFFFF";
-    eb1.style.backgroundColor = "#000000";
-    w.style.backgroundColor = "#000000";
-    e1.style.backgroundColor = "#FFFFFF";
-    c.style.backgroundColor = "#FFFFFF";
-    f1.style.backgroundColor = "#FFFFFF";
-    v.style.backgroundColor = "#FFFFFF";
-    gb1.style.backgroundColor = "#000000";
-    e.style.backgroundColor = "#000000";
-    g1.style.backgroundColor = "#FFFFFF";
-    b.style.backgroundColor = "#FFFFFF";
-    ab1.style.backgroundColor = "#000000";
-    r.style.backgroundColor = "#000000";
-    a1.style.backgroundColor = "#FFFFFF";
-    n.style.backgroundColor = "#FFFFFF";
-    bb1.style.backgroundColor = "#000000";
-    t.style.backgroundColor = "#000000";
-    b1.style.backgroundColor = "#FFFFFF";
-    m.style.backgroundColor = "#FFFFFF";
-    c2.style.backgroundColor = "#FFFFFF";
-    a.style.backgroundColor = "#FFFFFF";
-    db2.style.backgroundColor = "#000000";
-    y.style.backgroundColor = "#000000";
-    d2.style.backgroundColor = "#FFFFFF";
-    s.style.backgroundColor = "#FFFFFF";
-    eb2.style.backgroundColor = "#000000";
-    u.style.backgroundColor = "#000000";
-    e2.style.backgroundColor = "#FFFFFF";
-    d.style.backgroundColor = "#FFFFFF";
-    f2.style.backgroundColor = "#FFFFFF";
-    f.style.backgroundColor = "#FFFFFF";
-    gb2.style.backgroundColor = "#000000";
-    i.style.backgroundColor = "#000000";
-    g2.style.backgroundColor = "#FFFFFF";
-    g.style.backgroundColor = "#FFFFFF";
-    ab2.style.backgroundColor = "#000000";
-    o.style.backgroundColor = "#000000";
-    a2.style.backgroundColor = "#FFFFFF";
-    h.style.backgroundColor = "#FFFFFF";
-    bb2.style.backgroundColor = "#000000";
-    p.style.backgroundColor = "#000000";
-    b2.style.backgroundColor = "#FFFFFF";
-    j.style.backgroundColor = "#FFFFFF";
-}
-
-// flash key lights function
-function flashKeyLights() {
-    c1.style.backgroundColor = "#5e17eb";
-    z.style.backgroundColor = "#5e17eb";
-    db1.style.backgroundColor = "#5e17eb";
-    q.style.backgroundColor = "#5e17eb";
-    d1.style.backgroundColor = "#5e17eb";
-    x.style.backgroundColor = "#5e17eb";
-    eb1.style.backgroundColor = "#5e17eb";
-    w.style.backgroundColor = "#5e17eb";
-    e1.style.backgroundColor = "#5e17eb";
-    c.style.backgroundColor = "#5e17eb";
-    f1.style.backgroundColor = "#5e17eb";
-    v.style.backgroundColor = "#5e17eb";
-    gb1.style.backgroundColor = "#5e17eb";
-    e.style.backgroundColor = "#5e17eb";
-    g1.style.backgroundColor = "#5e17eb";
-    b.style.backgroundColor = "#5e17eb";
-    ab1.style.backgroundColor = "#5e17eb";
-    r.style.backgroundColor = "#5e17eb";
-    a1.style.backgroundColor = "#5e17eb";
-    n.style.backgroundColor = "#5e17eb";
-    bb1.style.backgroundColor = "#5e17eb";
-    t.style.backgroundColor = "#5e17eb";
-    b1.style.backgroundColor = "#5e17eb";
-    m.style.backgroundColor = "#5e17eb";
-    c2.style.backgroundColor = "#5e17eb";
-    a.style.backgroundColor = "#5e17eb";
-    db2.style.backgroundColor = "#5e17eb";
-    y.style.backgroundColor = "#5e17eb";
-    d2.style.backgroundColor = "#5e17eb";
-    s.style.backgroundColor = "#5e17eb";
-    eb2.style.backgroundColor = "#5e17eb";
-    u.style.backgroundColor = "#5e17eb";
-    e2.style.backgroundColor = "#5e17eb";
-    d.style.backgroundColor = "#5e17eb";
-    f2.style.backgroundColor = "#5e17eb";
-    f.style.backgroundColor = "#5e17eb";
-    gb2.style.backgroundColor = "#5e17eb";
-    i.style.backgroundColor = "#5e17eb";
-    g2.style.backgroundColor = "#5e17eb";
-    g.style.backgroundColor = "#5e17eb";
-    ab2.style.backgroundColor = "#5e17eb";
-    o.style.backgroundColor = "#5e17eb";
-    a2.style.backgroundColor = "#5e17eb";
-    h.style.backgroundColor = "#5e17eb";
-    bb2.style.backgroundColor = "#5e17eb";
-    p.style.backgroundColor = "#5e17eb";
-    b2.style.backgroundColor = "#5e17eb";
-    j.style.backgroundColor = "#5e17eb";
+    let noteAudio = document.getElementById('B2');
+    noteAudio.currentTime = 0;
+    noteAudio.play();
+    b2.classList.add('active');
+    noteAudio.addEventListener('ended', function () {
+        b2.classList.remove('active');
+    });
 }
 
 // event listeners for clicking on each piano key
@@ -614,7 +508,6 @@ c1.addEventListener('click', function (event) {
         one();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -628,7 +521,6 @@ db1.addEventListener('click', function (event) {
         two();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -642,7 +534,6 @@ d1.addEventListener('click', function (event) {
         three();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -656,7 +547,6 @@ eb1.addEventListener('click', function (event) {
         four();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -670,7 +560,6 @@ e1.addEventListener('click', function (event) {
         five();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -684,7 +573,6 @@ f1.addEventListener('click', function (event) {
         six();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -698,7 +586,6 @@ gb1.addEventListener('click', function (event) {
         seven();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -712,7 +599,6 @@ g1.addEventListener('click', function (event) {
         eight();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -726,7 +612,6 @@ ab1.addEventListener('click', function (event) {
         nine();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -740,7 +625,6 @@ a1.addEventListener('click', function (event) {
         ten();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -754,7 +638,6 @@ bb1.addEventListener('click', function (event) {
         eleven();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -768,7 +651,6 @@ b1.addEventListener('click', function (event) {
         twelve();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -782,7 +664,6 @@ c2.addEventListener('click', function (event) {
         thirteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -796,7 +677,6 @@ db2.addEventListener('click', function (event) {
         fourteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -810,7 +690,6 @@ d2.addEventListener('click', function (event) {
         fifteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -824,7 +703,6 @@ eb2.addEventListener('click', function (event) {
         sixteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -838,7 +716,6 @@ e2.addEventListener('click', function (event) {
         seventeen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -852,7 +729,6 @@ f2.addEventListener('click', function (event) {
         eighteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -866,7 +742,6 @@ gb2.addEventListener('click', function (event) {
         nineteen();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -880,7 +755,6 @@ g2.addEventListener('click', function (event) {
         twenty();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -894,7 +768,6 @@ ab2.addEventListener('click', function (event) {
         twentyOne();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -908,7 +781,6 @@ a2.addEventListener('click', function (event) {
         twentyTwo();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -922,7 +794,6 @@ bb2.addEventListener('click', function (event) {
         twentyThree();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -936,7 +807,6 @@ b2.addEventListener('click', function (event) {
         twentyFour();
         if (!win) {
             setTimeout(function () {
-                clearKeyLights();
             }, 300);
         }
     }
@@ -953,8 +823,6 @@ function check() {
     }
 
     if (correct == false) {
-        flashKeyLights();
-        clearKeyLights();
         sound = false;
         loseGame();
         playChallenge();
@@ -972,7 +840,6 @@ function check() {
 
 // player wins function
 function winGame() {
-    flashKeyLights();
     win = true;
     winScore++;
     winCounter.innerHTML = winScore;
@@ -981,7 +848,6 @@ function winGame() {
 
 // player loses function
 function loseGame() {
-    flashKeyLights();
     win = false;
     loseScore++;
     loseCounter.innerHTML = loseScore;
