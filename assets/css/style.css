@@ -332,3 +332,22 @@ ul {
         font-size: 1.6rem;
     }
 }
+
+/* 1150px and down */
+@media only screen and (max-width: 1150px) {
+
+    /* play and instructions pages */
+    .horizontal-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instruction-graphic img {
+        width: 30%;
+    }
+
+    .instruction-text {
+        width: 100%;
+        margin-right: 0px
+    }
+}
