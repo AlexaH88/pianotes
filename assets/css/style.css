@@ -17,13 +17,16 @@ body {
     flex-direction: column;
 }
 
-header, section, footer {
+header,
+section,
+footer {
     padding: 2rem 4rem;
 }
 
 /* fonts and colours */
-h1, h2 {
-    font-family: 'Orelega One', sans-serif; 
+h1,
+h2 {
+    font-family: 'Orelega One', sans-serif;
 }
 
 h1 {
@@ -34,9 +37,12 @@ h2 {
     font-size: 4rem;
 }
 
-section, li, .black, .white {
+section,
+li,
+.black,
+.white {
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 0.5px; 
+    letter-spacing: 0.5px;
 }
 
 .black {
@@ -61,7 +67,7 @@ section, li, .black, .white {
     background-color: #FFFFFF;
 }
 
-li { 
+li {
     font-size: 2rem;
     list-style: none;
 }
@@ -269,7 +275,7 @@ section li {
     display: flex;
     align-items: center;
     align-content: center;
-    text-align:justify;
+    text-align: justify;
 }
 
 .instruction-graphic img {
@@ -298,4 +304,26 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+}
+
+/* media queries */
+
+/* 1300px and down */
+@media only screen and (max-width: 1300px) {
+
+    /* play page */
+    .black {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+
+    .black,
+    .white {
+        font-size: 2rem;
+    }
+
+    .black i,
+    .white i {
+        font-size: 1.6rem;
+    }
 }
