@@ -30,18 +30,20 @@
         <a href="index.html" aria-label="Link to the site's landing page">
             <h1><i class="fa-solid fa-music" aria-hidden="true"></i> PiaNotes</h1>
         </a>
+
+        <!-- 800px screen width and up version -->
         <!-- navigation links -->
-        <nav>
+        <nav id="site-nav">
             <ul>
                 <!-- link to Play page -->
                 <li class="nav-list">
-                    <a href="index.html" aria-label="Link to the Play page">
+                    <a href="index.html" aria-label="Link to the Play page" class="nav-active">
                         <h2>Play</h2>
                     </a>
                 </li>
                 <!-- link to Sheet Music page -->
                 <li class="nav-list">
-                    <a href="sheet-music.html" aria-label="Link to the Sheet Music page" class="nav-active">
+                    <a href="sheet-music.html" aria-label="Link to the Sheet Music page">
                         <h2>Sheet Music</h2>
                     </a>
                 </li>
@@ -52,6 +54,41 @@
                     </a>
                 </li>
             </ul>
+        </nav>
+
+        <!-- 800px screen width and down version -->
+        <!-- navigation links -->
+        <nav id="hamburger-nav">
+            <div id="nav-links">
+                <ul>
+                    <!-- link to Play page -->
+                    <li class="nav-list">
+                        <a href="index.html" aria-label="Link to the Play page">
+                            <h2>Play</h2>
+                        </a>
+                    </li>
+                    <!-- link to Sheet Music page -->
+                    <li class="nav-list">
+                        <a href="sheet-music.html" aria-label="Link to the Sheet Music page" class="nav-active">
+                            <h2>Sheet Music</h2>
+                        </a>
+                    </li>
+                    <!-- link to Instructions page -->
+                    <li class="nav-list">
+                        <a href="instructions.html" aria-label="Link to the Instructions page">
+                            <h2>Instructions</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- hamburger button -->
+            <div>
+                <a href="javascript:void(0);" id="hamburger-icon" onclick="hamburgerButton()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
         </nav>
     </header>
 
