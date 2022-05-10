@@ -1,11 +1,14 @@
 // hamburger menu
 function hamburgerButton() {
     let navLinks = document.getElementById('nav-links');
+    let mainPageContainer = document.getElementsByClassName('main-page-container');
 
     if (navLinks.style.display === "block") {
         navLinks.style.display = "none";
     } else {
         navLinks.style.display = "block";
+        navLinks.style.width = "100vw";
+        navLinks.style.height = "100vh";
     }
 };
 
