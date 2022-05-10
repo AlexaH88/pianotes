@@ -388,3 +388,28 @@ ul {
         text-align: center;
     }
 }
+
+/* 1000px and down */
+@media only screen and (max-width: 1000px) {
+
+    /* play page */
+    #key-c2,
+    #key-db2,
+    #key-d2,
+    #key-eb2,
+    #key-e2,
+    #key-f2,
+    #key-gb2,
+    #key-g2,
+    #key-ab2,
+    #key-a2,
+    #key-bb2,
+    #key-b2 {
+        display: none;
+    }
+
+    .black {
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+}
