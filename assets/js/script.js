@@ -42,6 +42,7 @@ function playFreestyle() {
 
     // play audio and define interaction with piano keys
     function playNote(key) {
+        let noteAudio = document.getElementById(key.dataset.note);
         noteAudio.currentTime = 0;
         noteAudio.play();
         key.classList.add('active');
