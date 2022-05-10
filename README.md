@@ -419,6 +419,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
 
+- The JavaScript media queries were taken from [CSS Tricks](https://css-tricks.com/), specifically [this article](https://css-tricks.com/working-with-javascript-media-queries/), and adapted. 
+
 ### ***Content***
 
 - All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88). 
