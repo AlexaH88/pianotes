@@ -1,6 +1,6 @@
 <h1 align="center">PiaNotes</h1>
 
-[The PiaNotes website](https://alexah88.github.io/pianotes/) has been developed for XXX
+[The PiaNotes website](https://alexah88.github.io/pianotes/) has been developed for anyone interested in music, piano, and playing mini-games online. The user can play a virtual piano, challenge themselves in a Simon Says type mini-game against the computer, play along to a selection of sheet music, and find out how to use the site on a dedicated instructions page.
 
 <h2 align="center"><img src="assets/images/mockup-horizon-gamepedia.png"></h2>
 
