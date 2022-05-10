@@ -42,7 +42,6 @@ function playFreestyle() {
 
     // play audio and define interaction with piano keys
     function playNote(key) {
-        let noteAudio = document.getElementById(key.dataset.note);
         noteAudio.currentTime = 0;
         noteAudio.play();
         key.classList.add('active');
@@ -481,8 +480,7 @@ c1.addEventListener('click', function (event) {
         check();
         one();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -494,8 +492,7 @@ db1.addEventListener('click', function (event) {
         check();
         two();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -507,8 +504,7 @@ d1.addEventListener('click', function (event) {
         check();
         three();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -520,8 +516,7 @@ eb1.addEventListener('click', function (event) {
         check();
         four();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -533,8 +528,7 @@ e1.addEventListener('click', function (event) {
         check();
         five();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -546,8 +540,7 @@ f1.addEventListener('click', function (event) {
         check();
         six();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -559,8 +552,7 @@ gb1.addEventListener('click', function (event) {
         check();
         seven();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -572,8 +564,7 @@ g1.addEventListener('click', function (event) {
         check();
         eight();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -585,8 +576,7 @@ ab1.addEventListener('click', function (event) {
         check();
         nine();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -598,8 +588,7 @@ a1.addEventListener('click', function (event) {
         check();
         ten();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -611,8 +600,7 @@ bb1.addEventListener('click', function (event) {
         check();
         eleven();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -624,8 +612,7 @@ b1.addEventListener('click', function (event) {
         check();
         twelve();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -637,8 +624,7 @@ c2.addEventListener('click', function (event) {
         check();
         thirteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -650,8 +636,7 @@ db2.addEventListener('click', function (event) {
         check();
         fourteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -663,8 +648,7 @@ d2.addEventListener('click', function (event) {
         check();
         fifteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -676,8 +660,7 @@ eb2.addEventListener('click', function (event) {
         check();
         sixteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -689,8 +672,7 @@ e2.addEventListener('click', function (event) {
         check();
         seventeen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -702,8 +684,7 @@ f2.addEventListener('click', function (event) {
         check();
         eighteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -715,8 +696,7 @@ gb2.addEventListener('click', function (event) {
         check();
         nineteen();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -728,8 +708,7 @@ g2.addEventListener('click', function (event) {
         check();
         twenty();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -741,8 +720,7 @@ ab2.addEventListener('click', function (event) {
         check();
         twentyOne();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -754,8 +732,7 @@ a2.addEventListener('click', function (event) {
         check();
         twentyTwo();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -767,8 +744,7 @@ bb2.addEventListener('click', function (event) {
         check();
         twentyThree();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
@@ -780,8 +756,7 @@ b2.addEventListener('click', function (event) {
         check();
         twentyFour();
         if (!win) {
-            setTimeout(function () {
-            }, 300);
+            setTimeout(function () {}, 300);
         }
     }
 });
