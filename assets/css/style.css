@@ -37,11 +37,7 @@ h2 {
     font-size: 4rem;
 }
 
-section,
-li,
-.black,
-.white,
-span {
+body {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
 }
@@ -94,6 +90,8 @@ i {
 .horizontal-section div {
     font-size: 2.5rem;
 }
+
+
 
 /* header */
 header {
@@ -294,6 +292,10 @@ section li {
     flex-direction: column;
     display: flex;
     margin-right: 150px;
+}
+
+.instruction-text a {
+    font-size: 2rem;
 }
 
 .instruction-graphic {
