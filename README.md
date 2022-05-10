@@ -79,7 +79,7 @@
 
   - In order to make navigation easier for the user, the navigation bar is in a fixed position, meaning that it remains at the top of the page as the user scrolls down.
 
-  - The navigation bar follows the same style as the footer, and appears in the same format on all four pages - this allows for consistency throughout the site.
+  - The navigation bar follows the same style as the footer, and appears in the same format on all three pages - this allows for consistency throughout the site.
 
   - A hover effect of the text turning purple is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
 
@@ -123,16 +123,16 @@
     - How to Play - explaining to the user the difference between the two play modes and how to access them, and the use of the sheet music. 
     - Using the Virtual Piano - explaining to the user in which ways the piano can be played on various devices. 
 
-- #### The Footer
+- #### Footer
 
   ![Footer](assets/images/footer.png)
 
-  - The footer follows the same style and size as the navigation bar, and appears in the same format on all four pages - this allows for consistency throughout the site.
+  - The footer follows the same style as the navigation bar, and appears in the same format on all three pages - this allows for consistency throughout the site.
 
   - The footer contains three elements:
     - The copyrighted site name on the left hand side. 
-    - Information abou the site and how it was created. 
-    - Social media links, allowing the user to visit the site creator's LinkedIn and GitHub pages.
+    - Information about the site and how it was created. 
+    - Social media links, allowing the user to visit the site creator's LinkedIn and GitHub pages. Hovering over the link icons turns them purple to signal to the user that there is an interaction possible. All links are opened in separate tabs so that the user remains on the site. 
 
   - The footer was created with HTML and CSS only and is fully responsive across devices.
 
