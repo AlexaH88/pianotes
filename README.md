@@ -253,7 +253,7 @@
   - [EightShapes Contrast Grid](http://eightshapes.com/) was used to test the colour palette of the site for any accessibility issues. Only AAA and AA rating options were used on the site. 
   ![Colour Palette Contrast Grid](assets/images/color-palette-contrast-grid.png)
   
-  - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page           (https://fontawesome.com/v5/docs/web/other-topics/accessibility)
+  - Any icons on the site that are for decorative purposes only use the aria-hidden="true" attribute to accommodate for accessibility, as recommended by [Font Awesome's Accessiblity Page](https://fontawesome.com/v5/docs/web/other-topics/accessibility)
   ![Font Awesome Accessiblity Page](assets/images/font-awesome-accessibility.png)
 
 ### ***Responsive Testing***
@@ -338,12 +338,18 @@
 ### ***Fixed Bugs***
 
 - Initially `style.backgroundColor` was used on the Challenge mode of the piano to achieve a purple coloured piano key as it was played - see example `function twenty()` below. This was followed by a `clearKeyLights function`, resetting the `style.backgroundColor` to white and black respectively - see `function clearKeyLights` below. This however caused a bug when switching to Freestyle mode after having played Challenge mode: the purple colour no longer appeared when playing the notes. This was due to the `style.backgroundColor` taking precedence over the `.active` class used on Freestyle mode. The bug was fixed by applying an `.active` class on the Challenge as well - see `function nineteen()` example below. 
-![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
-![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
+  - Key Colour Bug Add Colours:
+  ![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
+  - Key Colour Bug Clear Colours:
+  ![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
 
 ### ***Known Bugs***
 
--   XXX
+- The iframe containing the sheet music on the Sheet Music Page doesn't always load, requiring a hard refresh (ctrl + shift + R) - see example below. Chrome DevTools revealed the issue being that `<!DOCTYPE html>` hadn't been called and the site was therefore being loaded in Quirks Mode - see example below. However, `<!DOCTYPE html>` is present on all html pages, and this issue could therefore not be resolved. 
+  - iframe Bug:
+  ![iframe Bug](assets/images/bug-iframe.png)
+  - iframe Bug Quirks Mode:
+  ![iframe Bug Quirks Mode](assets/images/bug-iframe-quirks-mode.png)
 
 ## __Deployment__
 
