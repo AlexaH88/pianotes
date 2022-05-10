@@ -802,3 +802,26 @@ function loseGame() {
     loseCounter.innerHTML = loseScore;
     resultMessage.innerHTML = "Lose!";
 }
+
+// media queries
+
+// 1000px and down
+const mediaQuery = window.matchMedia('(max-width: 1000px)')
+
+if (mediaQuery.matches) {
+    function playChallenge() {
+        win = false;
+        order = [];
+        playerOrder = [];
+        keyLights = 0;
+        intervalId = 0;
+        round = 1;
+        roundCounter.innerHTML = 1;
+        correct = true;
+        for (let i = 0; i < 5; i++) {
+            order.push(Math.floor(Math.random() * 12) + 1);
+        }
+        computerTurn = true;
+        intervalId = setInterval(gameTurn, 1000);
+    }
+}
