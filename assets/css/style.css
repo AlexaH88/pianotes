@@ -245,6 +245,10 @@ section li {
     background-color: #5e17eb;
 }
 
+.active span {
+    background-color: #5e17eb;
+}
+
 /* sheet music page */
 .vertical-section audio {
     margin-bottom: 3rem;
