@@ -1,3 +1,15 @@
+// hamburger menu
+function hamburgerButton() {
+    let navLinks = document.getElementById('nav-links');
+    let hamburgerNav = document.getElementById('hamburger-nav');
+
+    if (hamburgerNav.style.display === "block") {
+        navLinks.style.display = "none";
+    } else {
+        navLinks.style.display = "block";
+    }
+};
+
 // virtual piano freestyle mode
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 

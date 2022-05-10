@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="The PiaNotes website has been developed for anyone interested in music, piano, and playing mini-games online. The user can play a virtual piano, challenge themselves in a Simon Says type mini-game against the computer, play along to a selection of sheet music, and find out how to use the site on a dedicated instructions page.">
-    <meta name="keywords"
-        content="Virtual Piano, Piano, Play, Game, Challenge, Simon Game, Music">
+    <meta name="keywords" content="Virtual Piano, Piano, Play, Game, Challenge, Simon Game, Music">
     <meta name="author" content="Alexa Hendry">
 
     <!-- site title and favicon -->
@@ -31,8 +30,10 @@
         <a href="index.html" aria-label="Link to the site's landing page">
             <h1><i class="fa-solid fa-music" aria-hidden="true"></i> PiaNotes</h1>
         </a>
+
+        <!-- 800px screen width and up version -->
         <!-- navigation links -->
-        <nav>
+        <nav id="site-nav">
             <ul>
                 <!-- link to Play page -->
                 <li class="nav-list">
@@ -53,6 +54,41 @@
                     </a>
                 </li>
             </ul>
+        </nav>
+
+        <!-- 800px screen width and down version -->
+        <!-- navigation links -->
+        <nav id="hamburger-nav">
+            <div id="nav-links">
+                <ul>
+                    <!-- link to Play page -->
+                    <li class="nav-list">
+                        <a href="index.html" aria-label="Link to the Play page" class="nav-active">
+                            <h2>Play</h2>
+                        </a>
+                    </li>
+                    <!-- link to Sheet Music page -->
+                    <li class="nav-list">
+                        <a href="sheet-music.html" aria-label="Link to the Sheet Music page">
+                            <h2>Sheet Music</h2>
+                        </a>
+                    </li>
+                    <!-- link to Instructions page -->
+                    <li class="nav-list">
+                        <a href="instructions.html" aria-label="Link to the Instructions page">
+                            <h2>Instructions</h2>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- hamburger button -->
+            <div>
+                <a href="javascript:void(0);" class="icon" onclick="hamburgerButton()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
         </nav>
     </header>
 
@@ -100,30 +136,54 @@
 
                 <!-- keys -->
                 <div id="virtual-piano">
-                    <div data-note="C1" class="key white" id="key-c1"><i class="fa-solid fa-keyboard" id="icon-z"></i><span>Z</span></div>
-                    <div data-note="Db1" class="key black" id="key-db1"><i class="fa-solid fa-keyboard" id="icon-q"></i><span>Q</span></div>
-                    <div data-note="D1" class="key white" id="key-d1"><i class="fa-solid fa-keyboard" id="icon-x"></i><span>X</span></div>
-                    <div data-note="Eb1" class="key black" id="key-eb1"><i class="fa-solid fa-keyboard" id="icon-w"></i><span>W</span></div>
-                    <div data-note="E1" class="key white" id="key-e1"><i class="fa-solid fa-keyboard" id="icon-c"></i><span>C</span></div>
-                    <div data-note="F1" class="key white" id="key-f1"><i class="fa-solid fa-keyboard" id="icon-v"></i><span>V</span></div>
-                    <div data-note="Gb1" class="key black" id="key-gb1"><i class="fa-solid fa-keyboard" id="icon-e"></i><span>E</span></div>
-                    <div data-note="G1" class="key white" id="key-g1"><i class="fa-solid fa-keyboard" id="icon-b"></i><span>B</span></div>
-                    <div data-note="Ab1" class="key black" id="key-ab1"><i class="fa-solid fa-keyboard" id="icon-r"></i><span>R</span></div>
-                    <div data-note="A1" class="key white" id="key-a1"><i class="fa-solid fa-keyboard" id="icon-n"></i><span>N</span></div>
-                    <div data-note="Bb1" class="key black" id="key-bb1"><i class="fa-solid fa-keyboard" id="icon-t"></i><span>T</span></div>
-                    <div data-note="B1" class="key white" id="key-b1"><i class="fa-solid fa-keyboard" id="icon-m"></i><span>M</span></div>
-                    <div data-note="C2" class="key white" id="key-c2"><i class="fa-solid fa-keyboard" id="icon-a"></i><span>A</span></div>
-                    <div data-note="Db2" class="key black" id="key-db2"><i class="fa-solid fa-keyboard" id="icon-y"></i><span>Y</span></div>
-                    <div data-note="D2" class="key white" id="key-d2"><i class="fa-solid fa-keyboard" id="icon-s"></i><span>S</span></div>
-                    <div data-note="Eb2" class="key black" id="key-eb2"><i class="fa-solid fa-keyboard" id="icon-u"></i><span>U</span></div>
-                    <div data-note="E2" class="key white" id="key-e2"><i class="fa-solid fa-keyboard" id="icon-d"></i><span>D</span></div>
-                    <div data-note="F2" class="key white" id="key-f2"><i class="fa-solid fa-keyboard" id="icon-f"></i><span>F</span></div>
-                    <div data-note="Gb2" class="key black" id="key-gb2"><i class="fa-solid fa-keyboard" id="icon-i"></i><span>I</span></div>
-                    <div data-note="G2" class="key white" id="key-g2"><i class="fa-solid fa-keyboard" id="icon-g"></i><span>G</span></div>
-                    <div data-note="Ab2" class="key black" id="key-ab2"><i class="fa-solid fa-keyboard" id="icon-o"></i><span>O</span></div>
-                    <div data-note="A2" class="key white" id="key-a2"><i class="fa-solid fa-keyboard" id="icon-h"></i><span>H</span></div>
-                    <div data-note="Bb2" class="key black" id="key-bb2"><i class="fa-solid fa-keyboard" id="icon-p"></i><span>P</span></div>
-                    <div data-note="B2" class="key white" id="key-b2"><i class="fa-solid fa-keyboard" id="icon-j"></i><span>J</span></div>
+                    <div data-note="C1" class="key white" id="key-c1"><i class="fa-solid fa-keyboard"
+                            id="icon-z"></i><span>Z</span></div>
+                    <div data-note="Db1" class="key black" id="key-db1"><i class="fa-solid fa-keyboard"
+                            id="icon-q"></i><span>Q</span></div>
+                    <div data-note="D1" class="key white" id="key-d1"><i class="fa-solid fa-keyboard"
+                            id="icon-x"></i><span>X</span></div>
+                    <div data-note="Eb1" class="key black" id="key-eb1"><i class="fa-solid fa-keyboard"
+                            id="icon-w"></i><span>W</span></div>
+                    <div data-note="E1" class="key white" id="key-e1"><i class="fa-solid fa-keyboard"
+                            id="icon-c"></i><span>C</span></div>
+                    <div data-note="F1" class="key white" id="key-f1"><i class="fa-solid fa-keyboard"
+                            id="icon-v"></i><span>V</span></div>
+                    <div data-note="Gb1" class="key black" id="key-gb1"><i class="fa-solid fa-keyboard"
+                            id="icon-e"></i><span>E</span></div>
+                    <div data-note="G1" class="key white" id="key-g1"><i class="fa-solid fa-keyboard"
+                            id="icon-b"></i><span>B</span></div>
+                    <div data-note="Ab1" class="key black" id="key-ab1"><i class="fa-solid fa-keyboard"
+                            id="icon-r"></i><span>R</span></div>
+                    <div data-note="A1" class="key white" id="key-a1"><i class="fa-solid fa-keyboard"
+                            id="icon-n"></i><span>N</span></div>
+                    <div data-note="Bb1" class="key black" id="key-bb1"><i class="fa-solid fa-keyboard"
+                            id="icon-t"></i><span>T</span></div>
+                    <div data-note="B1" class="key white" id="key-b1"><i class="fa-solid fa-keyboard"
+                            id="icon-m"></i><span>M</span></div>
+                    <div data-note="C2" class="key white" id="key-c2"><i class="fa-solid fa-keyboard"
+                            id="icon-a"></i><span>A</span></div>
+                    <div data-note="Db2" class="key black" id="key-db2"><i class="fa-solid fa-keyboard"
+                            id="icon-y"></i><span>Y</span></div>
+                    <div data-note="D2" class="key white" id="key-d2"><i class="fa-solid fa-keyboard"
+                            id="icon-s"></i><span>S</span></div>
+                    <div data-note="Eb2" class="key black" id="key-eb2"><i class="fa-solid fa-keyboard"
+                            id="icon-u"></i><span>U</span></div>
+                    <div data-note="E2" class="key white" id="key-e2"><i class="fa-solid fa-keyboard"
+                            id="icon-d"></i><span>D</span></div>
+                    <div data-note="F2" class="key white" id="key-f2"><i class="fa-solid fa-keyboard"
+                            id="icon-f"></i><span>F</span></div>
+                    <div data-note="Gb2" class="key black" id="key-gb2"><i class="fa-solid fa-keyboard"
+                            id="icon-i"></i><span>I</span></div>
+                    <div data-note="G2" class="key white" id="key-g2"><i class="fa-solid fa-keyboard"
+                            id="icon-g"></i><span>G</span></div>
+                    <div data-note="Ab2" class="key black" id="key-ab2"><i class="fa-solid fa-keyboard"
+                            id="icon-o"></i><span>O</span></div>
+                    <div data-note="A2" class="key white" id="key-a2"><i class="fa-solid fa-keyboard"
+                            id="icon-h"></i><span>H</span></div>
+                    <div data-note="Bb2" class="key black" id="key-bb2"><i class="fa-solid fa-keyboard"
+                            id="icon-p"></i><span>P</span></div>
+                    <div data-note="B2" class="key white" id="key-b2"><i class="fa-solid fa-keyboard"
+                            id="icon-j"></i><span>J</span></div>
                 </div>
 
             </div>

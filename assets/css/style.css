@@ -130,6 +130,10 @@ a:hover {
     color: #5e17eb;
 }
 
+#hamburger-nav {
+    display: none;
+}
+
 /* main page sections */
 .main-page-container {
     margin-top: 150px;
@@ -431,6 +435,20 @@ footer ul {
     .black {
         margin-left: -40px;
         margin-right: -40px;
+    }
+}
+
+/* 800px and down */
+@media only screen and (max-width: 800px) {
+    
+    /* header */
+    #site-nav, 
+    #nav-links {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: block;
     }
 }
 
