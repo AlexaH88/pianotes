@@ -113,29 +113,15 @@
     - Greensleeves - Unknown Composer
     - Happy Birthday - Patty & Mildred J. Hill
 
-- #### Machine Catalogue Page
+- #### Instructions Page
 
-  ![Machine Catalogue Page](assets/images/page-1-machine-catalogue.png)
-  ![Machine Catalogue Page](assets/images/page-2-machine-catalogue.png)
-  ![Machine Catalogue Page](assets/images/page-3-machine-catalogue.png)
+  ![Instructions Page](assets/images/page-instructions.png)
 
-  - The Machine Catalogue page allows the user to find out more about the enemy machines in the game, as well as tips on how to beat them in both the first and second intallments of the Horizon games. 
+  - The Intructions page serves to inform the user on how to play and how to use the virtual piano. 
 
-  - The page is split into three sections:
-    - Background information on what the machines are in the games and how they were developed. 
-    - Videos introducing the user to the different machine types that exist in both games (Zero Dawn and Forbidden West).
-    - A catalogue of six machines that appear in both games, including images, machine names, and info on their strenghts, weaknesses and cauldron locations that allow them to be overriden and controlled. This valuable information is helpful to the user to enable them to beat the machines and master the games. 
-
-- #### Sign Up Page
-
-  ![Sign Up Page](assets/images/page-sign-up.png)
-
-  - The Sign Up page encourages the user to join the Horizon gaming community, and to connect with fellow gamers, allowing for social connection. Please note that the community and newsletter are not currently functional on this project and would be implemented in future developments. 
-
-  - The page contains one section, in the shape of a form that covers three areas:
-    - User details, including first name, last name and email address.
-    - A survey to find out more about the user's profile, and including age, gender, gaming hours, and gaming style. 
-    - The option to sign up for the newsletter. 
+  - The page is split into two sections:
+    - How to Play - explaining to the user the difference between the two play modes and how to access them, and the use of the sheet music. 
+    - Using the Virtual Piano - explaining to the user in which ways the piano can be played on various devices. 
 
 - #### The Footer
 
