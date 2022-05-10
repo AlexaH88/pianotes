@@ -83,7 +83,7 @@
 
   - A hover effect of the text turning purple is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
 
-  - The navigation bar was created with HTML and CSS only and is fully responsive across devices.
+  - The navigation bar was created with HTML, CSS and JavaScript and is fully responsive across devices.
     ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
 
 - #### Play Page
@@ -420,6 +420,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - The favicon code was taken from [W3Schools](https://www.w3schools.com/), specifically from [HTML Favicon](https://www.w3schools.com/html/html_favicon.asp) and adapted.
 
 - The JavaScript media queries were taken from [CSS Tricks](https://css-tricks.com/), specifically [this article](https://css-tricks.com/working-with-javascript-media-queries/), and adapted. 
+
+- The code for the hamburger menu on 800px width screens and smaller was taken from [W3 Schools](https://www.w3schools.com/), specifically [this section](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar), and adapted. 
 
 ### ***Content***
 

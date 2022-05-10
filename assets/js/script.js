@@ -1,4 +1,5 @@
 // hamburger menu
+// This code was taken from W3 Schools and adapted - see details in the README
 function hamburgerButton() {
     let navLinks = document.getElementById('nav-links');
     let mainPageContainer = document.getElementsByClassName('main-page-container');
