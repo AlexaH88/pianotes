@@ -79,49 +79,39 @@
 
   - In order to make navigation easier for the user, the navigation bar is in a fixed position, meaning that it remains at the top of the page as the user scrolls down.
 
-  - The navigation bar follows the same style and size as the footer, and appears in the same format on all four pages - this allows for consistency throughout the site.
+  - The navigation bar follows the same style as the footer, and appears in the same format on all four pages - this allows for consistency throughout the site.
 
   - A hover effect of the text turning purple is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
 
   - The navigation bar was created with HTML and CSS only and is fully responsive across devices.
     ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
 
-- #### Hero Images
+- #### Play Page
 
-  - Each page has its own hero image to immediately immerse the user into the breath-taking world of the Horizon games - whether it be existing fans of the games or newcomers coming to learn more about the world of Horizon.
+  ![Play Page](assets/images/page-play.png)
 
-    - About The Games Hero Image:
-    ![About The Games Hero Image](assets/images/hero-image-about-the-games.jpg)
-
-    - Game Developer History Hero Image:
-    ![Game Developer History Hero Image](assets/images/hero-image-developer-history.jpg)
-
-    - Machine Catalogue Hero Image:
-    ![Machine Catalogue Hero Image](assets/images/hero-image-machine-catalogue.jpg)
-
-    - Sign Up Hero Image:
-    ![Sign Up Hero Image](assets/images/hero-image-sign-up.jpg)
-
-- #### About The Games Page
-
-  ![About The Games Page](assets/images/page-about-the-games.png)
-
-  - The About The Games page is the landing page of the website and as the user's first port of call serves to inform the user about the Horizon games franchise.
+  - The Play page is the landing page of the website and as the user's first port of call serves as the main purpose of the site, namely to be able to play a virtual piano - on Freestyle mode, or on Challenge mode. 
   
-  - The page is split into three sections:
-    - Information about the games in general, detailing what type of gaming experience the player can expect.  
-    - A synopsis on the first game release, Zero Dawn, including a video trailer of the game. 
-    - A synopsis on the second game release, Forbidden West, including a video trailer of the game.
-
-- #### Game Developer History Page
-
-  ![Game Developer History Page](assets/images/page-game-developer-history.png)
-
-  - The Game Developer History page serves to provide background to the user about who created the games and how they came to exist.
-
   - The page is split into two sections:
-    - A timeline of key dates leading to the creation of the developer of the games, Guerrilla Games.
-    - A detailed history of how the game studio, Guerrilla Games, came to be.  
+    - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!".
+    - The virtual piano, including computer keyboard keys to be used on non-touchscreen devices. 
+
+- #### Sheet Music Page
+
+  ![Sheet Music Page](assets/images/page-sheet-music.png)
+
+  - The Sheet Music page allows the user to view a selection of sheet music that they can play along to on the piano, by opening the page in a separate tab. 
+
+  - Each piece of sheet music includes the corresponding audio file that users can listen to in order to familiarise themselves with the song. 
+
+  - The page has a choice of seven songs:
+    - The Entertainer - Scott Joplin
+    - Für Elise - Ludwig van Beethoven
+    - Clair de Lune - Claude Debussy
+    - Canon in D - Johann Pachelbel
+    - Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky
+    - Greensleeves - Unknown Composer
+    - Happy Birthday - Patty & Mildred J. Hill
 
 - #### Machine Catalogue Page
 
@@ -453,6 +443,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
   - [Clair de Lune - Claude Debussy](https://musescore.com/user/19710/scores/58553) by [ClassicMan](https://musescore.com/classicman)
   - [Canon in D - Johann Pachelbel](https://musescore.com/user/1809056/scores/1019991) by [lemontart](https://musescore.com/user/1809056)
   - [Dance of the Sugar Plum Fairy - Pyotr Ilyich Tchaikovsky](https://musescore.com/user/3435661/scores/2899321) by [Nohpets](https://musescore.com/user/3435661)
+  - [Greensleeves - Unknown Composer](https://musescore.com/user/35704259/scores/6340178) by [DominiqueMakowski](https://musescore.com/dominiquemakowski
   - [Happy Birthday - Patty & Mildred J. Hill](https://musescore.com/user/173585/scores/166951) by [wildpig](https://musescore.com/user/173585)
 
 - The piano notes audio was recorded by the site creator [Alexa Hendry](https://github.com/AlexaH88) on [Ableton Live](https://www.ableton.com/en/live/) with the [Grand Piano](https://www.ableton.com/en/packs/grand-piano/) sound. 
