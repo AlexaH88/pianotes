@@ -40,14 +40,16 @@ h2 {
 section,
 li,
 .black,
-.white {
+.white,
+span {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
 }
 
-.black {
+.black span {
     font-size: 2.5rem;
     color: #FFFFFF;
+    background-color: #000000;
 }
 
 .black i {
@@ -56,9 +58,10 @@ li,
     background-color: #000000;
 }
 
-.white {
+.white span {
     font-size: 2.5rem;
     color: #000000;
+    background-color: #FFFFFF;
 }
 
 .white i {
@@ -415,5 +418,16 @@ ul {
     .black {
         margin-left: -40px;
         margin-right: -40px;
+    }
+}
+
+/* 768px and down (tablet) */
+@media only screen and (max-width: 768px) {
+    #virtual-piano i {
+        display: none;
+    }
+
+    #virtual-piano span {
+        display: none;
     }
 }

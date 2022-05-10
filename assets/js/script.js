@@ -807,7 +807,7 @@ function loseGame() {
 // media queries
 
 // 1000px and down
-const mediaQuery = window.matchMedia('(max-width: 1000px)')
+const mediaQuery = window.matchMedia('(max-width: 1000px)');
 
 if (mediaQuery.matches) {
     function playChallenge() {
@@ -825,4 +825,4 @@ if (mediaQuery.matches) {
         computerTurn = true;
         intervalId = setInterval(gameTurn, 1000);
     }
-}
+};
