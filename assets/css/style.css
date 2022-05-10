@@ -456,10 +456,6 @@ footer ul {
         right: 100px;
         top: 35px;
     }
-    
-    #hamburger-icon a:hover {
-        color: #FFFFFF;
-    }
 
     header ul {
         flex-direction: column;

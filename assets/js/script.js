@@ -1,9 +1,8 @@
 // hamburger menu
 function hamburgerButton() {
     let navLinks = document.getElementById('nav-links');
-    let hamburgerNav = document.getElementById('hamburger-nav');
 
-    if (hamburgerNav.style.display === "block") {
+    if (navLinks.style.display === "block") {
         navLinks.style.display = "none";
     } else {
         navLinks.style.display = "block";
