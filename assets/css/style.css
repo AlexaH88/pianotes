@@ -230,7 +230,7 @@ section li {
     height: 240px;
     margin-left: -40px;
     margin-right: -40px;
-    z-index: 2;
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: flex-start;
