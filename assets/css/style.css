@@ -133,7 +133,7 @@ a:hover {
 }
 
 /* main page sections */
-.main-page-container {
+#main-page-container {
     margin-top: 150px;
     justify-content: center;
     align-items: center;
