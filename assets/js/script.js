@@ -11,4 +11,4 @@ function hamburgerButton() {
         navLinks.style.display = "block";
         mainPageContainer.style.marginTop = "400px";
     }
-};
+}

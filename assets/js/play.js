@@ -30,15 +30,17 @@ function playFreestyle() {
     });
 
     // keydown event for piano keys
-    document.addEventListener('keydown', function (event) {
-        if (event.repeat) return;
-        let pianoKey = event.key;
-        let whiteKeyIndex = WHITE_KEYS.indexOf(pianoKey);
-        let blackKeyIndex = BLACK_KEYS.indexOf(pianoKey);
+    function keydown() {
+        document.addEventListener('keydown', function (event) {
+            if (event.repeat) return;
+            let pianoKey = event.key;
+            let whiteKeyIndex = WHITE_KEYS.indexOf(pianoKey);
+            let blackKeyIndex = BLACK_KEYS.indexOf(pianoKey);
 
-        if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
-        if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
-    });
+            if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
+            if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
+        });
+    }
 
     // play audio and define interaction with piano keys
     function playNote(key) {
@@ -104,7 +106,7 @@ let resultMessage = document.getElementById('result-message');
 let freestyleButton = document.getElementById('freestyle-button');
 let challengeButton = document.getElementById('challenge-button');
 
-// assign individual piano keys to variables
+// assign individual piano keys to variables for clicking
 let c1 = document.getElementById('key-c1');
 let db1 = document.getElementById('key-db1');
 let d1 = document.getElementById('key-d1');
@@ -155,6 +157,32 @@ let noteAb2 = document.getElementById('Ab2');
 let noteA2 = document.getElementById('A2');
 let noteBb2 = document.getElementById('Bb2');
 let noteB2 = document.getElementById('B2');
+
+// assign individual piano keys to variables for keydown
+let z = ['z'];
+let x = ['x'];
+let c = ['c'];
+let v = ['v'];
+let b = ['b'];
+let n = ['n'];
+let m = ['m'];
+let a = ['a'];
+let s = ['s'];
+let d = ['d'];
+let f = ['f'];
+let g = ['g'];
+let h = ['h'];
+let j = ['j'];
+let q = ['q'];
+let w = ['w'];
+let e = ['e'];
+let r = ['r'];
+let t = ['t'];
+let y = ['y'];
+let u = ['u'];
+let i = ['i'];
+let o = ['o'];
+let p = ['p'];
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
@@ -764,6 +792,19 @@ b2.addEventListener('click', function (event) {
     }
 });
 
+// event listeners for keydown on each piano key
+// event listener for z computer key keydown
+c1.addEventListener('keydown', function (event) {
+    if (challengeOn) {
+        playerOrder.push(1);
+        check();
+        one();
+        if (!win) {
+            setTimeout(function () {}, 300);
+        }
+    }
+});
+
 // check correct key press function
 function check() {
     if (playerOrder[playerOrder.length - 1] !== order[playerOrder.length - 1])
@@ -943,4 +984,4 @@ if (mediaQuery.matches) {
         computerTurn = true;
         intervalId = setInterval(gameTurn, 1000);
     }
-};
+}

@@ -178,6 +178,7 @@ section li {
 .horizontal-section button:hover {
     border: solid 5px #000000;
     color: #5e17eb;
+    cursor: pointer;
 }
 
 #round {
@@ -310,6 +311,35 @@ section li {
 .instruction-graphic img {
     width: 60%;
     height: auto;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popup-text {
+    visibility: hidden;
+    width: 160px;
+    background-color: #5e17eb;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.popup .show {
+    visibility: visible;
 }
 
 /* footer */
