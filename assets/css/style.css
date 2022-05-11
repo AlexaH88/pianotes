@@ -580,3 +580,29 @@ footer ul {
         justify-content: space-evenly;
     }
 }
+
+/* 430px and down */
+@media only screen and (max-width: 430px) {
+
+    /* header */
+    h1 {
+        font-size: 5rem;
+    }
+
+    header i {
+        font-size: 3.6rem;
+    }
+}
+
+/* 390px and down */
+@media only screen and (max-width: 390px) {
+
+    /* header */
+    h1 {
+        font-size: 4rem;
+    }
+    
+    header i {
+        font-size: 2.6rem;
+    }
+}
