@@ -1,5 +1,5 @@
 // wait for the DOM to finish loading before running freestyle mode
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     playFreestyle();
     freestyleButton.style.color = "#5e17eb";
     freestyleButton.style.border = "solid 5px #000000";
@@ -163,32 +163,6 @@ let noteAb2 = document.getElementById('Ab2');
 let noteA2 = document.getElementById('A2');
 let noteBb2 = document.getElementById('Bb2');
 let noteB2 = document.getElementById('B2');
-
-// assign individual piano keys to variables for keydown
-let z = ['z'];
-let x = ['x'];
-let c = ['c'];
-let v = ['v'];
-let b = ['b'];
-let n = ['n'];
-let m = ['m'];
-let a = ['a'];
-let s = ['s'];
-let d = ['d'];
-let f = ['f'];
-let g = ['g'];
-let h = ['h'];
-let j = ['j'];
-let q = ['q'];
-let w = ['w'];
-let e = ['e'];
-let r = ['r'];
-let t = ['t'];
-let y = ['y'];
-let u = ['u'];
-let i = ['i'];
-let o = ['o'];
-let p = ['p'];
 
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
@@ -792,19 +766,6 @@ b2.addEventListener('click', function (event) {
         playerOrder.push(24);
         check();
         twentyFour();
-        if (!win) {
-            setTimeout(function () {}, 300);
-        }
-    }
-});
-
-// event listeners for keydown on each piano key
-// event listener for z computer key keydown
-c1.addEventListener('keydown', function (event) {
-    if (challengeOn) {
-        playerOrder.push(1);
-        check();
-        one();
         if (!win) {
             setTimeout(function () {}, 300);
         }

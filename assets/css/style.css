@@ -9,6 +9,12 @@
     padding: 0;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* flexbox code taken from Stack Overflow - more details in the README */
 body {
     height: 100vh;
@@ -117,7 +123,6 @@ header ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
 }
 
 .nav-list {
@@ -199,13 +204,10 @@ section li {
     border: solid 5px #5e17eb;
     border-radius: 10px;
     padding: 10px;
-    height: 100px;
+    height: 140px;
     width: 500px;
-    text-align: center;
-}
-
-.border table {
-    margin-left: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 .horizontal-section th,
@@ -389,7 +391,7 @@ footer ul {
 /* 1300px and down */
 @media only screen and (max-width: 1300px) {
 
-    /* play page */    
+    /* play page */
     .black {
         margin-left: -30px;
         margin-right: -30px;
