@@ -240,24 +240,21 @@
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
-  [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the Performance category on some pages that came in the yellow range. Compressing the image size resulted in pixelated images and was therefore dismissed and a lower performance rating accepted. 
-  - The About The Games Page scored 77 on mobile.
-  - The Game Developer History Page scored 65 on mobile.
-  - The Sign Up Page scored 80 on mobile and 84 on desktop.
+  [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test Performance, Accessibility, Best Practices and SEO. All tests performed in the 90-100 green score, except for in the SEO category on some pages that came just below in the yellow range. 
+  - The Play page scored 89 on desktop.
+  - The Sheet Music page scored 89 on desktop.
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [About The Games Page](assets/testing/testing-lighthouse-index-desktop.pdf)
-  - [Game Developer History Page](assets/testing/testing-lighthouse-developer-history-desktop.pdf)
-  - [Machine Catalogue Page](assets/testing/testing-lighthouse-machine-catalogue-desktop.pdf)
-  - [Sign Up Page](assets/testing/testing-lighthouse-sign-up-desktop.pdf)
+  - [Play Page](assets/testing/testing-lighthouse-index-desktop.pdf)
+  - [Sheet Music Page](assets/testing/testing-sheet-music-desktop.pdf)
+  - [Instructions Page](assets/testing/testing-lighthouse-instructions-desktop.pdf)
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
-  - [About The Games Page](assets/testing/testing-lighthouse-index-mobile.pdf)
-  - [Game Developer History Page](assets/testing/testing-lighthouse-developer-history-mobile.pdf)
-  - [Machine Catalogue Page](assets/testing/testing-lighthouse-machine-catalogue-mobile.pdf)
-  - [Sign Up Page](assets/testing/testing-lighthouse-sign-up-mobile.pdf)
+  - [Play Page](assets/testing/testing-lighthouse-index-mobile.pdf)
+  - [Sheet Music Page](assets/testing/testing-lighthouse-sheet-music-mobile.pdf)
+  - [Instructions Page](assets/testing/testing-lighthouse-instructions-mobile.pdf)
 
 - #### Further Accessibility Testing
 
