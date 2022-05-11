@@ -388,17 +388,16 @@ footer ul {
 
 /* media queries */
 
-/* 1300px and down */
-@media only screen and (max-width: 1300px) {
-
+/* 1440px and down (laptop) */
+@media only screen and (max-width: 1440px) {
     /* play page */
     .black {
         margin-left: -30px;
         margin-right: -30px;
     }
 
-    .black,
-    .white {
+    .black span,
+    .white span {
         font-size: 2rem;
     }
 
@@ -406,6 +405,10 @@ footer ul {
     .white i {
         font-size: 1.6rem;
     }
+}
+
+/* 1300px and down */
+@media only screen and (max-width: 1300px) {
 
     /* footer */
     footer li {
