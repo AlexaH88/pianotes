@@ -429,7 +429,7 @@ footer ul {
     #main-page-container {
         margin-top: 250px;
     }
-    
+
     .vertical-section {
         margin: 0rem 0rem 2rem;
     }
@@ -511,8 +511,8 @@ footer ul {
 
     #hamburger-icon {
         position: absolute;
-        right: 100px;
-        top: 35px;
+        right: 40px;
+        top: 33px;
     }
 
     header ul {
@@ -527,6 +527,8 @@ footer ul {
 
 /* 768px and down (tablet) */
 @media only screen and (max-width: 768px) {
+
+    /* play page */
     #virtual-piano i {
         display: none;
     }
@@ -536,16 +538,15 @@ footer ul {
     }
 }
 
-/* 580px and down (tablet) */
-@media only screen and (max-width: 580px) {
-    .border {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 30px 0px;
+/* 600px and down */
+@media only screen and (max-width: 600px) {
+
+    /* header */
+    header {
+        align-items: flex-start;
     }
 
-    .border table {
-        margin-left: 0;
+    header ul {
+        align-items: flex-start;
     }
 }
