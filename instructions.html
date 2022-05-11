@@ -108,16 +108,42 @@
                     <h2>How to Play</h2>
                     <!-- the font awesome icons as bullet points code was taken from Font Awesome - details can be found in the README -->
                     <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Freestlye Mode: click on
-                            the Freestyle button on the Play page to play the piano freely as you like.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Sheet Music: open the
-                            sheet music page
-                            in
-                            a separate tab to follow along. You can also listen to an audio sample of the song if you're
-                            unfamiliar with the music.</li>
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Challenge Mode: click on
-                            the Challenge button on the Play page to play a 'Simon' style
-                            game against the computer. You can find the rules of the game <div class="popup" onclick="rulesPopup()">here.<span class="popup-text" id="rules-popup">Simon Game Rules</span></div></li>
+                        <!-- freestyle mode -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Freestlye Mode: click on the Freestyle button on the Play page to play the piano
+                            freely as you like.
+                        </li>
+                        <!-- sheet music -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Sheet Music: open the sheet music page in a separate tab to follow along. You can
+                            also listen to an audio sample of the song if you're unfamiliar with the music.
+                        </li>
+                        <!-- challenge mode -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Challenge Mode: click on the Challenge button on the Play page to play a 'Simon'
+                            style game against the computer. You can find the rules of the game
+                            <div class="popup" onclick="rulesPopup()">here.
+                                    <ol class="popup-text" id="rules-popup">
+                                        <li>The computer plays a note on the piano, which lights up in purple.</li>
+                                        <li>The user copies the note by clicking or using the keyboard on the key.</li>
+                                        <li>The computer plays the first note, and adds a second note.</li>
+                                        <li>The user plays the first and second note.</li>
+                                        <li>This continues until:
+                                            <ol>
+                                                <li>The user achieves five correct notes in a row and wins the game.</li>
+                                                <li>The user makes a mistake and the computer wins the game.</li>
+                                            </ol>
+                                        </li>
+                                        <li>The game starts again, unless the user selects Freestyle mode.</li>
+                                    </ol>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -133,20 +159,25 @@
                     <h2>Using the Virtual Piano</h2>
                     <!-- the font awesome icons as bullet points code was taken from Font Awesome - details can be found in the README -->
                     <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Computer mouse: click on
-                            the piano keys with
-                            your
-                            mouse to play it.
+                        <!-- computer mouse -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Computer mouse: click on the piano keys with your mouse to play it.
                         </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Computer keyboard: use
-                            your computer
-                            keyboard to play the piano keys, as shown on each piano key next to the keyboard symbol <i
-                                class="fa-solid fa-keyboard"></i>.
+                        <!-- computer keyboard -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Computer keyboard: use your computer keyboard to play the piano keys, as shown on
+                            each piano key next to the keyboard symbol <i class="fa-solid fa-keyboard"></i>.
                         </li>
-                        <li><span class="fa-li"><i class="fa-solid fa-compact-disc"></i></span>Touchscreen: tap the keys
-                            on a
-                            touchscreen
-                            device.</li>
+                        <!-- touchscreen -->
+                        <li>
+                            <span class="fa-li">
+                                <i class="fa-solid fa-compact-disc"></i>
+                            </span>Touchscreen: tap the keys on a touchscreen device.
+                        </li>
                     </ul>
                 </div>
             </section>
