@@ -268,7 +268,7 @@
 
   - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsinator](https://www.responsinator.com/) were used to regularly check for any responsive design issues. Rather than only checking for specific device screen widths, I used DevTools to reduce the viewport width gradually and noted any and all issues for each width. My media queries are based on these specific pixel widths rather than typical viewport breakpoints to allow for an enjoyable experience for all users, on any devices they use. 
 
-  - The site is responsive down to 320px viewport widths, and in most cases even down to 280px.  
+  - The site is responsive down to 320px viewport widths.  
 
 ### ***Testing User Stories from User Experience (UX) Section***
 
@@ -342,17 +342,22 @@
 
 - Initially `style.backgroundColor` was used on the Challenge mode of the piano to achieve a purple coloured piano key as it was played - see example `function twenty()` below. This was followed by a `clearKeyLights function`, resetting the `style.backgroundColor` to white and black respectively - see `function clearKeyLights` below. This however caused a bug when switching to Freestyle mode after having played Challenge mode: the purple colour no longer appeared when playing the notes. This was due to the `style.backgroundColor` taking precedence over the `.active` class used on Freestyle mode. The bug was fixed by applying an `.active` class on the Challenge as well - see `function nineteen()` example below. 
   - Key Colour Bug Add Colours:
-  ![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
+  
+    ![Key Colour Bug Add Colours](assets/images/bug-key-colors-add-colours.png)
+  
   - Key Colour Bug Clear Colours:
-  ![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
+  
+    ![Key Colour Bug Clear Colours](assets/images/bug-key-colors-clear-colours.png)
 
 ### ***Known Bugs***
 
 - The iframe containing the sheet music on the Sheet Music Page doesn't always load, requiring a hard refresh (ctrl + shift + R) - see example below. Chrome DevTools revealed the issue being that `<!DOCTYPE html>` hadn't been called and the site was therefore being loaded in Quirks Mode - see example below. However, `<!DOCTYPE html>` is present on all html pages, and this issue could therefore not be resolved. 
+  
   - iframe Bug:
-  ![iframe Bug](assets/images/bug-iframe.png)
+    ![iframe Bug](assets/images/bug-iframe.png)
+  
   - iframe Bug Quirks Mode:
-  ![iframe Bug Quirks Mode](assets/images/bug-iframe-quirks-mode.png)
+    ![iframe Bug Quirks Mode](assets/images/bug-iframe-quirks-mode.png)
 
 ## __Deployment__
 
