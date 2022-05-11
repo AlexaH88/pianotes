@@ -223,16 +223,20 @@
 
 ## __Testing__
 
-### ***HTML and CSS Testing***
+### ***HTML, CSS and JavaScript Testing***
 
 -   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no HTML syntax errors in the project.
     - [Results index.html](assets/testing/testing-html-index.pdf)
-    - [Results game-developer-history.html](assets/testing/testing-html-game-developer-history.pdf)
-    - [Results machine-catalogue.html](assets/testing/testing-html-machine-catalogue.pdf)
-    - [Results sign-up.html](assets/testing/testing-html-sign-up.pdf)
+    - [Results sheet-music.html](assets/testing/testing-html-sheet-music.pdf)
+    - [Results instructions.html](assets/testing/testing-html-instructions.pdf)
 
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate every page of the project to ensure there were no CSS syntax errors in the project.
     - [Results style.css](assets/testing/testing-style-css.pdf)
+
+-   [JS Hint](https://jshint.com/) was used to validate every page of the project to ensure there were no JavScript errors in the project.
+    - [Results script.js](assets/testing/testing-js-script.pdf)
+    - [Results play.js](assets/testing/testing-js-play.pdf)
+    - [Results instructions.js](assets/testing/testing-js-instructions.pdf)
 
 ### ***Performance, Accessibility, Best Practices, and SEO Testing***
 
