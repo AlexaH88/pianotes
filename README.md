@@ -10,22 +10,21 @@
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the Horizon games.
-        2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and have fun playing a virtual piano and/or a mini game.
+        2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content, including on how to use the virtual piano and play the game. 
         3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to look up the machine catalogue page, to find out how to beat the enemy machines in the game.
-        2. As a Returning Visitor, I want to rewatch the YouTube videos on the About The Games page and the Machine Catalogue page, to immerse myself in the Horizon gaming world.
-        3. As a Returning Visitor, I want to sign up for the newsletter and join the community.
-        4. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
+        1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
+        2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
+        3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
 
     -   #### Frequent User Goals
 
-        1. As a Frequent User, I want to check to see if there are any newly added machines on the machine catalogue, as not all machines in the games are currently included.
-        2. As a Frequent User, I want to check to see if there are any new game releases planned.
-        3. As a Frequent User, I want to have more interaction with the community.
+        1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
+        2. As a Frequent User, I want to try and beat my personal best score on the challenge.
+        3. As a Frequent User, I want to see if any new sheet music had been added.
 
 -   ### ***Design***
     
