@@ -559,6 +559,21 @@ footer ul {
     .border table {
         margin: 0rem 2rem;
     }
+
+    #key-f1,
+    #key-gb1,
+    #key-g1,
+    #key-ab1,
+    #key-a1,
+    #key-bb1,
+    #key-b1 {
+        display: none;
+    }
+
+    .black {
+        margin-left: -60px;
+        margin-right: -60px;
+    }
 }
 
 /* 525px and down */
