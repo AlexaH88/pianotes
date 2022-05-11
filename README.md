@@ -287,7 +287,7 @@
         4. The Instructions page greets the user with visual aids in the form of graphics, as well as clear headings, making it immediately clear what each section is about. A popup explains in detail what the challenge rules are, ensuring the user doesn't get frustrated trying to play the game. 
 
     3. As a First Time Visitor, I want to locate the site creator's social media links to see their following on social media to determine how trusted and known they are.
-        
+
         1. The user can scroll to the bottom of any page on the site to locate social media links in the footer.
 
 -   #### Returning Visitor Goals
@@ -299,32 +299,33 @@
         3. The sheet music can be opened in a separate tab and used on a secondary computer screen to play along. It can also be downloaded, printed, and the zoom and page fit adjusted to enable a comfortable experience for the user. 
 
     2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
-        
+
         1. The navigation bar clearly highlights the Instructions page.
         2. In the How to Play section, a hover effect turning the word 'here' purple and the cursor to a pointer make it clear to the user that this is a clickable element.   
         3. The popup detailing the rules of the challenge is clean, easy to read and explains thorougly how to play.  
 
     3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
-        
+
         1. The footer contains links to the site creator's GitHub and Linkedin pages.
         2. Whichever link they click, it will be opened up in a new tab to ensure the user can easily get back to the website.
 
 -   #### Frequent User Goals
 
-    1. As a Frequent User, I want to check to see if there are any newly added machines on the machine catalogue, as not all machines in the games are currently included.
+    1. As a Frequent User, I want to attempt to play the sheet music songs using only the computer keyboard, without making any mistakes.
 
-        1. The user would already be comfortable with the website layout and can easily find the "Machine Catalogue" Page in the navigation bar.
-        2. Here they would quickly see if any new machines had been added to the list. 
+        1. The user would already be comfortable with the website layout and could easily find the Play and Sheet Music pages in the navigation bar.
+        2. The user would already be familiar with how to use the sheet music and listen to the corresponding audio. 
+        3. The computer keyboard keys to be used are clearly indicated on the piano keys, thus facilitating their use. 
 
-    2. As a Frequent User, I want to check to see if there are any new game releases planned.
+    2. As a Frequent User, I want to try and beat my personal best score on the challenge.
 
-        1. The user would already be comfortable with the website layout and can easily find the "About The Games" or "Game Developer History" Pages in the navigation bar. 
-        2. Here they would find updates on any new game news. 
+        1. The user would already be comfortable with the website layout and could easily find the Play Page in the navigation bar. 
+        2. Having noted their previous results, the user would easily be able to keep track of the clear and self-explanatory score board. 
 
-    3. As a Frequent User, I want to have more interaction with the community.
-        
-        1. The user would already be comfortable with the website layout and can easily find the "Sign Up" Page in the navigation bar.
-        2. Here they would find updates on any developments within the community, such as a user creation and login section, or a chat function between users.  
+    3. As a Frequent User, I want to see if any new sheet music had been added.
+
+        1. The user would already be comfortable with the website layout and could easily find the Sheet Music page in the navigation bar.
+        2. Here they would quickly see if any new sheet music had been added to the list.  
 
 ### ***Further Testing***
 
