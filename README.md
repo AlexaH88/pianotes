@@ -40,6 +40,7 @@
         - The yellow #FFDE59 and purple #5E17EB were chosen for their playfulness and retro feel, fitting with the theme of the site, all the while taking into account their compatibility with each other and the site as a whole. Black #000000 and white #FFFFFF are used as the third and fourth colours on the site as neutral tones.
 
     -   #### Typography
+
         - The [Orelega One](https://fonts.google.com/specimen/Orelega+One?query=orelega) and [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins) fonts are used across the site, with 'Orelega One' used for the headings and 'Poppins' used for the remaining text. 
 
         - The fonts were chosen for their playful and retro feel, taking into account the theme of the site. 
@@ -49,6 +50,7 @@
         - The piano and computer mouse icons on the Instructions Page were added to avoid having a text-heavy page and to create a playful and fun look and feel. The graphics use the same colours and style of the site in order to keep things coherent.  
 
 -   ### ***Wireframes***
+
     - The Play and Challenge pages at the wireframe stage were later combined to create one page (Play), with the ability to switch between Freestlye and Challenge modes. This was done in order to improve UX and repetitive code on two pages. 
 
     -   Play page:
@@ -81,7 +83,7 @@
 
   - The navigation bar follows the same style as the footer, and appears in the same format on all three pages - this allows for consistency throughout the site.
 
-  - A hover effect of the text turning purple is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
+  - A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the link is clickable. Once the link has been clicked, the text remains pruple to indicate to the user which page they find themselves on. 
 
   - The navigation bar was created with HTML, CSS and JavaScript and is fully responsive across devices.
     ![Responsive Nav Bar](assets/images/nav-bar-responsive.png)
@@ -93,8 +95,8 @@
   - The Play page is the landing page of the website and as the user's first port of call serves as the main purpose of the site, namely to be able to play a virtual piano - on Freestyle mode, or on Challenge mode. 
   
   - The page is split into two sections:
-    - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!".
-    - The virtual piano, including computer keyboard keys to be used on non-touchscreen devices. 
+    - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!". A hover effect of the buttons inversing colours, and the cursor becoming a pointer is included, allowing the user to understand that the button is clickable.
+    - The virtual piano, including computer keyboard keys to be used on non-touchscreen devices. A hover effect on the keys of the cursor becoming a pointer is included, allowing the user to understand that the keys is clickable.
 
 - #### Sheet Music Page
 
@@ -123,7 +125,7 @@
     - How to Play - explaining to the user the difference between the two play modes and how to access them, and the use of the sheet music. 
     - Using the Virtual Piano - explaining to the user in which ways the piano can be played on various devices. 
 
-  - The user can access a popup window in the How to Play section, detailing the rules of the challenge. 
+  - The user can access a popup window in the How to Play section, detailing the rules of the challenge. A hover effect of the text turning purple, and the cursor becoming a pointer is included, allowing the user to understand that the word 'here' is clickable. A popup was used to avoid overloading the page with text, and thus discouraging the user from reading the information. 
 
   - A piano and computer mouse graphic were used for each of the sections, to break up the text-heavy page and instantly make clear to the user what the secions are about. The graphics use the same colours and style of the site in order to keep things coherent.  
 
@@ -241,12 +243,14 @@
   - The Sign Up Page scored 80 on mobile and 84 on desktop.
 
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
   - [About The Games Page](assets/testing/testing-lighthouse-index-desktop.pdf)
   - [Game Developer History Page](assets/testing/testing-lighthouse-developer-history-desktop.pdf)
   - [Machine Catalogue Page](assets/testing/testing-lighthouse-machine-catalogue-desktop.pdf)
   - [Sign Up Page](assets/testing/testing-lighthouse-sign-up-desktop.pdf)
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
   - [About The Games Page](assets/testing/testing-lighthouse-index-mobile.pdf)
   - [Game Developer History Page](assets/testing/testing-lighthouse-developer-history-mobile.pdf)
   - [Machine Catalogue Page](assets/testing/testing-lighthouse-machine-catalogue-mobile.pdf)
