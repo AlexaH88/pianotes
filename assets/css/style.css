@@ -518,6 +518,11 @@ footer ul {
     header ul {
         flex-direction: column;
     }
+
+    /* sections */
+    #main-page-container {
+        margin-top: 150px;
+    }
 }
 
 /* 768px and down (tablet) */
