@@ -130,6 +130,32 @@ let a2 = document.getElementById('key-a2');
 let bb2 = document.getElementById('key-bb2');
 let b2 = document.getElementById('key-b2');
 
+// assign individual notes to variables 
+let noteC1 = document.getElementById('C1');
+let noteDb1 = document.getElementById('Db1');
+let noteD1 = document.getElementById('D1');
+let noteEb1 = document.getElementById('Eb1');
+let noteE1 = document.getElementById('E1');
+let noteF1 = document.getElementById('F1');
+let noteGb1 = document.getElementById('Gb1');
+let noteG1 = document.getElementById('G1');
+let noteAb1 = document.getElementById('Ab1');
+let noteA1 = document.getElementById('A1');
+let noteBb1 = document.getElementById('Bb1');
+let noteB1 = document.getElementById('B1');
+let noteC2 = document.getElementById('C2');
+let noteDb2 = document.getElementById('Db2');
+let noteD2 = document.getElementById('D2');
+let noteEb2 = document.getElementById('Eb2');
+let noteE2 = document.getElementById('E2');
+let noteF2 = document.getElementById('F2');
+let noteGb2 = document.getElementById('Gb2');
+let noteG2 = document.getElementById('G2');
+let noteAb2 = document.getElementById('Ab2');
+let noteA2 = document.getElementById('A2');
+let noteBb2 = document.getElementById('Bb2');
+let noteB2 = document.getElementById('B2');
+
 // event listener for clicking on challenge button
 challengeButton.addEventListener('click', function (event) {
     challengeButton.style.color = "#5e17eb";
@@ -211,264 +237,240 @@ function gameTurn() {
 // define all keys audio functions
 // define c1 key audio function
 function one() {
-    let noteAudio = document.getElementById('C1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteC1.currentTime = 0;
+    noteC1.play();
     c1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteC1.addEventListener('ended', function () {
         c1.classList.remove('active');
     });
 }
 
 // define db1 key audio function
 function two() {
-    let noteAudio = document.getElementById('Db1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteDb1.currentTime = 0;
+    noteDb1.play();
     db1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteDb1.addEventListener('ended', function () {
         db1.classList.remove('active');
     });
 }
 
 // define d1 key audio function
 function three() {
-    let noteAudio = document.getElementById('D1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteD1.currentTime = 0;
+    noteD1.play();
     d1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteD1.addEventListener('ended', function () {
         d1.classList.remove('active');
     });
 }
 
 // define eb1 key audio function
 function four() {
-    let noteAudio = document.getElementById('Eb1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteEb1.currentTime = 0;
+    noteEb1.play();
     eb1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteEb1.addEventListener('ended', function () {
         eb1.classList.remove('active');
     });
 }
 
 // define e1 key audio function
 function five() {
-    let noteAudio = document.getElementById('E1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteE1.currentTime = 0;
+    noteE1.play();
     e1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteE1.addEventListener('ended', function () {
         e1.classList.remove('active');
     });
 }
 
 // define f1 key audio function
 function six() {
-    let noteAudio = document.getElementById('F1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteF1.currentTime = 0;
+    noteF1.play();
     f1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteF1.addEventListener('ended', function () {
         f1.classList.remove('active');
     });
 }
 
 // define gb1 key audio function
 function seven() {
-    let noteAudio = document.getElementById('Gb1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteGb1.currentTime = 0;
+    noteGb1.play();
     gb1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteGb1.addEventListener('ended', function () {
         gb1.classList.remove('active');
     });
 }
 
 // define g1 key audio function
 function eight() {
-    let noteAudio = document.getElementById('G1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteG1.currentTime = 0;
+    noteG1.play();
     g1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteG1.addEventListener('ended', function () {
         g1.classList.remove('active');
     });
 }
 
 // define ab1 key audio function
 function nine() {
-    let noteAudio = document.getElementById('Ab1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteAb1.currentTime = 0;
+    noteAb1.play();
     ab1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteAb1.addEventListener('ended', function () {
         ab1.classList.remove('active');
     });
 }
 
 // define a1 key audio function
 function ten() {
-    let noteAudio = document.getElementById('A1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteA1.currentTime = 0;
+    noteA1.play();
     a1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteA1.addEventListener('ended', function () {
         a1.classList.remove('active');
     });
 }
 
 // define bb1 key audio function
 function eleven() {
-    let noteAudio = document.getElementById('Bb1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteBb1.currentTime = 0;
+    noteBb1.play();
     bb1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteBb1.addEventListener('ended', function () {
         bb1.classList.remove('active');
     });
 }
 
 // define b1 key audio function
 function twelve() {
-    let noteAudio = document.getElementById('B1');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteB1.currentTime = 0;
+    noteB1.play();
     b1.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteB1.addEventListener('ended', function () {
         b1.classList.remove('active');
     });
 }
 
 // define c2 key audio function
 function thirteen() {
-    let noteAudio = document.getElementById('C2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteC2.currentTime = 0;
+    noteC2.play();
     c2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteC2.addEventListener('ended', function () {
         c2.classList.remove('active');
     });
 }
 
 // define db2 key audio function
 function fourteen() {
-    let noteAudio = document.getElementById('Db2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteDb2.currentTime = 0;
+    noteDb2.play();
     db2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteDb2.addEventListener('ended', function () {
         db2.classList.remove('active');
     });
 }
 
 // define d2 key audio function
 function fifteen() {
-    let noteAudio = document.getElementById('D2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteD2.currentTime = 0;
+    noteD2.play();
     d2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteD2.addEventListener('ended', function () {
         d2.classList.remove('active');
     });
 }
 
 // define eb2 key audio function
 function sixteen() {
-    let noteAudio = document.getElementById('Eb2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteEb2.currentTime = 0;
+    noteEb2.play();
     eb2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteEb2.addEventListener('ended', function () {
         eb2.classList.remove('active');
     });
 }
 
 // define e2 key audio function
 function seventeen() {
-    let noteAudio = document.getElementById('E2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteE2.currentTime = 0;
+    noteE2.play();
     e2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteE2.addEventListener('ended', function () {
         e2.classList.remove('active');
     });
 }
 
 // define f2 key audio function
 function eighteen() {
-    let noteAudio = document.getElementById('F2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteF2.currentTime = 0;
+    noteF2.play();
     f2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteF2.addEventListener('ended', function () {
         f2.classList.remove('active');
     });
 }
 
 // define gb2 key audio function
 function nineteen() {
-    let noteAudio = document.getElementById('Gb2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteGb2.currentTime = 0;
+    noteGb2.play();
     gb2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteGb2.addEventListener('ended', function () {
         gb2.classList.remove('active');
     });
 }
 
 // define g2 key audio function
 function twenty() {
-    let noteAudio = document.getElementById('G2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteG2.currentTime = 0;
+    noteG2.play();
     g2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteG2.addEventListener('ended', function () {
         g2.classList.remove('active');
     });
 }
 
 // define ab2 key audio function
 function twentyOne() {
-    let noteAudio = document.getElementById('Ab2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteAb2.currentTime = 0;
+    noteAb2.play();
     ab2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteAb2.addEventListener('ended', function () {
         ab2.classList.remove('active');
     });
 }
 
 // define a2 key audio function
 function twentyTwo() {
-    let noteAudio = document.getElementById('A2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteA2.currentTime = 0;
+    noteA2.play();
     a2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteA2.addEventListener('ended', function () {
         a2.classList.remove('active');
     });
 }
 
 // define bb2 key audio function
 function twentyThree() {
-    let noteAudio = document.getElementById('Bb2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteBb2.currentTime = 0;
+    noteBb2.play();
     bb2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteBb2.addEventListener('ended', function () {
         bb2.classList.remove('active');
     });
 }
 
 // define b2 key audio function
 function twentyFour() {
-    let noteAudio = document.getElementById('B2');
-    noteAudio.currentTime = 0;
-    noteAudio.play();
+    noteB2.currentTime = 0;
+    noteB2.play();
     b2.classList.add('active');
-    noteAudio.addEventListener('ended', function () {
+    noteB2.addEventListener('ended', function () {
         b2.classList.remove('active');
     });
 }
@@ -795,6 +797,7 @@ function winGame() {
     winScore++;
     winCounter.innerHTML = winScore;
     resultMessage.innerHTML = "Win!";
+    clearWinColours();
 }
 
 // player loses function
@@ -804,6 +807,7 @@ function loseGame() {
     loseScore++;
     loseCounter.innerHTML = loseScore;
     resultMessage.innerHTML = "Lose!";
+    clearLoseColours();
 }
 
 // player wins colours lighting up
@@ -836,6 +840,87 @@ function loseColours() {
     gb2.classList.add('active');
     ab2.classList.add('active');
     bb2.classList.add('active');
+}
+
+// player wins colours being cleared
+function clearWinColours() {
+    setTimeout(function () {
+        c1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        d1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        e1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        f1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        g1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        a1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        b1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        c2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        d2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        e2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        f2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        g2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        a2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        b2.classList.remove('active');
+    }, 600);
+}
+
+// player loses colours being cleared
+function clearLoseColours() {
+    setTimeout(function () {
+        db1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        eb1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        gb1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        ab1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        bb1.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        db2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        eb2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        gb2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        ab2.classList.remove('active');
+    }, 600);
+    setTimeout(function () {
+        bb2.classList.remove('active');
+    }, 600);
+
 }
 
 // media queries
