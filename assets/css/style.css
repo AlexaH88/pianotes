@@ -52,6 +52,7 @@ body {
     font-size: 2.5rem;
     color: #FFFFFF;
     background-color: #000000;
+    margin: 1px;
 }
 
 .black i {
@@ -388,8 +389,9 @@ footer ul {
 
 /* media queries */
 
-/* 1440px and down (laptop) */
+/* 1440px and down (laptop L) */
 @media only screen and (max-width: 1440px) {
+
     /* play page */
     .black {
         margin-left: -30px;
@@ -474,6 +476,26 @@ footer ul {
     }
 }
 
+/* 1024px and down (laptop) */
+@media only screen and (max-width: 1024px) {
+
+    /* play page */
+    .black {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
+    .black span,
+    .white span {
+        font-size: 1.8rem;
+    }
+
+    .black i,
+    .white i {
+        font-size: 1.4rem;
+    }
+}
+
 /* 1000px and down */
 @media only screen and (max-width: 1000px) {
 
@@ -494,8 +516,8 @@ footer ul {
     }
 
     .black {
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: -30px;
+        margin-right: -30px;
     }
 }
 
@@ -574,8 +596,8 @@ footer ul {
     }
 
     .black {
-        margin-left: -60px;
-        margin-right: -60px;
+        margin-left: -55px;
+        margin-right: -55px;
     }
 }
 
@@ -599,8 +621,8 @@ footer ul {
     }
 }
 
-/* 430px and down */
-@media only screen and (max-width: 430px) {
+/* 425px and down (mobile L) */
+@media only screen and (max-width: 425px) {
 
     /* header */
     h1 {
@@ -610,27 +632,39 @@ footer ul {
     header i {
         font-size: 3.6rem;
     }
-}
-
-/* 390px and down */
-@media only screen and (max-width: 390px) {
-
-    /* header */
-    h1 {
-        font-size: 4rem;
-    }
-    
-    header i {
-        font-size: 2.6rem;
-    }
-}
-
-/* 320px and down */
-@media only screen and (max-width: 320px) {
 
     /* play page */
     .black {
         margin-left: -35px;
         margin-right: -35px;
+    }
+}
+
+/* 375px and down (mobile M) */
+@media only screen and (max-width: 375px) {
+
+    /* header */
+    h1 {
+        font-size: 4rem;
+    }
+
+    header i {
+        font-size: 2.6rem;
+    }
+
+    /* play page */
+    .black {
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
+/* 320px and down (mobile S) */
+@media only screen and (max-width: 320px) {
+
+    /* play page */
+    .black {
+        margin-left: -25px;
+        margin-right: -25px;
     }
 }
