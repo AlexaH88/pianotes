@@ -549,4 +549,14 @@ footer ul {
     header ul {
         align-items: flex-start;
     }
+
+    /* play page */
+    .border {
+        height: auto;
+        width: 100%;
+    }
+
+    .border table {
+        margin: 0rem 2rem;
+    }
 }
