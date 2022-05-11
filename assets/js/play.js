@@ -786,7 +786,7 @@ function check() {
         computerTurn = true;
         keyLights = 0;
         roundCounter.innerHTML = round;
-        intervalId = setInterval(gameTurn, 800);
+        intervalId = setInterval(gameTurn, 1000);
     }
 }
 
@@ -924,7 +924,6 @@ function clearLoseColours() {
 }
 
 // media queries
-
 // 1000px and down
 const mediaQuery = window.matchMedia('(max-width: 1000px)');
 
