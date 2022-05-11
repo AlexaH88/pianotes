@@ -73,8 +73,14 @@ li {
 
 ol li {
     font-size: 1.5rem;
-    list-style:decimal;
+    list-style: decimal;
     text-align: left;
+    background-color: #5e17eb;
+    padding-left: 0.8rem !important;
+}
+
+ol {
+    background-color: #5e17eb;
 }
 
 i {
@@ -92,12 +98,9 @@ i {
     font-weight: bold;
 }
 
-.horizontal-section td,
-.horizontal-section div {
+.horizontal-section td {
     font-size: 2.5rem;
 }
-
-
 
 /* header */
 header {
@@ -328,6 +331,11 @@ section li {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-size: 2rem;
+}
+
+.popup:hover {
+    color: #5e17eb;
 }
 
 .popup .popup-text {
@@ -337,12 +345,12 @@ section li {
     color: #FFFFFF;
     text-align: center;
     border-radius: 6px;
-    padding: 8px 0;
+    padding: 8px 0px 8px 40px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
     left: 50%;
-    margin-left: -375px;
+    margin-left: -400px;
 }
 
 .popup .show {
