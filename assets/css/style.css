@@ -561,6 +561,11 @@ footer ul {
     #virtual-piano span {
         display: none;
     }
+
+    /* instructions page */
+    .vertical-section iframe {
+        height: 600px;
+    }
 }
 
 /* 600px and down */
@@ -637,6 +642,11 @@ footer ul {
     .black {
         margin-left: -35px;
         margin-right: -35px;
+    }
+
+    /* instructions page */
+    .vertical-section iframe {
+        height: 400px;
     }
 }
 
