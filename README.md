@@ -292,28 +292,22 @@
 
 -   #### Returning Visitor Goals
 
-    1. As a Returning Visitor, I want to look up the machine catalogue page, to find out how to beat the enemy machines in the game.
+    1. As a Returning Visitor, I want to use the sheet music to try and play along to well-known songs.
 
-        1. The navigation bar clearly highlights the "Machine Catalogue" Page.
-        2. The user will be directed to the page with another hero image and the machine catalogue in the main page area below.
-        3. The Beat The Machines section explains to the user that they need to hover over (or tap on touchscreens) the machine images below in order for the info text to appear, which details how they can override and destroy the machines. 
+        1. The navigation bar clearly highlights the Sheet Music page.
+        2. Each piece of sheet music includes a playable audio file of the song, allowing the user to familiarise themselves with the song if they do not know it. 
+        3. The sheet music can be opened in a separate tab and used on a secondary computer screen to play along. It can also be downloaded, printed, and the zoom and page fit adjusted to enable a comfortable experience for the user. 
 
-    2. As a Returning Visitor, I want to rewatch the YouTube videos on the About The Games page and the Machine Catalogue page, to immerse myself in the Horizon gaming world.
+    2. As a Returning Visitor, I want to re-read the challenge instructions to try and beat the computer.
         
-        1. The navigation bar clearly highlights the "About The Games" and "Machine Catalogue" Pages.
-        2. The videos do not autoplay and it is up to the user to press the play button, making it a chosen action. 
-        3. The videos can either be played on the site directly with a set window size, or they can be made full-screen - depending on what the user prefers. 
+        1. The navigation bar clearly highlights the Instructions page.
+        2. In the How to Play section, a hover effect turning the word 'here' purple and the cursor to a pointer make it clear to the user that this is a clickable element.   
+        3. The popup detailing the rules of the challenge is clean, easy to read and explains thorougly how to play.  
 
-    3. As a Returning Visitor, I want to sign up for the newsletter and join the community.
-        
-        1. The navigation bar clearly highlights the "Sign Up" Page.
-        2. The form on the sign up page is clear in its instruction, detailing three sections to complete: user details, survey questions, and newsletter subscription. 
-        3. Once complete the user is instructed to click the "Join Us!" button and once clicked is informed that the form has successfully been submitted.
-
-    4. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
+    3. As a Returning Visitor, I want to get in contact with the site creator with any questions I may have about the site.
         
         1. The footer contains links to the site creator's GitHub and Linkedin pages.
-        2. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
+        2. Whichever link they click, it will be opened up in a new tab to ensure the user can easily get back to the website.
 
 -   #### Frequent User Goals
 
