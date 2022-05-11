@@ -117,7 +117,7 @@ header {
     border-bottom: solid 3px #000000;
     width: 100vw;
     position: fixed;
-    z-index: +1;
+    z-index: +2;
 }
 
 header ul {
@@ -257,7 +257,7 @@ section li {
     height: 240px;
     margin-left: -40px;
     margin-right: -40px;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -332,7 +332,6 @@ section li {
 
 /* This code was taken from W3 Schools and adapted - see details in the README */
 .popup {
-    position: relative;
     display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
@@ -356,9 +355,10 @@ section li {
     padding: 8px 0px 8px 40px;
     position: absolute;
     z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -400px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .popup .show {
