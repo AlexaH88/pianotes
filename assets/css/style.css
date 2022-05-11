@@ -80,7 +80,6 @@ li {
 
 ol li {
     font-size: 1.5rem;
-    list-style: decimal;
     text-align: left;
     background-color: #5e17eb;
     padding-left: 0.8rem !important;
@@ -363,6 +362,14 @@ section li {
 
 .popup .show {
     visibility: visible;
+}
+
+.decimal-list {
+    list-style: decimal !important;
+}
+
+.roman-list {
+    list-style: lower-roman;
 }
 
 /* footer */
