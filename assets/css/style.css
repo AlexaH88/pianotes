@@ -621,3 +621,13 @@ footer ul {
         font-size: 2.6rem;
     }
 }
+
+/* 320px and down */
+@media only screen and (max-width: 320px) {
+
+    /* play page */
+    .black {
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+}
