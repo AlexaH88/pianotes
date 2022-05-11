@@ -197,6 +197,7 @@ section li {
 
 .border {
     border: solid 5px #5e17eb;
+    border-radius: 10px;
     padding: 10px;
     height: 100px;
     width: 500px;
