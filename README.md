@@ -247,7 +247,7 @@
 - #### Desktop Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
   - [Play Page](assets/testing/testing-lighthouse-index-desktop.pdf)
-  - [Sheet Music Page](assets/testing/testing-sheet-music-desktop.pdf)
+  - [Sheet Music Page](assets/testing/testing-lighthouse-sheet-music-desktop.pdf)
   - [Instructions Page](assets/testing/testing-lighthouse-instructions-desktop.pdf)
 
 - #### Mobile Testing with [Chrome DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse)
