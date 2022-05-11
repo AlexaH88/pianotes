@@ -1,3 +1,11 @@
+// wait for the DOM to finish loading before running freestyle mode
+document.addEventListener("DOMContentLoaded", function() {
+    playFreestyle();
+    freestyleButton.style.color = "#5e17eb";
+    freestyleButton.style.border = "solid 5px #000000";
+    challengeOn = false;
+})
+
 // virtual piano freestyle mode
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 
@@ -30,7 +38,6 @@ function playFreestyle() {
     });
 
     // keydown event for piano keys
-    function keydown() {
         document.addEventListener('keydown', function (event) {
             if (event.repeat) return;
             let pianoKey = event.key;
@@ -40,7 +47,6 @@ function playFreestyle() {
             if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
             if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
         });
-    }
 
     // play audio and define interaction with piano keys
     function playNote(key) {
