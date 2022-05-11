@@ -790,6 +790,7 @@ function check() {
 
 // player wins function
 function winGame() {
+    winColours();
     win = true;
     winScore++;
     winCounter.innerHTML = winScore;
@@ -798,10 +799,43 @@ function winGame() {
 
 // player loses function
 function loseGame() {
+    loseColours();
     win = false;
     loseScore++;
     loseCounter.innerHTML = loseScore;
     resultMessage.innerHTML = "Lose!";
+}
+
+// player wins colours lighting up
+function winColours() {
+    c1.classList.add('active');
+    d1.classList.add('active');
+    e1.classList.add('active');
+    f1.classList.add('active');
+    g1.classList.add('active');
+    a1.classList.add('active');
+    b1.classList.add('active');
+    c2.classList.add('active');
+    d2.classList.add('active');
+    e2.classList.add('active');
+    f2.classList.add('active');
+    g2.classList.add('active');
+    a2.classList.add('active');
+    b2.classList.add('active');
+}
+
+// player loses colours lighting up
+function loseColours() {
+    db1.classList.add('active');
+    eb1.classList.add('active');
+    gb1.classList.add('active');
+    ab1.classList.add('active');
+    bb1.classList.add('active');
+    db2.classList.add('active');
+    eb2.classList.add('active');
+    gb2.classList.add('active');
+    ab2.classList.add('active');
+    bb2.classList.add('active');
 }
 
 // media queries
