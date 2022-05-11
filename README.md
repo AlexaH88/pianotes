@@ -423,6 +423,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - The code for the hamburger menu on 800px width screens and smaller was taken from [W3 Schools](https://www.w3schools.com/), specifically [this section](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar), and adapted. 
 
+- The code for the Simon game rules popup on the instructions page was taken from [W3 Schools](https://www.w3schools.com/), specifically [this aticle](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_popup), and adapted. 
+
 ### ***Content***
 
 - All text content was written by the site creator [Alexa Hendry](https://github.com/AlexaH88). 

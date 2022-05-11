@@ -313,6 +313,7 @@ section li {
     height: auto;
 }
 
+/* This code was taken from W3 Schools and adapted - see details in the README */
 .popup {
     position: relative;
     display: inline-block;
