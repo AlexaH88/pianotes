@@ -553,10 +553,30 @@ footer ul {
     /* play page */
     .border {
         height: auto;
-        width: 100%;
+        width: 80vw;
     }
 
     .border table {
         margin: 0rem 2rem;
+    }
+}
+
+/* 525px and down */
+@media only screen and (max-width: 525px) {
+
+    /* play page */
+    .border {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table,
+    tbody,
+    th,
+    td {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
