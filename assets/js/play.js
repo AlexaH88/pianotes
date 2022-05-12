@@ -1,11 +1,3 @@
-// wait for the DOM to finish loading before running freestyle mode
-document.addEventListener("DOMContentLoaded", function () {
-    playFreestyle();
-    freestyleButton.style.color = "#5e17eb";
-    freestyleButton.style.border = "solid 5px #000000";
-    challengeOn = false;
-});
-
 // virtual piano freestyle mode
 // This code was taken from YouTuber Web Dev Simplified and adapted - see details in the README
 

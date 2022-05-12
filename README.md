@@ -95,7 +95,7 @@
   
   - The page is split into two sections:
     - The play mode choice, including a clickable button each for Freestyle mode and Challenge mode. And the score board, including counters for the number of rounds played, the number of games won, the number of games lost, and a results message showing either "Won!" or "Lost!". A hover effect of the buttons inversing colours, and the cursor becoming a pointer is included, allowing the user to understand that the button is clickable.
-    - The virtual piano, including computer keyboard keys to be used on non-touchscreen devices. A hover effect on the keys of the cursor becoming a pointer is included, allowing the user to understand that the keys is clickable.
+    - The virtual piano, including computer keyboard keys to be used on Freestyle mode on non-touchscreen devices.
 
 - #### Sheet Music Page
 
@@ -146,40 +146,38 @@
 ### ***Future Implementations***
 
 - #### General
-  
-  - Use a [recreation of the in-game font](https://www.fontspace.com/category/horizon-zero-dawn) for headings across the site.
 
-  - Add a Tribe Quiz page with JavaScript, allowing the user to answer questions about their gaming style resulting in being assigned to a tribe from the Horizon universe. 
+  - Improve Lighthouse SEO score on Play and Sheet Music pages.
 
-  - Add a chat room function to the site for users to be able to connect socially. 
+  - Refactor and simplify JavaScript code, to make it easier to read and avoid any possible repetition. 
 
-  - Improve Lighthouse Performance score on all pages by further compressing image sizes without losing the quality, or by using a next-gen image format such as WebP or AVIF. 
+  - Improve accessibility across the site, including on audio files for the sheet music and the piano, the piano keys, and the sheet music. 
+
+  - Include an alert to users on small devices that landscape mode is the preferred mode to play the piano on. 
 
 - #### Navigation Bar
-  
-  - Add sub-menu on navigation bar, linking to the h3 and h4 sections on the site.
 
-  - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear. 
+  - Make header invisible on smaller viewports and allow for swipe down or hover to make it appear.  
 
-  - Improve the hamburger menu functionality by using a JavaScript version instead. 
+- #### Play Page
 
-- #### Hero Images
+  - Include the option to play the piano with the keyboard on Challenge mode. 
 
-  - Add a text box or scroll down arrow on the hero images to make it clearer to users that there is content below the images - as they take up a lot of the screen space in order to be visually striking.  
+  - Include a cursor pointer hover effect for the piano keys to make it clearer to the user that they are clickable.
 
-- #### Machine Catalogue Page
+  - Include a larger version of the virtual piano, with more notes, for very large screens.  
 
-  - Include all the machines from the Horizon games to have the full collection of existing machines. 
+  - Include several versions of the Challenge to make it more interesting, such as the piano playing an actual, recognisable song, and hard and easy modes. 
 
-  - Make the machine catalogue info text on the images visually more appealing on smaller viewports, for example using a different system instead e.g. modals with Java. 
+  - Include audio sounds for correct and incorrect guesses on the Challenge, to further clarify what has occured to the user. 
 
-- #### Sign Up Page
+- #### Sheet Music Page
 
-  - Make the newsletter an actual function of the site.
+  - Improve visuals on the iframes, such as colours fitting with the site. 
 
-  - Create user profile and login options in order to create a true community where users can connect. 
+  - Find another option instead of the iframes altogether as they create bugs when loading and do not work on mobile devices. 
 
-  - Make the how many hours a day do you play selector into a range slider instead and show the 1-24 hour values with JavaScript. 
+  - Include the sheet music on the Play page above the piano so that users can read and follow it more easily. Make it interactive also, scrolling down the page as you play, and highlighting the notes played on the screen.
 
 - #### The Footer
 

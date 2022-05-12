@@ -231,10 +231,6 @@ section li {
     margin: 2rem 0rem 10rem;
 }
 
-.key:hover {
-    cursor: pointer;
-}
-
 .white {
     background-color: #FFFFFF;
     border: solid 1px #000000;
