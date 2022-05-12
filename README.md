@@ -357,6 +357,10 @@
   - iframe Bug Quirks Mode:
     ![iframe Bug Quirks Mode](assets/images/bug-iframe-quirks-mode.png)
 
+- The iframe is also incompatible with most smaller devices as they are unable to display pdfs within the iframe. The user is required to open them in a separate viewer. Given that users are unlikely to play along to the sheet music on a mobile device this bug was accepted and noted for future improvements. 
+
+- Occasionally the virtual piano has played several notes at once without explanation on the Challenge mode. This bug appears to be resolved but is noted nonetheless in case some users experience this.  
+
 ## __Deployment__
 
 ### ***GitHub Pages***
